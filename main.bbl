@@ -1,0 +1,43 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{\uppercase{MBBV15}}
+
+\bibitem[BBL{\etalchar{*}}16]{Geometric_deep_learning}
+\textsc{Bronstein M.~M., Bruna J., LeCun Y., Szlam A., Vandergheynst P.}:
+\newblock Geometric deep learning: going beyond euclidean data.
+\newblock \emph{CoRR abs/1611.08097} (2016).
+\newblock URL: \url{http://arxiv.org/abs/1611.08097}, \href
+  {http://arxiv.org/abs/1611.08097} {\path{arXiv:1611.08097}}.
+
+\bibitem[GGH02]{gu2002geometry}
+\textsc{Gu X., Gortler S.~J., Hoppe H.}:
+\newblock Geometry images.
+\newblock \emph{ACM Transactions on Graphics (TOG) 21}, 3 (2002), 355--361.
+
+\bibitem[MBBV15]{Masci2015ShapeNetCN}
+\textsc{Masci J., Boscaini D., Bronstein M.~M., Vandergheynst P.}:
+\newblock Shapenet: Convolutional neural networks on non-euclidean manifolds.
+\newblock \emph{CoRR abs/1501.06297} (2015).
+
+\bibitem[MGA{\etalchar{*}}17]{CNN_on_Torus}
+\textsc{Maron H., Galun M., Aigerman N., Trope M., Dym N., Yumer E., Kim V.~G.,
+  Lipman Y.}:
+\newblock Convolutional neural networks on surfaces via seamless toric covers.
+\newblock \emph{ACM Trans. Graph. 36}, 4 (July 2017), 71:1--71:10.
+\newblock URL: \url{http://doi.acm.org/10.1145/3072959.3073616}, \href
+  {https://doi.org/10.1145/3072959.3073616}
+  {\path{doi:10.1145/3072959.3073616}}.
+
+\bibitem[SBR16]{sinha2016deep}
+\textsc{Sinha A., Bai J., Ramani K.}:
+\newblock Deep learning 3d shape surfaces using geometry images.
+\newblock In \emph{European Conference on Computer Vision} (2016), Springer,
+  pp.~223--240.
+
+\bibitem[SKS02]{sloan2002precomputed}
+\textsc{Sloan P.-P., Kautz J., Snyder J.}:
+\newblock Precomputed radiance transfer for real-time rendering in dynamic,
+  low-frequency lighting environments.
+\newblock In \emph{ACM Transactions on Graphics (TOG)} (2002), vol.~21, ACM,
+  pp.~527--536.
+
+\end{thebibliography}
