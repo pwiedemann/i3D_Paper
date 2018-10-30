@@ -26,15 +26,16 @@ L(\bm{x}, \bm{\omega}_0 ) \approx \sum_{i}^{n^2} l_i \cdot t_i
 \textbf{Goal:} The objective of our CNN is to directly predict the coefficients $t_i$'s, for a given shape, skipping the costly ray-casting computations of $G$. 
 % -------------- GEOMETRY IMAGE ----------------- 
 \subsection{Object Reconstuction}
-To this end, the network has to be fed with shape information. This information lies intrinsically on a non-Euclidean domain on which the convolution operation is not well defined \cite{Masci2015ShapeNetCN ,Geometric_deep_learning, CNN_on_Torus}. We chose a parametric approach called \textit{Geometry Image } which translates the problem into a space on which standard CNNs can be applied \cite{gu2002geometry, sinha2016deep}. 
-
-(see Figure \ref{Fig: Method_Overview} picturing input and output of network). 
+To this end, the network has to be fed with shape information. This information lies intrinsically on a non-Euclidean domain on which the convolution operation is not well defined \cite{Masci2015ShapeNetCN ,Geometric_deep_learning, CNN_on_Torus}. We chose a parametric approach called \textit{geometry Iimage } which translates the problem into a uniform grid on which standard CNNs can be applied \cite{gu2002geometry, sinha2016deep}. The parametrisation we chose is a harmonic mapping and the geometric data we transform into geomtry images are vertex positions and normals (see Figure \ref{Fig: Method_Overview} picturing input and output of network)
 \begin{figure}[H]
   \centering
     \includegraphics[width=0.5\textwidth]{Figures/Overview_method}
      \caption{Just an example...(TODO: better picture)}
      \label{Fig: Method_Overview}
 \end{figure}
+On top of that we chose to 
+
+
 \subsection{DPRT}
 
 

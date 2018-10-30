@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  30 OCT 2018 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  30 OCT 2018 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -507,10 +507,10 @@ l.14 \begin{itemize}
 File: Figures/Overview_method.png Graphic file (type png)
 
 <use Figures/Overview_method.png>
-Package pdftex.def Info: Figures/Overview_method.png used on input line 34.
+Package pdftex.def Info: Figures/Overview_method.png used on input line 32.
 (pdftex.def)             Requested size: 252.0pt x 189.92424pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 34--35
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--33
  [][] 
  []
 
@@ -523,15 +523,17 @@ Underfull \hbox (badness 1859) in paragraph at lines 20--20
 []\T1/ptm/m/sc/8 Masci J., Boscaini D., Bron-stein M. M., Van-
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
- [2pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
- has been already used, duplicate ignored
+[2pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.134 \end{document}
-                     <./Figures/Overview_method.png>]
+l.42 
+      <./Figures/Overview_method.png>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
+ [3
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
@@ -541,13 +543,13 @@ Package rerunfilecheck Info: File `main.brf' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
- 6639 strings out of 493089
- 96586 string characters out of 6134843
+ 6640 strings out of 493089
+ 96592 string characters out of 6134843
  201910 words of memory out of 5000000
  9953 multiletter control sequences out of 15000+600000
  57493 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,11n,25p,582b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,11n,25p,714b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local
@@ -561,10 +563,10 @@ nts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times
 /utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on main.pdf (2 pages, 2100795 bytes).
+Output written on main.pdf (3 pages, 2101493 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
- 23 named destinations out of 1000 (max. 500000)
+ 121 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
+ 24 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
