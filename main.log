@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  30 OCT 2018 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  30 OCT 2018 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -304,25 +304,32 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box28
 \@float@everytoks=\toks23
 \@floatcapt=\box29
-) (./main.aux)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+ (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen117
@@ -364,7 +371,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
 )
-Package hyperref Info: Link coloring ON on input line 107.
+Package hyperref Info: Link coloring ON on input line 108.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -374,42 +381,52 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 107.
-LaTeX Info: Redefining \pageref on input line 107.
-LaTeX Info: Redefining \nameref on input line 107.
+LaTeX Info: Redefining \ref on input line 108.
+LaTeX Info: Redefining \pageref on input line 108.
+LaTeX Info: Redefining \nameref on input line 108.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 118.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 119.
 LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 11
-8.
+9.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 11
-8.
+9.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlptmcm.fd
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+psycm on input line 11
-8.
+9.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 118.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 119.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+LaTeX Font Info:    Try loading font information for U+msa on input line 119.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 119.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 <eg_new.jpg, id=4, 394.5942pt x 66.4884pt>
 File: eg_new.jpg Graphic file (type jpg)
  <use eg_new.jpg>
-Package pdftex.def Info: eg_new.jpg used on input line 118.
+Package pdftex.def Info: eg_new.jpg used on input line 119.
 (pdftex.def)             Requested size: 504.0pt x 84.92934pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 118.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 119.
  (./0_abstract.tex
 Excluding 'CCSXML' comment.
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 40.
@@ -423,12 +440,6 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 40.
 )
 (./1_introduction.tex
-Underfull \hbox (badness 1596) in paragraph at lines 2--14
-\T1/ptm/m/it/9 der-ing Equa-tion \T1/ptm/m/n/9 for each point on an ob-jects su
-r-face. This
- []
-
-
 Underfull \hbox (badness 1028) in paragraph at lines 2--14
 \T1/ptm/m/n/9 to over-come this com-pu-ta-tional overkill, sim-pli-fy-ing the r
 en-
@@ -447,15 +458,21 @@ e
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 2--14
-\T1/ptm/m/n/9 re-computation of $\OML/ptmcm/m/it/9 T$\T1/ptm/m/n/9 , re-quir-in
-g ex-pen-sive ray-casting. Hence,
+Underfull \hbox (badness 2261) in paragraph at lines 2--14
+\T1/ptm/m/n/9 of \T1/ptm/m/it/9 trans-fer func-tion\T1/ptm/m/n/9 , re-quir-ing 
+ex-pen-sive ray-casting. Hence,
  []
 
 
 Underfull \hbox (badness 1237) in paragraph at lines 2--14
 \T1/ptm/m/n/9 in-ter-ac-tive scenes may re-quire on-the-fly adap-tive, pre-vi-o
 usly
+ []
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 2--14
+\T1/ptm/m/n/9 phys-i-cally based de-for-ma-tions for cloth or soft-bodies [find
+
  []
 
 
@@ -514,42 +531,55 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 32--33
  [][] 
  []
 
+
+Underfull \hbox (badness 1817) in paragraph at lines 41--43
+\T1/ptm/m/n/9 of po-si-tion and nor-mal im-ages ($\OMS/cmsy/m/n/9 P \OT1/ptmcm/
+m/n/9 = \OMS/cmsy/m/n/9 f\OML/ptmcm/m/it/9 P[]; P[]; P[]\OMS/cmsy/m/n/9 g$ \T1/
+ptm/m/n/9 and $\OMS/cmsy/m/n/9 N \OT1/ptmcm/m/n/9 =
+ []
+
+
+Underfull \hbox (badness 7081) in paragraph at lines 47--49
+\T1/ptm/m/n/9 Besides, the a set of pre-com-puted SH-Coefficients $\OMS/cmsy/m/
+n/9 C \OT1/ptmcm/m/n/9 =
+ []
+
 ) (./4_results.tex) (./Outlook.tex) (./main.bbl (./main.brf)
 \tf@brf=\write4
 \openout4 = `main.brf'.
 
+ [2pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.10 
+      <./Figures/Overview_method.png>]
 Underfull \hbox (badness 1859) in paragraph at lines 20--20
 []\T1/ptm/m/sc/8 Masci J., Boscaini D., Bron-stein M. M., Van-
  []
 
-[2pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.42 
-      <./Figures/Overview_method.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
  [3
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
 Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: C62C698FB85CCFDCE0322DF129E49F42;390.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  ) 
 Here is how much of TeX's memory you used:
- 6640 strings out of 493089
- 96592 string characters out of 6134843
- 201910 words of memory out of 5000000
- 9953 multiletter control sequences out of 15000+600000
- 57493 words of font info for 86 fonts, out of 8000000 for 9000
+ 6722 strings out of 493089
+ 97828 string characters out of 6134843
+ 202327 words of memory out of 5000000
+ 10017 multiletter control sequences out of 15000+600000
+ 59565 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,11n,25p,714b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,11n,25p,779b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local
@@ -557,16 +587,17 @@ l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times
-/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.p
-fb>
-Output written on main.pdf (3 pages, 2101493 bytes).
+/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
+imes/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on main.pdf (3 pages, 2106890 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
+ 129 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
