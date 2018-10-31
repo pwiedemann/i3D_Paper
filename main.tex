@@ -1,135 +1,91 @@
-% ---------------------------------------------------------------------------
-% Author guideline and sample document for EG publication using LaTeX2e input
-% D.Fellner, v1.14, Nov. 29, 2017
+\documentclass[sigconf]{acmart}
 
-\documentclass{egpubl}
-\usepackage{eg2019}
-
-% --- for  Annual CONFERENCE
-\ConferenceSubmission   % uncomment for Conference submission
-% \ConferencePaper        % uncomment for (final) Conference Paper
-% \STAR                   % uncomment for STAR contribution
-% \Tutorial               % uncomment for Tutorial contribution
-% \ShortPresentation      % uncomment for (final) Short Conference Presentation
-% \Areas                  % uncomment for Areas contribution
-% \MedicalPrize           % uncomment for Medical Prize contribution
-% \Education              % uncomment for Education contribution
-% \Poster                 % uncomment for Poster contribution
-% \DC                     % uncomment for Doctoral Consortium
-%
-% --- for  CGF Journal
-% \JournalSubmission    % uncomment for submission to Computer Graphics Forum
-% \JournalPaper         % uncomment for final version of Journal Paper
-%
-% --- for  CGF Journal: special issue
-% \SpecialIssueSubmission    % uncomment for submission to , special issue
-% \SpecialIssuePaper         % uncomment for final version of Computer Graphics Forum, special issue
-%                          % EuroVis, SGP, Rendering, PG
-% --- for  EG Workshop Proceedings
-% \WsSubmission      % uncomment for submission to EG Workshop
-% \WsPaper           % uncomment for final version of EG Workshop contribution
-% \WsSubmissionJoint % for joint events, for example ICAT-EGVE
-% \WsPaperJoint      % for joint events, for example ICAT-EGVE
-% \Expressive        % for SBIM, CAe, NPAR
-% \DigitalHeritagePaper
-% \PaperL2P          % for events EG only asks for License to Publish
-
-% --- for EuroVis 
-% for full papers use \SpecialIssuePaper
-% \STAREurovis   % for EuroVis additional material 
-% \EuroVisPoster % for EuroVis additional material 
-% \EuroVisShort  % for EuroVis additional material
-
- \electronicVersion % can be used both for the printed and electronic version
-
-% !! *please* don't change anything above
-% !! unless you REALLY know what you are doing
-% ------------------------------------------------------------------------
-
-% for including postscript figures
-% mind: package option 'draft' will replace PS figure by a filname within a frame
-\ifpdf \usepackage[pdftex]{graphicx} \pdfcompresslevel=9
-\else \usepackage[dvips]{graphicx} \fi
-
-\PrintedOrElectronic
-
-% prepare for electronic version of your document
-\usepackage{t1enc,dfadobe}
-
-\usepackage{egweblnk}
-\usepackage{cite}
+\usepackage{booktabs} % For formal tables
 \usepackage{amsmath}
 \usepackage{bm}
 \usepackage{float}
 \usepackage{amsfonts}
 
-% For backwards compatibility to old LaTeX type font selection.
-% Uncomment if your document adheres to LaTeX2e recommendations.
-% \let\rm=\rmfamily    \let\sf=\sffamily    \let\tt=\ttfamily
-% \let\it=\itshape     \let\sl=\slshape     \let\sc=\scshape
-% \let\bf=\bfseries
+\acmPrice{15.00}
 
-% end of prologue
+% The next six lines come directly from the completed rights form.
+% You MUST replace them with the lines specific to your accepted work.
+\copyrightyear{2018}
+\acmYear{2018}
+\setcopyright{rightsretained}
+\acmConference{Interactive 3D Graphics and Games}{2019}{Montreal}
+\acmDOI{10.1145/8888888.7777777}
+\acmISBN{978-1-4503-1234-5/17/07}
 
-% ---------------------------------------------------------------------
-% EG author guidelines plus sample file for EG publication using LaTeX2e input
-% D.Fellner, v2.02, Jan 25, 2017
+% Use the "authoryear" citation style, and make sure citations are in [square brackets].
+\citestyle{acmauthoryear}
+\setcitestyle{square}
 
+% A useful command for controlling the number of authors per row.
+% The default value of "authorsperrow" is 2.
+\settopmatter{authorsperrow=4}
 
-\title[EG \LaTeX\ Author Guidelines]%
-      {Deep Precomputed Radiance Transfer for Deforming Objects}
-
-% for anonymous conference submission please enter your SUBMISSION ID
-% instead of the author's name (and leave the affiliation blank) !!
-% for final version: please provide your *own* ORCID in the brackets following \orcid; see https://orcid.org/ for more details.
-\author[Submission ID ]
-{\parbox{\textwidth}{\centering 
-%        S. Spencer$^2$\thanks{Chairman Siggraph Publications Board}  
-        }
-        \\
-% For Computer Graphics Forum: Please use the abbreviation of your first name.
-{\parbox{\textwidth}{\centering 
-%        $^2$ Another Department to illustrate the use in papers from authors
-%             with different affiliations
-       } 
-}
-}
-% ------------------------------------------------------------------------
-
-% if the Editors-in-Chief have given you the data, you may uncomment
-% the following five lines and insert it here
-%
-% \volume{36}   % the volume in which the issue will be published;
-% \issue{1}     % the issue number of the publication
-% \pStartPage{1}      % set starting page
-
-
-%-------------------------------------------------------------------------
+% end of preamble.
+% --------------------------------------------------------------------------
 \begin{document}
 
-\teaser{
- \includegraphics[width=\linewidth]{eg_new}
- \centering
-  \caption{New EG Logo}
-\label{fig:teaser}
-}
+% Title. 
+% If your title is long, consider \title[short title]{full title} - "short title" will be used for running heads.
+\title{Deep Precomputed Radiance Transfer for Deforming Objects}
 
-\maketitle
-%-------------------------------------------------------------------------
+% Authors.
+\author{Yue Li}
+\affiliation{%
+  \institution{University of Pensylvania??}}
+\email{yueli.cg@gmail.com}
 
+\author{Pablo Wiedemann}
+\affiliation{%
+  \institution{Edinburgh Napier University}}
+\email{p.wiedemann@napier.ac.uk}
+
+\author{Kenny Mitchell}
+\affiliation{%
+  \institution{Edinburgh Napier University}}
+\email{k.mitchell2@napier.ac.uk}
+
+
+% This command defines the author string for running heads.
+\renewcommand{\shortauthors}{Li, Wiedemann,Mitchell}
+
+% ----- ABSTRACT -----------------
 \input{0_abstract.tex}
-
+% -------------------------------------
+%
+% ----- TEASER FIGURE -----------
+\begin{teaserfigure}
+  \centering
+  \includegraphics[width=6.0in]{aaafiles/fountain}
+  \caption{Drumheller Fountain, The University of Washington, Seattle WA.}
+\end{teaserfigure}
+% -------------------------------------
+\maketitle
+% -------------------------------------
+%
+%
+% ---------- INTRO ------------------
 \input{1_introduction.tex}
-
+%
+% -------- REL. WORK -------------
 \input{2_related_works.tex}
-
+%
+% --------- METHOD --------------
 \input{3_algorithm.tex}
-
+%
+% -------- RESULTS -------------
 \input{4_results.tex}
-
-\input{Outlook.tex}
-
-\bibliographystyle{eg-alpha-doi}
-\bibliography{5_ref}
-
+%
+% -------- OUTLOOK -------------
+\input{5_Outlook.tex}
+%
+% -------- REFERENCES -------------
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{6_ref}
+%
+%
 \end{document}

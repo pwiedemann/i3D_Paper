@@ -1,53 +1,61 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
-The style file: eg-alpha-doi.bst
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: 6_ref.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: 5_ref.bib
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--page numbers missing in both pages and numpages fields in Geometric_deep_learning
+Warning--page numbers missing in both pages and numpages fields in Masci2015ShapeNetCN
+Warning--empty publisher in sinha2016deep
+Warning--empty address in sinha2016deep
 Warning--can't use both volume and number fields in sloan2002precomputed
+Warning--empty publisher in sloan2002precomputed
+Warning--empty address in sloan2002precomputed
 You've used 6 entries,
-            3585 wiz_defined-function locations,
-            782 strings with 6956 characters,
-and the built_in function-call counts, 3756 in all, are:
-= -- 375
-> -- 191
+            5719 wiz_defined-function locations,
+            1336 strings with 15694 characters,
+and the built_in function-call counts, 7784 in all, are:
+= -- 1027
+> -- 334
 < -- 0
-+ -- 71
-- -- 71
-* -- 295
-:= -- 579
-add.period$ -- 14
++ -- 110
+- -- 104
+* -- 616
+:= -- 785
+add.period$ -- 30
 call.type$ -- 6
-change.case$ -- 50
+change.case$ -- 51
 chr.to.int$ -- 6
-cite$ -- 7
-duplicate$ -- 105
-empty$ -- 285
-format.name$ -- 75
-if$ -- 867
-int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 6
-newline$ -- 36
-num.names$ -- 18
-pop$ -- 66
+cite$ -- 13
+duplicate$ -- 625
+empty$ -- 445
+format.name$ -- 128
+if$ -- 1904
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 25
+newline$ -- 95
+num.names$ -- 48
+pop$ -- 242
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 104
 quote$ -- 0
-skip$ -- 202
+skip$ -- 200
 stack$ -- 0
-substring$ -- 165
-swap$ -- 33
+substring$ -- 512
+swap$ -- 57
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 54
-warning$ -- 1
-while$ -- 28
-width$ -- 10
-write$ -- 82
-(There was 1 warning)
+type$ -- 124
+warning$ -- 7
+while$ -- 33
+width$ -- 0
+write$ -- 149
+(There were 7 warnings)

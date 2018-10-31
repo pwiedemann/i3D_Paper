@@ -1,43 +1,128 @@
-\newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{\uppercase{MBBV15}}
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\bibitem[BBL{\etalchar{*}}16]{Geometric_deep_learning}
-\textsc{Bronstein M.~M., Bruna J., LeCun Y., Szlam A., Vandergheynst P.}:
-\newblock Geometric deep learning: going beyond euclidean data.
-\newblock \emph{CoRR abs/1611.08097} (2016).
-\newblock URL: \url{http://arxiv.org/abs/1611.08097}, \href
-  {http://arxiv.org/abs/1611.08097} {\path{arXiv:1611.08097}}.
+\begin{thebibliography}{6}
 
-\bibitem[GGH02]{gu2002geometry}
-\textsc{Gu X., Gortler S.~J., Hoppe H.}:
-\newblock Geometry images.
-\newblock \emph{ACM Transactions on Graphics (TOG) 21}, 3 (2002), 355--361.
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
 
-\bibitem[MBBV15]{Masci2015ShapeNetCN}
-\textsc{Masci J., Boscaini D., Bronstein M.~M., Vandergheynst P.}:
-\newblock Shapenet: Convolutional neural networks on non-euclidean manifolds.
-\newblock \emph{CoRR abs/1501.06297} (2015).
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
 
-\bibitem[MGA{\etalchar{*}}17]{CNN_on_Torus}
-\textsc{Maron H., Galun M., Aigerman N., Trope M., Dym N., Yumer E., Kim V.~G.,
-  Lipman Y.}:
-\newblock Convolutional neural networks on surfaces via seamless toric covers.
-\newblock \emph{ACM Trans. Graph. 36}, 4 (July 2017), 71:1--71:10.
-\newblock URL: \url{http://doi.acm.org/10.1145/3072959.3073616}, \href
-  {https://doi.org/10.1145/3072959.3073616}
-  {\path{doi:10.1145/3072959.3073616}}.
+\bibitem[\protect\citeauthoryear{Bronstein, Bruna, LeCun, Szlam, and
+  Vandergheynst}{Bronstein et~al\mbox{.}}{2016}]%
+        {Geometric_deep_learning}
+\bibfield{author}{\bibinfo{person}{Michael~M. Bronstein}, \bibinfo{person}{Joan
+  Bruna}, \bibinfo{person}{Yann LeCun}, \bibinfo{person}{Arthur Szlam}, {and}
+  \bibinfo{person}{Pierre Vandergheynst}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Geometric deep learning: going beyond Euclidean
+  data}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1611.08097}
+  (\bibinfo{year}{2016}).
+\newblock
+\showeprint[arxiv]{1611.08097}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1611.08097}
+\showURL{%
+\tempurl}
 
-\bibitem[SBR16]{sinha2016deep}
-\textsc{Sinha A., Bai J., Ramani K.}:
-\newblock Deep learning 3d shape surfaces using geometry images.
-\newblock In \emph{European Conference on Computer Vision} (2016), Springer,
-  pp.~223--240.
 
-\bibitem[SKS02]{sloan2002precomputed}
-\textsc{Sloan P.-P., Kautz J., Snyder J.}:
-\newblock Precomputed radiance transfer for real-time rendering in dynamic,
-  low-frequency lighting environments.
-\newblock In \emph{ACM Transactions on Graphics (TOG)} (2002), vol.~21, ACM,
-  pp.~527--536.
+\bibitem[\protect\citeauthoryear{Gu, Gortler, and Hoppe}{Gu
+  et~al\mbox{.}}{2002}]%
+        {gu2002geometry}
+\bibfield{author}{\bibinfo{person}{Xianfeng Gu}, \bibinfo{person}{Steven~J
+  Gortler}, {and} \bibinfo{person}{Hugues Hoppe}.}
+  \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Geometry images}.
+\newblock \bibinfo{journal}{\emph{ACM Transactions on Graphics (TOG)}}
+  \bibinfo{volume}{21}, \bibinfo{number}{3} (\bibinfo{year}{2002}),
+  \bibinfo{pages}{355--361}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Maron, Galun, Aigerman, Trope, Dym, Yumer,
+  Kim, and Lipman}{Maron et~al\mbox{.}}{2017}]%
+        {CNN_on_Torus}
+\bibfield{author}{\bibinfo{person}{Haggai Maron}, \bibinfo{person}{Meirav
+  Galun}, \bibinfo{person}{Noam Aigerman}, \bibinfo{person}{Miri Trope},
+  \bibinfo{person}{Nadav Dym}, \bibinfo{person}{Ersin Yumer},
+  \bibinfo{person}{Vladimir~G. Kim}, {and} \bibinfo{person}{Yaron Lipman}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Convolutional Neural Networks on Surfaces via
+  Seamless Toric Covers}.
+\newblock \bibinfo{journal}{\emph{ACM Trans. Graph.}} \bibinfo{volume}{36},
+  \bibinfo{number}{4}, Article \bibinfo{articleno}{71} (\bibinfo{date}{July}
+  \bibinfo{year}{2017}), \bibinfo{numpages}{10}~pages.
+\newblock
+\showISSN{0730-0301}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3072959.3073616}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Masci, Boscaini, Bronstein, and
+  Vandergheynst}{Masci et~al\mbox{.}}{2015}]%
+        {Masci2015ShapeNetCN}
+\bibfield{author}{\bibinfo{person}{Jonathan Masci}, \bibinfo{person}{Davide
+  Boscaini}, \bibinfo{person}{Michael~M. Bronstein}, {and}
+  \bibinfo{person}{Pierre Vandergheynst}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{ShapeNet: Convolutional Neural Networks on
+  Non-Euclidean Manifolds}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1501.06297}
+  (\bibinfo{year}{2015}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sinha, Bai, and Ramani}{Sinha
+  et~al\mbox{.}}{2016}]%
+        {sinha2016deep}
+\bibfield{author}{\bibinfo{person}{Ayan Sinha}, \bibinfo{person}{Jing Bai},
+  {and} \bibinfo{person}{Karthik Ramani}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Deep learning 3D shape surfaces using geometry
+  images}. In \bibinfo{booktitle}{\emph{European Conference on Computer
+  Vision}}. Springer, \bibinfo{pages}{223--240}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sloan, Kautz, and Snyder}{Sloan
+  et~al\mbox{.}}{2002}]%
+        {sloan2002precomputed}
+\bibfield{author}{\bibinfo{person}{Peter-Pike Sloan}, \bibinfo{person}{Jan
+  Kautz}, {and} \bibinfo{person}{John Snyder}.}
+  \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Precomputed radiance transfer for real-time
+  rendering in dynamic, low-frequency lighting environments}. In
+  \bibinfo{booktitle}{\emph{ACM Transactions on Graphics (TOG)}},
+  Vol.~\bibinfo{volume}{21}. ACM, \bibinfo{pages}{527--536}.
+\newblock
+
 
 \end{thebibliography}
