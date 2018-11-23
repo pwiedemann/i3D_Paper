@@ -1,9 +1,33 @@
 %-------------------------------------------------------------------------
-\section{Related Works}
-
-\subsection{Precomputed Radiance Transfer}
-Precomputed Radiance Transfer was first proposed by Peter-Pike Sloan et al.\cite{sloan2002precomputed} to handle 
-
-\subsection{Geometry Image}
-Geometry image\cite{gu2002geometry} is utilized to preserve 3D mesh as 2D image. The regular shape of these images could be used in different areas of graphics reseaches and applications. Such parameterization process could be done via different methods\cite{gu2002geometry,sinha2016deep}. 
+\section{Related Work}
+%-------------------------------------------------------------------------
+\subsection*{Precomputed Radiance Transfer (PRT)}
+PRT was first proposed by \cite{sloan2002precomputed} to address low-frequency global illumination effects on objects for real-time applications. This technique exploits the limitation of static objects by making a single pre-computation step of the Transfer Function, allowing fast computations at runtime. \\
+\\
+PRT for dynamic or deformable objects would require pre-computing the Transfer Function for each conceivable pose, resulting in data sets that increase in size proportionally to the number of poses; hence, rapidly becoming unwieldy for such applications.\\
+Our aim is to extend traditional PRT to arbitrary deformable geometries while preserving a rather manageable and compact storage consumption. \\
+To our knowledge, literature that regards PRT for deformable objects is, on one hand, relatively narrow and, on the other hand, mostly very limited and concise with respect to their proposed solutions. \\
+One extension of PRT was introduced by  \cite{local-deformable-precomputed-radiance-transfer} to enable transfer of local illumination effects, such as bumps and wrinkles, to arbitrary deformations.  Nevertheless, this method cannot account for shadowing effects that arise from global shape deformations, such as the cast shadow from a limb to the trunk from an articulated figure.\\
+Other approaches \cite{Implicit_Visibility, Implicit_Visibility_2} circumvent the pre-computation problem by proposing an alternative algorithm to efficiently compute an approximation of the Visibility Function (implicit in $T$) at near real-time frame rates. ( However, ... )\\
+Data-based approaches, in principle aim to reduce the dimensionality of the problem, and thus the storage consumption, by exploiting the information of the dataset:\\
+A data-based compression scheme of precomputed radiance transfer matrices is presented in \cite{SkinningPRT}. Precomputed transfer matrices of surface samples, deformed by \textit{skinning}, are clustered and compressed, such that de-compression and interpolation can be performed efficiently.\\  
+An appearance model, that approximates PRT lighting, is presented in  \cite{James_Fatahalian}. The model is based on a reduced state space of deformable shapes that allows only very limited kind of poses/shapes. 
+\\
+Similarly, \cite{MoMoPRT} suggest a linear self-shadowing model to predict the coefficients of the Transfer Function from shape parameters of Morphable Models (MoMo) \cite{MoMo}. Their proposed model show good results while operating within the reduced shape space of MoMo; nevertheless, our aim is to provide a more generic PRT-model enabling good approximations for more general arbitrary deformations. To that end, we rather propose a non-linear model with well known strong generalisation properties namely Deep Neural Networks \cite{DL_nature}.  To the extend of our knowledge, our work is the first to tackle the problem of PRT for deformable objects. \\ 
+Nevertheless, Deep Learning (DL) has been used for appearance predictions before, mostly focusing on learning illumination effects from screen-space data. For instance, \cite{Nalbach2017b} and also \cite{DBLP} learn on image data gathered from the shading buffers to predict illumination effects in screen space. However, this approach does not leverage the underlying structure of the geometry (....) \\
+Alternatively, we propose learning from geometric data, in particular our aim is to apply a fully Convolutional Neural Network (CNN), due to its remarkable classification properties \cite{ImageNet_CNN, CNN_videoClassification}, on surfaces data. However, basic operations such as the convolution are not well-defined on Surfaces, hence making the problem rather challenging.\\
+One approach is to circumvent this difficulty by representing the surface data as a probability distribution on a  3D grid and apply volumetric CNN's \cite{3d_ShapeNets}. However, this extrinsic representation has many shortcomings when applied to deformable geometries: They are very sensitive to deformations are computationally expensive and, equally to the screen-space strategies, do not exploit the intrinsic structure of the geometry...
+%-------------------------------------------------------------------------
+%
+%-------------------------------------------------------------------------
+Deep Surface Light Fields \cite{Deep_Surface_Light_Fields}
+%-------------------------------------------------------------------------
+%
+%-------------------------------------------------------------------------
+\subsection*{Learning on surfaces}
+\textbf{Geometry image}: 
+\begin{itemize}
+\item is utilized to preserve 3D mesh as 2D image. The regular shape of these images could be used in different areas of graphics reseaches and applications \cite{gu2002geometry}.
+\item To get rid of classic geometry image artefacts \cite{Spherical_Parametrization, sinha2016deep}
+\end{itemize}   
 

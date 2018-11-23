@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{6}
+\begin{thebibliography}{21}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -37,6 +37,23 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
+\bibitem[\protect\citeauthoryear{Blanz and Vetter}{Blanz and Vetter}{1999}]%
+        {MoMo}
+\bibfield{author}{\bibinfo{person}{Volker Blanz} {and} \bibinfo{person}{Thomas
+  Vetter}.} \bibinfo{year}{1999}\natexlab{}.
+\newblock \showarticletitle{A Morphable Model for the Synthesis of 3D Faces}.
+  In \bibinfo{booktitle}{\emph{Proceedings of the 26th Annual Conference on
+  Computer Graphics and Interactive Techniques}}
+  \emph{(\bibinfo{series}{SIGGRAPH '99})}. \bibinfo{publisher}{ACM
+  Press/Addison-Wesley Publishing Co.}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{187--194}.
+\newblock
+\showISBNx{0-201-48560-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/311535.311556}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Bronstein, Bruna, LeCun, Szlam, and
   Vandergheynst}{Bronstein et~al\mbox{.}}{2016}]%
         {Geometric_deep_learning}
@@ -55,6 +72,78 @@
 \tempurl}
 
 
+\bibitem[\protect\citeauthoryear{Chen, Wu, Zhang, Li, Lu, Gao, and Yu}{Chen
+  et~al\mbox{.}}{2018}]%
+        {Deep_Surface_Light_Fields}
+\bibfield{author}{\bibinfo{person}{Anpei Chen}, \bibinfo{person}{Minye Wu},
+  \bibinfo{person}{Yingliang Zhang}, \bibinfo{person}{Nianyi Li},
+  \bibinfo{person}{Jie Lu}, \bibinfo{person}{Shenghua Gao}, {and}
+  \bibinfo{person}{Jingyi Yu}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Deep Surface Light Fields}.
+\newblock \bibinfo{journal}{\emph{Proc. ACM Comput. Graph. Interact. Tech.}}
+  \bibinfo{volume}{1}, \bibinfo{number}{1}, Article \bibinfo{articleno}{14}
+  (\bibinfo{date}{July} \bibinfo{year}{2018}), \bibinfo{numpages}{17}~pages.
+\newblock
+\showISSN{2577-6193}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3203192}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Dachsbacher, Stamminger, Drettakis, and
+  Durand}{Dachsbacher et~al\mbox{.}}{2007}]%
+        {Implicit_Visibility_2}
+\bibfield{author}{\bibinfo{person}{Carsten Dachsbacher}, \bibinfo{person}{Marc
+  Stamminger}, \bibinfo{person}{George Drettakis}, {and}
+  \bibinfo{person}{Fr{\'e}do Durand}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Implicit Visibility and Antiradiance for
+  Interactive Global Illumination}.
+\newblock \bibinfo{journal}{\emph{ACM Trans. Graph.}} \bibinfo{volume}{26},
+  \bibinfo{number}{3}, Article \bibinfo{articleno}{61} (\bibinfo{date}{July}
+  \bibinfo{year}{2007}).
+\newblock
+\showISSN{0730-0301}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1276377.1276453}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Dong, Kautz, Theobalt, and Seidel}{Dong
+  et~al\mbox{.}}{2007}]%
+        {Implicit_Visibility}
+\bibfield{author}{\bibinfo{person}{Z. Dong}, \bibinfo{person}{J. Kautz},
+  \bibinfo{person}{C. Theobalt}, {and} \bibinfo{person}{H. Seidel}.}
+  \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Interactive Global Illumination Using Implicit
+  Visibility}. In \bibinfo{booktitle}{\emph{15th Pacific Conference on Computer
+  Graphics and Applications (PG'07)}}. \bibinfo{pages}{77--86}.
+\newblock
+\showISSN{1550-4085}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/PG.2007.37}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Feng, Peng, Jia, and Yu}{Feng
+  et~al\mbox{.}}{2007}]%
+        {SkinningPRT}
+\bibfield{author}{\bibinfo{person}{Wei-Wen Feng}, \bibinfo{person}{Liang Peng},
+  \bibinfo{person}{Yuntao Jia}, {and} \bibinfo{person}{Yizhou Yu}.}
+  \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Large-scale Data Management for PRT-based Real-time
+  Rendering of Dynamically Skinned Models}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 18th Eurographics Conference on
+  Rendering Techniques}} \emph{(\bibinfo{series}{EGSR'07})}.
+  \bibinfo{publisher}{Eurographics Association},
+  \bibinfo{address}{Aire-la-Ville, Switzerland, Switzerland},
+  \bibinfo{pages}{23--34}.
+\newblock
+\showISBNx{978-3-905673-52-4}
+\urldef\tempurl%
+\url{https://doi.org/10.2312/EGWR/EGSR07/023-034}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Gu, Gortler, and Hoppe}{Gu
   et~al\mbox{.}}{2002}]%
         {gu2002geometry}
@@ -66,6 +155,73 @@
   \bibinfo{volume}{21}, \bibinfo{number}{3} (\bibinfo{year}{2002}),
   \bibinfo{pages}{355--361}.
 \newblock
+
+
+\bibitem[\protect\citeauthoryear{James and Fatahalian}{James and
+  Fatahalian}{2003}]%
+        {James_Fatahalian}
+\bibfield{author}{\bibinfo{person}{Doug~L. James} {and} \bibinfo{person}{Kayvon
+  Fatahalian}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{Precomputing Interactive Dynamic Deformable
+  Scenes}.
+\newblock \bibinfo{journal}{\emph{ACM Trans. Graph.}} \bibinfo{volume}{22},
+  \bibinfo{number}{3} (\bibinfo{date}{July} \bibinfo{year}{2003}),
+  \bibinfo{pages}{879--887}.
+\newblock
+\showISSN{0730-0301}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/882262.882359}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Karpathy, Toderici, Shetty, Leung, Sukthankar,
+  and Fei-Fei}{Karpathy et~al\mbox{.}}{2014}]%
+        {CNN_videoClassification}
+\bibfield{author}{\bibinfo{person}{A. Karpathy}, \bibinfo{person}{G. Toderici},
+  \bibinfo{person}{S. Shetty}, \bibinfo{person}{T. Leung}, \bibinfo{person}{R.
+  Sukthankar}, {and} \bibinfo{person}{L. Fei-Fei}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Large-Scale Video Classification with Convolutional
+  Neural Networks}. In \bibinfo{booktitle}{\emph{2014 IEEE Conference on
+  Computer Vision and Pattern Recognition}}. \bibinfo{pages}{1725--1732}.
+\newblock
+\showISSN{1063-6919}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPR.2014.223}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Krizhevsky, Sutskever, and Hinton}{Krizhevsky
+  et~al\mbox{.}}{2012}]%
+        {ImageNet_CNN}
+\bibfield{author}{\bibinfo{person}{Alex Krizhevsky}, \bibinfo{person}{Ilya
+  Sutskever}, {and} \bibinfo{person}{Geoffrey~E. Hinton}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{ImageNet Classification with Deep Convolutional
+  Neural Networks}. In \bibinfo{booktitle}{\emph{Proceedings of the 25th
+  International Conference on Neural Information Processing Systems - Volume
+  1}} \emph{(\bibinfo{series}{NIPS'12})}. \bibinfo{publisher}{Curran Associates
+  Inc.}, \bibinfo{address}{USA}, \bibinfo{pages}{1097--1105}.
+\newblock
+\urldef\tempurl%
+\url{http://dl.acm.org/citation.cfm?id=2999134.2999257}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{LeCun, Bengio, and Hinton}{LeCun
+  et~al\mbox{.}}{2015}]%
+        {DL_nature}
+\bibfield{author}{\bibinfo{person}{Yann LeCun}, \bibinfo{person}{Yoshua
+  Bengio}, {and} \bibinfo{person}{Geoffrey~E. Hinton}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Deep learning}.
+\newblock \bibinfo{journal}{\emph{Nature}} \bibinfo{volume}{521},
+  \bibinfo{number}{7553} (\bibinfo{year}{2015}), \bibinfo{pages}{436--444}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1038/nature14539}
+\showDOI{\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Maron, Galun, Aigerman, Trope, Dym, Yumer,
@@ -101,6 +257,50 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Nalbach, Arabadzhiyska, Mehta, Seidel, and
+  Ritschel}{Nalbach et~al\mbox{.}}{2017}]%
+        {Nalbach2017b}
+\bibfield{author}{\bibinfo{person}{Oliver Nalbach}, \bibinfo{person}{Elena
+  Arabadzhiyska}, \bibinfo{person}{Dushyant Mehta}, \bibinfo{person}{Hans-Peter
+  Seidel}, {and} \bibinfo{person}{Tobias Ritschel}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Deep Shading: Convolutional Neural Networks for
+  Screen-Space Shading}.
+\newblock  \bibinfo{volume}{36}, \bibinfo{number}{4} (\bibinfo{year}{2017}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Praun and Hoppe}{Praun and Hoppe}{2003}]%
+        {Spherical_Parametrization}
+\bibfield{author}{\bibinfo{person}{Emil Praun} {and} \bibinfo{person}{Hugues
+  Hoppe}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{Spherical Parametrization and Remeshing}.
+\newblock \bibinfo{journal}{\emph{ACM Trans. Graph.}} \bibinfo{volume}{22},
+  \bibinfo{number}{3} (\bibinfo{date}{July} \bibinfo{year}{2003}),
+  \bibinfo{pages}{340--349}.
+\newblock
+\showISSN{0730-0301}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/882262.882274}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Schneider, Schönborn, Egger, Frobeen, and
+  Vetter}{Schneider et~al\mbox{.}}{2017}]%
+        {MoMoPRT}
+\bibfield{author}{\bibinfo{person}{A. Schneider}, \bibinfo{person}{S.
+  Schönborn}, \bibinfo{person}{B. Egger}, \bibinfo{person}{L. Frobeen}, {and}
+  \bibinfo{person}{T. Vetter}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Efficient Global Illumination for Morphable
+  Models}. In \bibinfo{booktitle}{\emph{2017 IEEE International Conference on
+  Computer Vision (ICCV)}}. \bibinfo{pages}{3885--3893}.
+\newblock
+\showISSN{2380-7504}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICCV.2017.417}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Sinha, Bai, and Ramani}{Sinha
   et~al\mbox{.}}{2016}]%
         {sinha2016deep}
@@ -123,6 +323,53 @@
   \bibinfo{booktitle}{\emph{ACM Transactions on Graphics (TOG)}},
   Vol.~\bibinfo{volume}{21}. ACM, \bibinfo{pages}{527--536}.
 \newblock
+
+
+\bibitem[\protect\citeauthoryear{Sloan, Luna, and Snyder}{Sloan
+  et~al\mbox{.}}{2005}]%
+        {local-deformable-precomputed-radiance-transfer}
+\bibfield{author}{\bibinfo{person}{Peter-Pike Sloan}, \bibinfo{person}{Ben
+  Luna}, {and} \bibinfo{person}{John Snyder}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Local, Deformable Precomputed Radiance Transfer}.
+  \bibinfo{publisher}{ACM}, \bibinfo{pages}{1216--1224}.
+\newblock
+\urldef\tempurl%
+\url{https://www.microsoft.com/en-us/research/publication/local-deformable-precomputed-radiance-transfer/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Thomas and Forbes}{Thomas and Forbes}{2017}]%
+        {DBLP}
+\bibfield{author}{\bibinfo{person}{Manu~Mathew Thomas} {and}
+  \bibinfo{person}{Angus~Graeme Forbes}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Deep Illumination: Approximating Dynamic Global
+  Illumination with Generative Adversarial Network}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1710.09834}
+  (\bibinfo{year}{2017}).
+\newblock
+\showeprint[arxiv]{1710.09834}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1710.09834}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wu, Song, Khosla, Yu, Zhang, Tang, and
+  Xiao}{Wu et~al\mbox{.}}{2015}]%
+        {3d_ShapeNets}
+\bibfield{author}{\bibinfo{person}{Zhirong Wu}, \bibinfo{person}{S. Song},
+  \bibinfo{person}{A. Khosla}, \bibinfo{person}{Fisher Yu},
+  \bibinfo{person}{Linguang Zhang}, \bibinfo{person}{Xiaoou Tang}, {and}
+  \bibinfo{person}{J. Xiao}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{3D ShapeNets: A deep representation for volumetric
+  shapes}. In \bibinfo{booktitle}{\emph{2015 IEEE Conference on Computer Vision
+  and Pattern Recognition (CVPR)}}. \bibinfo{pages}{1912--1920}.
+\newblock
+\showISSN{1063-6919}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPR.2015.7298801}
+\showDOI{\tempurl}
 
 
 \end{thebibliography}
