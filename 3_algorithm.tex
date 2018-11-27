@@ -1,33 +1,28 @@
 %-------------------------------------------------------------------------
 \section{Method}
-\subsubsection*{Precomputer Radiance Transfer (PRT)}
-$ \quad $ \\ 
-
-In PRT the integrands of the \textit{rendering equation}
-\begin{equation}
-L(\bm{x}, \bm{\omega}_0 ) = 
-\int_{\Omega} L_{\epsilon}(\bm{x}, \bm{\omega}_i ) 
-T(\bm{x},\bm{\omega}_i,\bm{\omega}_0, \bm{N}) 
-\,  \, d\bm{\omega}_i ,
+Classic PRT  is a physically-based rendering method to accelerate on-line computations of the (simplified) \textit{Rendering Equation}:
+\begin{align}
+L_{\bm{s}}(\bm{\omega}_0 ) &= 
+\int_{\Omega}   L_{\epsilon}(\bm{\omega}_i ) 
+\underbrace{f(\bm{\omega}_i,\bm{\omega}_0) 
+V(\bm{\omega}_i) H_N(\omega_i) }_{T(\bm{\omega}_i,\bm{\omega}_0) }
+\,  \, d\bm{\omega}_i , 
 \label{rendering equation PRT}
-\end{equation}
- are split into two terms:
-\begin{itemize}
-\item[1.] The \textit{lighting function}: $L_{\epsilon}(\bm{x}, \bm{\omega}_i ) $, describing all incoming radiance over the hemisphere around the surface point $\bm{x} $,
-\item[2.] and the \textit{transfer function} :  
+\end{align}
+where $L_{\epsilon}$ accounts for all incoming radiance over the hemisphere, $f$  describes the surface reflectance properties $f$ (BRDF), $H_N$ is the \textit{Lambert's Law} and $V$ the \textit{Visibility Function} describing geometric information of the scene.\\
+It precisely exploits the essence of static/non-deformable objects by uniquely determining the integrand $T(\bm{\omega}_i,\bm{\omega}_0)$ (called the \textbf{\textit{Transfer Function}} ), which contains the costly-to-compute  \textit{Visibility} term,
 \begin{align*}
-T(\bm{x},\bm{\omega}_i,\bm{\omega}_0, \bm{N}) = f(\bm{x},\bm{\omega}_i,\bm{\omega}_0) G(\bm{x},\bm{\omega}_i,\bm{N}) 
+V :  \mathcal{S}  \times \Omega \rightarrow \{0,1\} \quad,
 \end{align*}
-describing the surface reflectance properties $f$ (BRDF) and the geometric information $G$ surrounding $\bm{x}$. 
-Where $\bm{N}$ is the normal vector of the surface at $\bm{x}$ .
-\end{itemize}
-Both functions $L_{\epsilon} $ and $T$ are projected onto a suitable set of orthonormal basis functions, in our case \textit{Spherical Harmonics} (SH), for faster evaluation.\\
-For $n$ number of SH bands and $l_i$, $t_i$ being the $i$-th SH coefficient of $L$ and $T$ respectively, the rendering equation \ref{rendering equation PRT} reduces to  [for more PRT SH, see citations]: 
+for each surface point $\bm{s} \in \mathcal{S} \subset \mathbb{R}^3$ \cite{CohenBook, sloan2002precomputed}. 
+
+Both functions $L_{\epsilon} $ and $T$  are projected onto a suitable set of orthonormal basis functions for faster evaluation, in our case \textit{Spherical Harmonics} (SH). \\
+For $n$ number of SH bands and $l_i$, $t_i$ being the $i$-th SH coefficient of $L$ and $T$ respectively, the rendering equation \ref{rendering equation PRT} reduces to \cite{sloan2002precomputed}. 
 \begin{align*}
-L(\bm{x}, \bm{\omega}_0 ) \approx \sum_{i}^{n^2} l_i \cdot t_i
+L(\bm{\omega}_0 ) \approx \sum_{i}^{n^2} l_i \cdot t_i
 \end{align*}
-\subsubsection*{Goal}
-The objective of our CNN is to directly predict the coefficients $t_i$'s, for a given shape, skipping the costly ray-casting computations of $G$. 
+As mentioned above, our aim is to extend the PRT method to malleable and dynamic objects, but avoiding exhaustive pre-computations of every single \textit{Transfer Function} $T_i$ per shape query $S_i$ (with $i \in \{1,2,..., d\}$ ) that would imply enormous storage consumptions. \\
+With this in mind, we propose a data-based model, a Convolutional Neural Network, to infer the Transfer Function $T_i$, more precisely the coefficients of its projection $t_j$'s, for any given shape query $S_i$. This makes the costly ray-casting computations superfluous and solves the abusive memory requirements, only requiring the storage of the network's parameters. 
 \subsubsection*{Problem}
 To this end, the network has to be fed with shape information. \\ 
 

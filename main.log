@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  23 NOV 2018 17:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  27 NOV 2018 17:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -993,8 +993,9 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/sb/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/sb/n' will be
 (Font)              scaled to size 6.2pt on input line 67.
  (./1_introduction.tex
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 9.0pt on input line 14.
+
+Package natbib Warning: Citation `Masci2015ShapeNetCN' on page 1 undefined on i
+nput line 14.
 
 
 Package natbib Warning: Citation `Sinha2016DeepL3' on page 1 undefined on input
@@ -1021,54 +1022,68 @@ Underfull \vbox (badness 6691) has occurred while \output is active []
  [1.1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
  <./Figures/Teaser.pdf>]
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/sb/n' will be
+(Font)              scaled to size 9.0pt on input line 20.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
 (./2_related_works.tex
-Overfull \hbox (5.18411pt too wide) in paragraph at lines 5--27
-\T1/LinuxLibertineT-TLF/m/n/9 (-20) PRT was first pro-posed by [[]Sloan et al[]
-[] []2002[]] to ad-dress low-frequency
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--27
+Underfull \hbox (badness 10000) in paragraph at lines 4--32
 
  []
 
 
-Overfull \hbox (2.72835pt too wide) in paragraph at lines 5--27
+Overfull \hbox (2.72835pt too wide) in paragraph at lines 4--32
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) PRT for dy-namic or de-formable ob-jects wo
 uld re-quire pre-computing
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--32
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 27.
-[2.2]) (./3_algorithm.tex
+(Font)              scaled to size 9.0pt on input line 32.
+ [2.2])
+(./3_algorithm.tex
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/it' will be
+(Font)              scaled to size 9.0pt on input line 13.
+
+Overfull \hbox (7.03195pt too wide) in paragraph at lines 23--26
+\T1/LinuxLibertineT-TLF/m/n/9 (-20) leable and dy-namic ob-jects, but avoid-ing
+ ex-haus-tive pre-computations
+ []
+
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 4.
+(Font)              scaled to size 9.0pt on input line 27.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-<Figures/Overview_method.pdf, id=249, 745.86595pt x 770.88pt>
+<Figures/Overview_method.pdf, id=269, 745.86595pt x 770.88pt>
 File: Figures/Overview_method.pdf Graphic file (type pdf)
 
 <use Figures/Overview_method.pdf>
-Package pdftex.def Info: Figures/Overview_method.pdf used on input line 39.
+Package pdftex.def Info: Figures/Overview_method.pdf used on input line 34.
 (pdftex.def)             Requested size: 253.14749pt x 261.637pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 39--40
+Overfull \hbox (12.0pt too wide) in paragraph at lines 34--35
  [][] 
  []
 
-
-Overfull \hbox (15.15833pt too wide) in paragraph at lines 48--50
+[3.3 <./Figures/Overview_method.pdf>]
+Overfull \hbox (15.15833pt too wide) in paragraph at lines 43--45
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) of po-si-tion and nor-mal im-ages ($\OMS/nt
 xsy/m/n/9 P \U/ntxmia/m/it/9 = \OMS/ntxsy/m/n/9 f\OML/nxlmi/m/it/9 P[]; P[]; P[
 ]\OMS/ntxsy/m/n/9 g$ \T1/LinuxLibertineT-TLF/m/n/9 (-20) and $\OMS/ntxsy/m/n/9 
@@ -1076,23 +1091,31 @@ N \U/ntxmia/m/it/9 = \OMS/ntxsy/m/n/9 f\OML/nxlmi/m/it/9 N[]; N[]; N[]\OMS/ntxs
 y/m/n/9 g$\T1/LinuxLibertineT-TLF/m/n/9 (-20) )
  []
 
-) (./4_results.tex) (./5_Outlook.tex [3.3 <./Figures/Overview_method.pdf>])
-(./main.bbl
+) (./4_results.tex) (./5_Outlook.tex) (./main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
+
+ []
+
 LaTeX Info: Redefining \tempurl on input line 70.
-LaTeX Info: Redefining \tempurl on input line 89.
-LaTeX Info: Redefining \tempurl on input line 107.
-LaTeX Info: Redefining \tempurl on input line 123.
-LaTeX Info: Redefining \tempurl on input line 143.
-LaTeX Info: Redefining \tempurl on input line 173.
-LaTeX Info: Redefining \tempurl on input line 190.
-LaTeX Info: Redefining \tempurl on input line 207.
-LaTeX Info: Redefining \tempurl on input line 223.
-LaTeX Info: Redefining \tempurl on input line 243.
-LaTeX Info: Redefining \tempurl on input line 284.
-LaTeX Info: Redefining \tempurl on input line 300.
-LaTeX Info: Redefining \tempurl on input line 337.
+LaTeX Info: Redefining \tempurl on input line 88.
+LaTeX Info: Redefining \tempurl on input line 106.
+LaTeX Info: Redefining \tempurl on input line 140.
+LaTeX Info: Redefining \tempurl on input line 170.
+LaTeX Info: Redefining \tempurl on input line 187.
+LaTeX Info: Redefining \tempurl on input line 204.
+LaTeX Info: Redefining \tempurl on input line 221.
+LaTeX Info: Redefining \tempurl on input line 237.
+LaTeX Info: Redefining \tempurl on input line 257.
+LaTeX Info: Redefining \tempurl on input line 274.
+LaTeX Info: Redefining \tempurl on input line 293.
+LaTeX Info: Redefining \tempurl on input line 305.
+LaTeX Info: Redefining \tempurl on input line 338.
 LaTeX Info: Redefining \tempurl on input line 353.
-LaTeX Info: Redefining \tempurl on input line 371.
+LaTeX Info: Redefining \tempurl on input line 369.
+LaTeX Info: Redefining \tempurl on input line 406.
+LaTeX Info: Redefining \tempurl on input line 422.
+LaTeX Info: Redefining \tempurl on input line 440.
+LaTeX Info: Redefining \tempurl on input line 458.
 )
 
 Package natbib Warning: There were undefined citations.
@@ -1104,46 +1127,52 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8B2D42516ECFE5B4D70E3414B1D2E63D;1469.
+(rerunfilecheck)             Checksum: 597EC127A91633D8FB11ABF1F06A7F29;1549.
  ) 
 Here is how much of TeX's memory you used:
- 17895 strings out of 493089
- 271249 string characters out of 6134843
- 390994 words of memory out of 5000000
- 20461 multiletter control sequences out of 15000+600000
- 209271 words of font info for 365 fonts, out of 8000000 for 9000
+ 17949 strings out of 493089
+ 272218 string characters out of 6134843
+ 390286 words of memory out of 5000000
+ 20480 multiletter control sequences out of 15000+600000
+ 218930 words of font info for 391 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,11n,94p,795b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/
-usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texli
-ve/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/local/texliv
-e/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local/texlive
-/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/
-2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/local/texlive/2
-015/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/fxlri-7letters.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/loc
+ 60i,15n,94p,795b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc
+}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/te
+xlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75ao.enc}{/usr/local/tex
+live/2015/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/usr/local/texlive
+/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local/texlive/
+2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/2
+015/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/local/texlive/20
+15/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTBI.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertin
+eTI.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/fxlri-5letters.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/fxlri-7letters.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/fxlzi-7letters.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/newtx/zxlr.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/newtx/zxlri.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
-c/newtx/zxlzi.pfb>
-Output written on main.pdf (4 pages, 21698991 bytes).
+ive/2015/texmf-dist/fonts/type1/public/newtx/txex-bar.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/newtx/zxlr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
+blic/newtx/zxlri.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/new
+tx/zxlzi.pfb>
+Output written on main.pdf (4 pages, 21827004 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
- 369 compressed objects within 4 object streams
- 51 named destinations out of 1000 (max. 500000)
- 46191 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 560 PDF objects out of 1000 (max. 8388607)
+ 413 compressed objects within 5 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 46703 words of extra memory for PDF output out of 51595 (max. 10000000)
 

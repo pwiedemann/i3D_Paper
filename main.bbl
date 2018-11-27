@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{21}
+\begin{thebibliography}{26}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -54,6 +54,24 @@
 \showDOI{\tempurl}
 
 
+\bibitem[\protect\citeauthoryear{Boscaini, Masci, Rodol{\`{a}}, and
+  Bronstein}{Boscaini et~al\mbox{.}}{2016}]%
+        {BoscainiMRB16}
+\bibfield{author}{\bibinfo{person}{Davide Boscaini}, \bibinfo{person}{Jonathan
+  Masci}, \bibinfo{person}{Emanuele Rodol{\`{a}}}, {and}
+  \bibinfo{person}{Michael~M. Bronstein}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Learning shape correspondence with anisotropic
+  convolutional neural networks}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1605.06437}
+  (\bibinfo{year}{2016}).
+\newblock
+\showeprint[arxiv]{1605.06437}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1605.06437}
+\showURL{%
+\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Bronstein, Bruna, LeCun, Szlam, and
   Vandergheynst}{Bronstein et~al\mbox{.}}{2016}]%
         {Geometric_deep_learning}
@@ -72,56 +90,35 @@
 \tempurl}
 
 
-\bibitem[\protect\citeauthoryear{Chen, Wu, Zhang, Li, Lu, Gao, and Yu}{Chen
-  et~al\mbox{.}}{2018}]%
-        {Deep_Surface_Light_Fields}
-\bibfield{author}{\bibinfo{person}{Anpei Chen}, \bibinfo{person}{Minye Wu},
-  \bibinfo{person}{Yingliang Zhang}, \bibinfo{person}{Nianyi Li},
-  \bibinfo{person}{Jie Lu}, \bibinfo{person}{Shenghua Gao}, {and}
-  \bibinfo{person}{Jingyi Yu}.} \bibinfo{year}{2018}\natexlab{}.
-\newblock \showarticletitle{Deep Surface Light Fields}.
-\newblock \bibinfo{journal}{\emph{Proc. ACM Comput. Graph. Interact. Tech.}}
-  \bibinfo{volume}{1}, \bibinfo{number}{1}, Article \bibinfo{articleno}{14}
-  (\bibinfo{date}{July} \bibinfo{year}{2018}), \bibinfo{numpages}{17}~pages.
+\bibitem[\protect\citeauthoryear{B{\"{u}}tepage, Black, Kragic, and
+  Kjellstr{\"{o}}m}{B{\"{u}}tepage et~al\mbox{.}}{2017}]%
+        {DeepHuman}
+\bibfield{author}{\bibinfo{person}{Judith B{\"{u}}tepage},
+  \bibinfo{person}{Michael~J. Black}, \bibinfo{person}{Danica Kragic}, {and}
+  \bibinfo{person}{Hedvig Kjellstr{\"{o}}m}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Deep representation learning for human motion
+  prediction and classification}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1702.07486}
+  (\bibinfo{year}{2017}).
 \newblock
-\showISSN{2577-6193}
+\showeprint[arxiv]{1702.07486}
 \urldef\tempurl%
-\url{https://doi.org/10.1145/3203192}
-\showDOI{\tempurl}
+\url{http://arxiv.org/abs/1702.07486}
+\showURL{%
+\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{Dachsbacher, Stamminger, Drettakis, and
-  Durand}{Dachsbacher et~al\mbox{.}}{2007}]%
-        {Implicit_Visibility_2}
-\bibfield{author}{\bibinfo{person}{Carsten Dachsbacher}, \bibinfo{person}{Marc
-  Stamminger}, \bibinfo{person}{George Drettakis}, {and}
-  \bibinfo{person}{Fr{\'e}do Durand}.} \bibinfo{year}{2007}\natexlab{}.
-\newblock \showarticletitle{Implicit Visibility and Antiradiance for
-  Interactive Global Illumination}.
-\newblock \bibinfo{journal}{\emph{ACM Trans. Graph.}} \bibinfo{volume}{26},
-  \bibinfo{number}{3}, Article \bibinfo{articleno}{61} (\bibinfo{date}{July}
-  \bibinfo{year}{2007}).
+\bibitem[\protect\citeauthoryear{Cohen, Wallace, and Hanrahan}{Cohen
+  et~al\mbox{.}}{1993}]%
+        {CohenBook}
+\bibfield{author}{\bibinfo{person}{Michael~F. Cohen}, \bibinfo{person}{John
+  Wallace}, {and} \bibinfo{person}{Pat Hanrahan}.}
+  \bibinfo{year}{1993}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Radiosity and Realistic Image Synthesis}}.
+\newblock \bibinfo{publisher}{Academic Press Professional, Inc.},
+  \bibinfo{address}{San Diego, CA, USA}.
 \newblock
-\showISSN{0730-0301}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/1276377.1276453}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Dong, Kautz, Theobalt, and Seidel}{Dong
-  et~al\mbox{.}}{2007}]%
-        {Implicit_Visibility}
-\bibfield{author}{\bibinfo{person}{Z. Dong}, \bibinfo{person}{J. Kautz},
-  \bibinfo{person}{C. Theobalt}, {and} \bibinfo{person}{H. Seidel}.}
-  \bibinfo{year}{2007}\natexlab{}.
-\newblock \showarticletitle{Interactive Global Illumination Using Implicit
-  Visibility}. In \bibinfo{booktitle}{\emph{15th Pacific Conference on Computer
-  Graphics and Applications (PG'07)}}. \bibinfo{pages}{77--86}.
-\newblock
-\showISSN{1550-4085}
-\urldef\tempurl%
-\url{https://doi.org/10.1109/PG.2007.37}
-\showDOI{\tempurl}
+\showISBNx{0-12-178270-0}
 
 
 \bibitem[\protect\citeauthoryear{Feng, Peng, Jia, and Yu}{Feng
@@ -155,6 +152,23 @@
   \bibinfo{volume}{21}, \bibinfo{number}{3} (\bibinfo{year}{2002}),
   \bibinfo{pages}{355--361}.
 \newblock
+
+
+\bibitem[\protect\citeauthoryear{Holden, Komura, and Saito}{Holden
+  et~al\mbox{.}}{2017}]%
+        {Holden2017}
+\bibfield{author}{\bibinfo{person}{Daniel Holden}, \bibinfo{person}{Taku
+  Komura}, {and} \bibinfo{person}{Jun Saito}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Phase-functioned Neural Networks for Character
+  Control}.
+\newblock \bibinfo{journal}{\emph{ACM Trans. Graph.}} \bibinfo{volume}{36},
+  \bibinfo{number}{4}, Article \bibinfo{articleno}{42} (\bibinfo{date}{July}
+  \bibinfo{year}{2017}), \bibinfo{numpages}{13}~pages.
+\newblock
+\showISSN{0730-0301}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3072959.3073663}
+\showDOI{\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{James and Fatahalian}{James and
@@ -246,7 +260,7 @@
 
 \bibitem[\protect\citeauthoryear{Masci, Boscaini, Bronstein, and
   Vandergheynst}{Masci et~al\mbox{.}}{2015}]%
-        {Masci2015ShapeNetCN}
+        {ShapeNet1}
 \bibfield{author}{\bibinfo{person}{Jonathan Masci}, \bibinfo{person}{Davide
   Boscaini}, \bibinfo{person}{Michael~M. Bronstein}, {and}
   \bibinfo{person}{Pierre Vandergheynst}.} \bibinfo{year}{2015}\natexlab{}.
@@ -255,6 +269,44 @@
 \newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1501.06297}
   (\bibinfo{year}{2015}).
 \newblock
+\showeprint[arxiv]{1501.06297}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1501.06297}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Masci, Rodol\`{a}, Boscaini, Bronstein, and
+  Li}{Masci et~al\mbox{.}}{2016}]%
+        {DeepGeoCourse}
+\bibfield{author}{\bibinfo{person}{Jonathan Masci}, \bibinfo{person}{Emanuele
+  Rodol\`{a}}, \bibinfo{person}{Davide Boscaini}, \bibinfo{person}{Michael~M.
+  Bronstein}, {and} \bibinfo{person}{Hao Li}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Geometric Deep Learning}. In
+  \bibinfo{booktitle}{\emph{SIGGRAPH ASIA 2016 Courses}}
+  \emph{(\bibinfo{series}{SA '16})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, Article \bibinfo{articleno}{1},
+  \bibinfo{numpages}{50}~pages.
+\newblock
+\showISBNx{978-1-4503-4538-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2988458.2988485}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Monti}{Monti}{[n. d.]}]%
+        {GeoDeepLearning}
+\bibfield{author}{\bibinfo{person}{Federico Monti}.} \bibinfo{year}{[n.
+  d.]}\natexlab{}.
+\newblock \bibinfo{title}{Geometric Deep Learning}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{http://geometricdeeplearning.com/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed: 26-11-2018.}
 
 
 \bibitem[\protect\citeauthoryear{Nalbach, Arabadzhiyska, Mehta, Seidel, and
@@ -268,6 +320,23 @@
   Screen-Space Shading}.
 \newblock  \bibinfo{volume}{36}, \bibinfo{number}{4} (\bibinfo{year}{2017}).
 \newblock
+
+
+\bibitem[\protect\citeauthoryear{Ng, Ramamoorthi, and Hanrahan}{Ng
+  et~al\mbox{.}}{2003}]%
+        {AllFrequencyPRT}
+\bibfield{author}{\bibinfo{person}{Ren Ng}, \bibinfo{person}{Ravi Ramamoorthi},
+  {and} \bibinfo{person}{Pat Hanrahan}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{All-frequency Shadows Using Non-linear Wavelet
+  Lighting Approximation}.
+\newblock \bibinfo{journal}{\emph{ACM Trans. Graph.}} \bibinfo{volume}{22},
+  \bibinfo{number}{3} (\bibinfo{date}{July} \bibinfo{year}{2003}),
+  \bibinfo{pages}{376--381}.
+\newblock
+\showISSN{0730-0301}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/882262.882280}
+\showDOI{\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Praun and Hoppe}{Praun and Hoppe}{2003}]%
@@ -369,6 +438,24 @@
 \showISSN{1063-6919}
 \urldef\tempurl%
 \url{https://doi.org/10.1109/CVPR.2015.7298801}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Zhang, Starke, Komura, and Saito}{Zhang
+  et~al\mbox{.}}{2018}]%
+        {QuadrupedMotion}
+\bibfield{author}{\bibinfo{person}{He Zhang}, \bibinfo{person}{Sebastian
+  Starke}, \bibinfo{person}{Taku Komura}, {and} \bibinfo{person}{Jun Saito}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Mode-adaptive Neural Networks for Quadruped Motion
+  Control}.
+\newblock \bibinfo{journal}{\emph{ACM Trans. Graph.}} \bibinfo{volume}{37},
+  \bibinfo{number}{4}, Article \bibinfo{articleno}{145} (\bibinfo{date}{July}
+  \bibinfo{year}{2018}), \bibinfo{numpages}{11}~pages.
+\newblock
+\showISSN{0730-0301}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3197517.3201366}
 \showDOI{\tempurl}
 
 
