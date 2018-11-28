@@ -15,6 +15,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--page numbers missing in both pages and numpages fields in BoscainiMRB16
 Warning--page numbers missing in both pages and numpages fields in Geometric_deep_learning
 Warning--page numbers missing in both pages and numpages fields in DeepHuman
+Warning--empty year in HarmonicMapping
 Warning--empty publisher in CNN_videoClassification
 Warning--empty address in CNN_videoClassification
 Warning--page numbers missing in both pages and numpages fields in ShapeNet1
@@ -33,45 +34,46 @@ Warning--empty address in local-deformable-precomputed-radiance-transfer
 Warning--page numbers missing in both pages and numpages fields in DBLP
 Warning--empty publisher in 3d_ShapeNets
 Warning--empty address in 3d_ShapeNets
-You've used 26 entries,
+Warning--page numbers missing in both pages and numpages fields in ResNeXt
+You've used 28 entries,
             5719 wiz_defined-function locations,
-            1515 strings with 20597 characters,
-and the built_in function-call counts, 32486 in all, are:
-= -- 4169
-> -- 1308
+            1528 strings with 20941 characters,
+and the built_in function-call counts, 34414 in all, are:
+= -- 4413
+> -- 1391
 < -- 0
-+ -- 432
-- -- 424
-* -- 2542
-:= -- 3270
-add.period$ -- 132
-call.type$ -- 26
-change.case$ -- 206
-chr.to.int$ -- 26
-cite$ -- 47
-duplicate$ -- 2723
-empty$ -- 1926
-format.name$ -- 524
-if$ -- 7854
++ -- 458
+- -- 452
+* -- 2692
+:= -- 3483
+add.period$ -- 143
+call.type$ -- 28
+change.case$ -- 221
+chr.to.int$ -- 28
+cite$ -- 51
+duplicate$ -- 2871
+empty$ -- 2037
+format.name$ -- 556
+if$ -- 8315
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 104
-newline$ -- 329
-num.names$ -- 208
-pop$ -- 1004
+missing$ -- 108
+newline$ -- 356
+num.names$ -- 224
+pop$ -- 1078
 preamble$ -- 1
-purify$ -- 429
+purify$ -- 455
 quote$ -- 0
-skip$ -- 911
+skip$ -- 953
 stack$ -- 0
-substring$ -- 2294
-swap$ -- 270
+substring$ -- 2390
+swap$ -- 280
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 569
-warning$ -- 21
-while$ -- 162
+type$ -- 615
+warning$ -- 23
+while$ -- 174
 width$ -- 0
-write$ -- 572
-(There were 23 warnings)
+write$ -- 615
+(There were 25 warnings)

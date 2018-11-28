@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  27 NOV 2018 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  28 NOV 2018 19:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1029,66 +1029,85 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
 (./2_related_works.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--32
+Underfull \hbox (badness 10000) in paragraph at lines 5--19
 
  []
 
 
-Overfull \hbox (2.72835pt too wide) in paragraph at lines 4--32
+Overfull \hbox (2.72835pt too wide) in paragraph at lines 5--19
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) PRT for dy-namic or de-formable ob-jects wo
 uld re-quire pre-computing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--32
+Underfull \hbox (badness 10000) in paragraph at lines 20--32
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--32
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 32.
- [2.2])
-(./3_algorithm.tex
+[2.2]) (./3_algorithm.tex
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/it' will be
 (Font)              scaled to size 9.0pt on input line 13.
 
-Overfull \hbox (7.03195pt too wide) in paragraph at lines 23--26
-\T1/LinuxLibertineT-TLF/m/n/9 (-20) leable and dy-namic ob-jects, but avoid-ing
- ex-haus-tive pre-computations
- []
-
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 27.
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-<Figures/Overview_method.pdf, id=269, 745.86595pt x 770.88pt>
+<Figures/Overview_method.pdf, id=265, 745.86595pt x 770.88pt>
 File: Figures/Overview_method.pdf Graphic file (type pdf)
 
 <use Figures/Overview_method.pdf>
-Package pdftex.def Info: Figures/Overview_method.pdf used on input line 34.
+Package pdftex.def Info: Figures/Overview_method.pdf used on input line 33.
 (pdftex.def)             Requested size: 253.14749pt x 261.637pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 34--35
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
  [][] 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--48
+
+ []
+
 [3.3 <./Figures/Overview_method.pdf>]
-Overfull \hbox (15.15833pt too wide) in paragraph at lines 43--45
+Underfull \hbox (badness 10000) in paragraph at lines 51--56
+
+ []
+
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 68.
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+
+ []
+
+
+Overfull \hbox (15.15833pt too wide) in paragraph at lines 75--77
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) of po-si-tion and nor-mal im-ages ($\OMS/nt
 xsy/m/n/9 P \U/ntxmia/m/it/9 = \OMS/ntxsy/m/n/9 f\OML/nxlmi/m/it/9 P[]; P[]; P[
 ]\OMS/ntxsy/m/n/9 g$ \T1/LinuxLibertineT-TLF/m/n/9 (-20) and $\OMS/ntxsy/m/n/9 
 N \U/ntxmia/m/it/9 = \OMS/ntxsy/m/n/9 f\OML/nxlmi/m/it/9 N[]; N[]; N[]\OMS/ntxs
 y/m/n/9 g$\T1/LinuxLibertineT-TLF/m/n/9 (-20) )
+ []
+
+
+Overfull \hbox (3.57698pt too wide) in paragraph at lines 81--83
+\T1/LinuxLibertineT-TLF/m/n/9 (-20) As re-gres-sand, or ground truth data, we p
+er-form a full self-shadowing
+ []
+
+<Figures/YueLi_network_sketch.pdf, id=405, 823.75595pt x 463.96843pt>
+File: Figures/YueLi_network_sketch.pdf Graphic file (type pdf)
+
+<use Figures/YueLi_network_sketch.pdf>
+Package pdftex.def Info: Figures/YueLi_network_sketch.pdf used on input line 86
+.
+(pdftex.def)             Requested size: 253.14749pt x 142.57564pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 86--87
+ [][] 
  []
 
 ) (./4_results.tex) (./5_Outlook.tex) (./main.bbl
@@ -1100,43 +1119,48 @@ LaTeX Info: Redefining \tempurl on input line 70.
 LaTeX Info: Redefining \tempurl on input line 88.
 LaTeX Info: Redefining \tempurl on input line 106.
 LaTeX Info: Redefining \tempurl on input line 140.
-LaTeX Info: Redefining \tempurl on input line 170.
-LaTeX Info: Redefining \tempurl on input line 187.
-LaTeX Info: Redefining \tempurl on input line 204.
-LaTeX Info: Redefining \tempurl on input line 221.
-LaTeX Info: Redefining \tempurl on input line 237.
-LaTeX Info: Redefining \tempurl on input line 257.
-LaTeX Info: Redefining \tempurl on input line 274.
-LaTeX Info: Redefining \tempurl on input line 293.
-LaTeX Info: Redefining \tempurl on input line 305.
-LaTeX Info: Redefining \tempurl on input line 338.
+LaTeX Info: Redefining \tempurl on input line 152.
+LaTeX Info: Redefining \tempurl on input line 185.
+LaTeX Info: Redefining \tempurl on input line 202.
+LaTeX Info: Redefining \tempurl on input line 219.
+LaTeX Info: Redefining \tempurl on input line 236.
+LaTeX Info: Redefining \tempurl on input line 252.
+LaTeX Info: Redefining \tempurl on input line 272.
+[4.4 <./Figures/YueLi_network_sketch.pdf, page is rotated 270 degrees>]
+LaTeX Info: Redefining \tempurl on input line 289.
+LaTeX Info: Redefining \tempurl on input line 308.
+LaTeX Info: Redefining \tempurl on input line 320.
 LaTeX Info: Redefining \tempurl on input line 353.
-LaTeX Info: Redefining \tempurl on input line 369.
-LaTeX Info: Redefining \tempurl on input line 406.
-LaTeX Info: Redefining \tempurl on input line 422.
-LaTeX Info: Redefining \tempurl on input line 440.
-LaTeX Info: Redefining \tempurl on input line 458.
+LaTeX Info: Redefining \tempurl on input line 368.
+LaTeX Info: Redefining \tempurl on input line 384.
+LaTeX Info: Redefining \tempurl on input line 421.
+LaTeX Info: Redefining \tempurl on input line 437.
+LaTeX Info: Redefining \tempurl on input line 455.
+LaTeX Info: Redefining \tempurl on input line 472.
+LaTeX Info: Redefining \tempurl on input line 491.
 )
 
 Package natbib Warning: There were undefined citations.
 
-[4.4]
+[5.5
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 597EC127A91633D8FB11ABF1F06A7F29;1549.
+(rerunfilecheck)             Checksum: E9E09B3FE7E63A7BB39CB4124556E293;1748.
  ) 
 Here is how much of TeX's memory you used:
- 17949 strings out of 493089
- 272218 string characters out of 6134843
- 390286 words of memory out of 5000000
- 20480 multiletter control sequences out of 15000+600000
- 218930 words of font info for 391 fonts, out of 8000000 for 9000
+ 17989 strings out of 493089
+ 273140 string characters out of 6134843
+ 387476 words of memory out of 5000000
+ 20492 multiletter control sequences out of 15000+600000
+ 221327 words of font info for 405 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,15n,94p,795b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,15n,94p,795b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc
 }{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/te
 xlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75ao.enc}{/usr/local/tex
@@ -1169,10 +1193,10 @@ mf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist
 /type1/public/newtx/zxlr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
 blic/newtx/zxlri.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/new
 tx/zxlzi.pfb>
-Output written on main.pdf (4 pages, 21827004 bytes).
+Output written on main.pdf (5 pages, 21864389 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 413 compressed objects within 5 object streams
- 52 named destinations out of 1000 (max. 500000)
- 46703 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 602 PDF objects out of 1000 (max. 8388607)
+ 447 compressed objects within 5 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 46708 words of extra memory for PDF output out of 51595 (max. 10000000)
 

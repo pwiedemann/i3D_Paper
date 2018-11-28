@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{26}
+\begin{thebibliography}{28}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -139,6 +139,21 @@
 \urldef\tempurl%
 \url{https://doi.org/10.2312/EGWR/EGSR07/023-034}
 \showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Gu}{Gu}{[n. d.]}]%
+        {HarmonicMapping}
+\bibfield{author}{\bibinfo{person}{David Gu}.} \bibinfo{year}{[n.
+  d.]}\natexlab{}.
+\newblock \bibinfo{title}{Harmonic Map}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://www3.cs.stonybrook.edu/~gu/tutorial/HarmonicMap.html}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed: 28-11-2018.}
 
 
 \bibitem[\protect\citeauthoryear{Gu, Gortler, and Hoppe}{Gu
@@ -439,6 +454,24 @@
 \urldef\tempurl%
 \url{https://doi.org/10.1109/CVPR.2015.7298801}
 \showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Xie, Girshick, Doll{\'{a}}r, Tu, and He}{Xie
+  et~al\mbox{.}}{2016}]%
+        {ResNeXt}
+\bibfield{author}{\bibinfo{person}{Saining Xie}, \bibinfo{person}{Ross~B.
+  Girshick}, \bibinfo{person}{Piotr Doll{\'{a}}r}, \bibinfo{person}{Zhuowen
+  Tu}, {and} \bibinfo{person}{Kaiming He}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Aggregated Residual Transformations for Deep Neural
+  Networks}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1611.05431}
+  (\bibinfo{year}{2016}).
+\newblock
+\showeprint[arxiv]{1611.05431}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1611.05431}
+\showURL{%
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Zhang, Starke, Komura, and Saito}{Zhang
