@@ -18,10 +18,12 @@ Warning--page numbers missing in both pages and numpages fields in DeepHuman
 Warning--empty year in HarmonicMapping
 Warning--empty publisher in CNN_videoClassification
 Warning--empty address in CNN_videoClassification
+Warning--page numbers missing in both pages and numpages fields in ADAM
 Warning--page numbers missing in both pages and numpages fields in ShapeNet1
 Warning--empty year in GeoDeepLearning
 Warning--no journal in Nalbach2017b
 Warning--page numbers missing in both pages and numpages fields in Nalbach2017b
+Warning--page numbers missing in both pages and numpages fields in U-Net
 Warning--empty publisher in MoMoPRT
 Warning--empty address in MoMoPRT
 Warning--empty publisher in sinha2016deep
@@ -31,49 +33,50 @@ Warning--empty publisher in sloan2002precomputed
 Warning--empty address in sloan2002precomputed
 Warning--empty booktitle in local-deformable-precomputed-radiance-transfer
 Warning--empty address in local-deformable-precomputed-radiance-transfer
+Warning--page numbers missing in both pages and numpages fields in StridingConv
 Warning--page numbers missing in both pages and numpages fields in DBLP
 Warning--empty publisher in 3d_ShapeNets
 Warning--empty address in 3d_ShapeNets
 Warning--page numbers missing in both pages and numpages fields in ResNeXt
-You've used 28 entries,
+You've used 32 entries,
             5719 wiz_defined-function locations,
-            1528 strings with 20941 characters,
-and the built_in function-call counts, 34414 in all, are:
-= -- 4413
-> -- 1391
+            1553 strings with 21534 characters,
+and the built_in function-call counts, 38684 in all, are:
+= -- 5031
+> -- 1560
 < -- 0
-+ -- 458
-- -- 452
-* -- 2692
-:= -- 3483
-add.period$ -- 143
-call.type$ -- 28
-change.case$ -- 221
-chr.to.int$ -- 28
-cite$ -- 51
-duplicate$ -- 2871
-empty$ -- 2037
-format.name$ -- 556
-if$ -- 8315
++ -- 514
+- -- 512
+* -- 3011
+:= -- 3915
+add.period$ -- 163
+call.type$ -- 32
+change.case$ -- 250
+chr.to.int$ -- 32
+cite$ -- 58
+duplicate$ -- 3207
+empty$ -- 2283
+format.name$ -- 628
+if$ -- 9379
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 108
-newline$ -- 356
-num.names$ -- 224
-pop$ -- 1078
+missing$ -- 120
+newline$ -- 403
+num.names$ -- 256
+pop$ -- 1206
 preamble$ -- 1
-purify$ -- 455
+purify$ -- 517
 quote$ -- 0
-skip$ -- 953
+skip$ -- 1058
 stack$ -- 0
-substring$ -- 2390
-swap$ -- 280
+substring$ -- 2633
+swap$ -- 300
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 615
-warning$ -- 23
-while$ -- 174
+type$ -- 693
+warning$ -- 26
+while$ -- 198
 width$ -- 0
-write$ -- 615
-(There were 25 warnings)
+write$ -- 695
+(There were 28 warnings)

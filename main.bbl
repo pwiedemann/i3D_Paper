@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{28}
+\begin{thebibliography}{32}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -106,6 +106,16 @@
 \url{http://arxiv.org/abs/1702.07486}
 \showURL{%
 \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Chollet et~al\mbox{.}}{Chollet
+  et~al\mbox{.}}{2015}]%
+        {Keras}
+\bibfield{author}{\bibinfo{person}{Fran\c{c}ois Chollet} {et~al\mbox{.}}}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \bibinfo{title}{Keras}.
+\newblock \bibinfo{howpublished}{\url{https://keras.io}}.
+\newblock
 
 
 \bibitem[\protect\citeauthoryear{Cohen, Wallace, and Hanrahan}{Cohen
@@ -218,6 +228,21 @@
 \urldef\tempurl%
 \url{https://doi.org/10.1109/CVPR.2014.223}
 \showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kingma and Ba}{Kingma and Ba}{2014}]%
+        {ADAM}
+\bibfield{author}{\bibinfo{person}{Diederik~P. Kingma} {and}
+  \bibinfo{person}{Jimmy Ba}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Adam: {A} Method for Stochastic Optimization}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1412.6980}
+  (\bibinfo{year}{2014}).
+\newblock
+\showeprint[arxiv]{1412.6980}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1412.6980}
+\showURL{%
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Krizhevsky, Sutskever, and Hinton}{Krizhevsky
@@ -369,6 +394,24 @@
 \showDOI{\tempurl}
 
 
+\bibitem[\protect\citeauthoryear{Ronneberger, Fischer, and Brox}{Ronneberger
+  et~al\mbox{.}}{2015}]%
+        {U-Net}
+\bibfield{author}{\bibinfo{person}{Olaf Ronneberger}, \bibinfo{person}{Philipp
+  Fischer}, {and} \bibinfo{person}{Thomas Brox}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{U-Net: Convolutional Networks for Biomedical Image
+  Segmentation}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1505.04597}
+  (\bibinfo{year}{2015}).
+\newblock
+\showeprint[arxiv]{1505.04597}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1505.04597}
+\showURL{%
+\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Schneider, Schönborn, Egger, Frobeen, and
   Vetter}{Schneider et~al\mbox{.}}{2017}]%
         {MoMoPRT}
@@ -419,6 +462,24 @@
 \newblock
 \urldef\tempurl%
 \url{https://www.microsoft.com/en-us/research/publication/local-deformable-precomputed-radiance-transfer/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Springenberg, Dosovitskiy, Brox, and
+  Riedmiller}{Springenberg et~al\mbox{.}}{2014}]%
+        {StridingConv}
+\bibfield{author}{\bibinfo{person}{Jost~Tobias Springenberg},
+  \bibinfo{person}{Alexey Dosovitskiy}, \bibinfo{person}{Thomas Brox}, {and}
+  \bibinfo{person}{Martin~A. Riedmiller}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Striving for Simplicity: The All Convolutional
+  Net}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1412.6806}
+  (\bibinfo{year}{2014}).
+\newblock
+\showeprint[arxiv]{1412.6806}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1412.6806}
 \showURL{%
 \tempurl}
 
