@@ -179,6 +179,23 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{He, Zhang, Ren, and Sun}{He
+  et~al\mbox{.}}{2015}]%
+        {ResNet}
+\bibfield{author}{\bibinfo{person}{Kaiming He}, \bibinfo{person}{Xiangyu
+  Zhang}, \bibinfo{person}{Shaoqing Ren}, {and} \bibinfo{person}{Jian Sun}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Deep Residual Learning for Image Recognition}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1512.03385}
+  (\bibinfo{year}{2015}).
+\newblock
+\showeprint[arxiv]{1512.03385}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1512.03385}
+\showURL{%
+\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Holden, Komura, and Saito}{Holden
   et~al\mbox{.}}{2017}]%
         {Holden2017}
@@ -515,24 +532,6 @@
 \urldef\tempurl%
 \url{https://doi.org/10.1109/CVPR.2015.7298801}
 \showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Xie, Girshick, Doll{\'{a}}r, Tu, and He}{Xie
-  et~al\mbox{.}}{2016}]%
-        {ResNeXt}
-\bibfield{author}{\bibinfo{person}{Saining Xie}, \bibinfo{person}{Ross~B.
-  Girshick}, \bibinfo{person}{Piotr Doll{\'{a}}r}, \bibinfo{person}{Zhuowen
-  Tu}, {and} \bibinfo{person}{Kaiming He}.} \bibinfo{year}{2016}\natexlab{}.
-\newblock \showarticletitle{Aggregated Residual Transformations for Deep Neural
-  Networks}.
-\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1611.05431}
-  (\bibinfo{year}{2016}).
-\newblock
-\showeprint[arxiv]{1611.05431}
-\urldef\tempurl%
-\url{http://arxiv.org/abs/1611.05431}
-\showURL{%
-\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Zhang, Starke, Komura, and Saito}{Zhang

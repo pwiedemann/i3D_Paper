@@ -74,7 +74,7 @@ Figure \ref{Fig: Method_Overview} illustrates the basic procedure of the method.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{ Network Architecture and Training}
 \subsubsection*{Architecture: \\} 
-The topology of our deep convolutional network consists of an encoder and decoder with skip connections based on \cite{U-Net}. Both encoder and decoder consist of sequences of ResNeXt blocks \cite{ResNeXt} each comprising a series of 2D-Convolution, Batch Normalisation, Down-sampling and ReLU - Activation layers (illustrated in Figure (\ref{Fig: NetworkTopology}) ). For the last layer of the decoder we use a Sigmoid-Activation-Function. Instead of a Pooling-Layer we perform down-sampling by increasing the stride, by a factor of two, within a Convolutional layer \cite{StridingConv}. To avoid information loss,  we make use of skip-connections, which passes outputs of encoding layers to the respective inputs of the decoding layers. The network has an approximate amount of $1,1 \cdot 10^7$ parameters. 
+The topology of our deep convolutional network consists of an encoder and decoder with skip connections based on \cite{U-Net}. Both encoder and decoder consist of sequences of ResNet blocks \cite{ResNet} each comprising a series of 2D-Convolution, Batch Normalisation, Down-sampling and ReLU - Activation layers (illustrated in Figure (\ref{Fig: NetworkTopology}) ). For the last layer of the decoder we use a Sigmoid-Activation-Function. Instead of a Pooling-Layer we perform down-sampling by increasing the stride, by a factor of two, within a Convolutional layer \cite{StridingConv}. To avoid information loss,  we make use of skip-connections, which passes outputs of encoding layers to the respective inputs of the decoding layers. The network has an approximate amount of $1,1 \cdot 10^7$ parameters. 
 \subsubsection*{Synthesis of Training Data :\\}
 For a given object, we generate the training data by applying sequences of smooth deformations, obtained by a physically based or blendshape based animation (see Section ?? for examples), each of a total length of 500 frames. 
 \\
@@ -84,11 +84,11 @@ For most objects we chose an image resolution of $256 \times 256$.
 \subsubsection*{Training: \\} 
 The network is trained on 450 samples, each consisting of six image channels of size $256 \times 256$. As cost function, we minimize the pixel-wise absolute error between predicted output and the ground-truth ($l_1$-loss), and the optimizer we use is ADAM \cite{ADAM}. 
 \\
-Convergence varies from object to object, but in most cases close to 500 epochs are sufficient, using a batch size of 5. The network is implemented in Keras \cite{Keras} with Tensorflow as Backend. On a high-end GPU (NVIDIA GetForce GTX 2080) this takes around...(TO CHECK!)
+Convergence varies from object to object, but in most cases 500 to 1000 epochs are sufficient, using a batch size of 5. The network is implemented in Keras \cite{Keras} with Tensorflow as Backend. On a high-end GPU (NVIDIA GetForce GTX 2080) this takes around...(TO CHECK!)
 %%%%
 \begin{figure*}[t]
   \centering
-    \includegraphics[width=0.8\paperwidth]{Figures/YueLi_network_sketch.pdf}
+    \includegraphics[width=0.7\paperwidth]{Figures/Network_topology.pdf}
      \caption{Network Topology}
      \label{Fig: NetworkTopology}
 \end{figure*}
