@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{32}
+\begin{thebibliography}{35}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -108,6 +108,24 @@
 \tempurl}
 
 
+\bibitem[\protect\citeauthoryear{Cheng, Wang, Zhou, and Zhang}{Cheng
+  et~al\mbox{.}}{2017}]%
+        {Survey_NN_Compression}
+\bibfield{author}{\bibinfo{person}{Yu Cheng}, \bibinfo{person}{Duo Wang},
+  \bibinfo{person}{Pan Zhou}, {and} \bibinfo{person}{Tao Zhang}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{A Survey of Model Compression and Acceleration for
+  Deep Neural Networks}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1710.09282}
+  (\bibinfo{year}{2017}).
+\newblock
+\showeprint[arxiv]{1710.09282}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1710.09282}
+\showURL{%
+\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Chollet et~al\mbox{.}}{Chollet
   et~al\mbox{.}}{2015}]%
         {Keras}
@@ -179,6 +197,23 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Han, Mao, and Dally}{Han
+  et~al\mbox{.}}{2015}]%
+        {Deep_Compression}
+\bibfield{author}{\bibinfo{person}{Song Han}, \bibinfo{person}{Huizi Mao},
+  {and} \bibinfo{person}{William~J. Dally}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Deep Compression: Compressing Deep Neural Network
+  with Pruning, Trained Quantization and Huffman Coding}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1510.00149}
+  (\bibinfo{year}{2015}).
+\newblock
+\showeprint[arxiv]{1510.00149}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1510.00149}
+\showURL{%
+\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{He, Zhang, Ren, and Sun}{He
   et~al\mbox{.}}{2015}]%
         {ResNet}
@@ -210,6 +245,21 @@
 \showISSN{0730-0301}
 \urldef\tempurl%
 \url{https://doi.org/10.1145/3072959.3073663}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Horowitz}{Horowitz}{2014}]%
+        {ComputingEnergy}
+\bibfield{author}{\bibinfo{person}{M. Horowitz}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{1.1 Computing's energy problem (and what we can do
+  about it)}. In \bibinfo{booktitle}{\emph{2014 IEEE International Solid-State
+  Circuits Conference Digest of Technical Papers (ISSCC)}}.
+  \bibinfo{pages}{10--14}.
+\newblock
+\showISSN{0193-6530}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ISSCC.2014.6757323}
 \showDOI{\tempurl}
 
 

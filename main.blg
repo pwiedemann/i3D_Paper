@@ -15,8 +15,12 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--page numbers missing in both pages and numpages fields in BoscainiMRB16
 Warning--page numbers missing in both pages and numpages fields in Geometric_deep_learning
 Warning--page numbers missing in both pages and numpages fields in DeepHuman
+Warning--page numbers missing in both pages and numpages fields in Survey_NN_Compression
 Warning--empty year in HarmonicMapping
+Warning--page numbers missing in both pages and numpages fields in Deep_Compression
 Warning--page numbers missing in both pages and numpages fields in ResNet
+Warning--empty publisher in ComputingEnergy
+Warning--empty address in ComputingEnergy
 Warning--empty publisher in CNN_videoClassification
 Warning--empty address in CNN_videoClassification
 Warning--page numbers missing in both pages and numpages fields in ADAM
@@ -38,45 +42,45 @@ Warning--page numbers missing in both pages and numpages fields in StridingConv
 Warning--page numbers missing in both pages and numpages fields in DBLP
 Warning--empty publisher in 3d_ShapeNets
 Warning--empty address in 3d_ShapeNets
-You've used 32 entries,
+You've used 35 entries,
             5719 wiz_defined-function locations,
-            1553 strings with 21489 characters,
-and the built_in function-call counts, 38623 in all, are:
-= -- 5028
-> -- 1549
+            1576 strings with 22172 characters,
+and the built_in function-call counts, 42010 in all, are:
+= -- 5489
+> -- 1662
 < -- 0
-+ -- 510
-- -- 508
-* -- 3001
-:= -- 3903
-add.period$ -- 163
-call.type$ -- 32
-change.case$ -- 249
-chr.to.int$ -- 32
-cite$ -- 58
-duplicate$ -- 3207
-empty$ -- 2283
-format.name$ -- 624
-if$ -- 9369
++ -- 547
+- -- 544
+* -- 3250
+:= -- 4222
+add.period$ -- 178
+call.type$ -- 35
+change.case$ -- 271
+chr.to.int$ -- 35
+cite$ -- 65
+duplicate$ -- 3504
+empty$ -- 2496
+format.name$ -- 668
+if$ -- 10220
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 120
-newline$ -- 403
-num.names$ -- 256
-pop$ -- 1205
+missing$ -- 133
+newline$ -- 440
+num.names$ -- 280
+pop$ -- 1325
 preamble$ -- 1
-purify$ -- 516
+purify$ -- 563
 quote$ -- 0
-skip$ -- 1058
+skip$ -- 1148
 stack$ -- 0
-substring$ -- 2633
-swap$ -- 300
+substring$ -- 2851
+swap$ -- 322
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 693
-warning$ -- 26
-while$ -- 198
+type$ -- 755
+warning$ -- 30
+while$ -- 216
 width$ -- 0
-write$ -- 695
-(There were 28 warnings)
+write$ -- 757
+(There were 32 warnings)
