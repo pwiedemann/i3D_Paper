@@ -34,8 +34,8 @@ This makes the costly ray-casting computations superfluous and solves the abusiv
 \subsection{Data: Geometry Images}
 We propose learning directly \textbf{on} the object's surface in order to leverage its underlying shape structure. \textit{Geometry Images} present a planar shape representation on which standard 2D CNNs can be applied \cite{gu2002geometry, sinha2016deep}. 
 \\ 
-Surfaces with a single boundary (topological disks) are mapped onto a unit square and later discretised (or resampled) into a regular grid of $n \times n$ vertices. 
-For simplicity, but without loss of generality of our method, we  chose a \textit{Harmonic Map}, based on \cite{HM_book, HarmonicMapping}, for the parametrisation of the interior of the 2D-grid. \\
+Surfaces with a single boundary (topological disks) are mapped onto a unit square and later discretised (or resampled) into a regular grid of $n \times n$ vertices. \\
+In \textit{Geometry Images} a \textit{Stretch-Minimising} parametrisation is presented for the interior of the planar surface. However, for simplicity, but without loss of generality, we  chose a \textit{Harmonic Map}, based on \cite{HM_book, HarmonicMapping}. \\
 \\
 It is to note that we apply deformations only on the reconstructed object (right shape of Figure (\ref{Fig: Teaser}) ) in order to make our shape representation, \textit{Geometry Images}, invariant to deformations. By doing so, we maintain a one-to-one pixel correspondence; hence, filtering out deformation invariant information of the surface; and therefore, facilitating the feature extraction of surface properties that are more related to self-shadowing effects. 
 \\

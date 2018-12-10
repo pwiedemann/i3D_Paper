@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  10 DEC 2018 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  10 DEC 2018 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1143,23 +1143,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--80
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--88
-
- []
-
-<Figures/Network_topology.pdf, id=461, 1013.57356pt x 405.70523pt>
+<Figures/Network_topology.pdf, id=458, 1013.57356pt x 405.70523pt>
 File: Figures/Network_topology.pdf Graphic file (type pdf)
 
 <use Figures/Network_topology.pdf>
-Package pdftex.def Info: Figures/Network_topology.pdf used on input line 97.
+Package pdftex.def Info: Figures/Network_topology.pdf used on input line 96.
 (pdftex.def)             Requested size: 430.00462pt x 172.116pt.
 ) (./4_results.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--11
 
  []
 
-[4.4] <Figures/glossy_pirate.pdf, id=487, 822.77934pt x 708.02457pt>
+[4.4] <Figures/glossy_pirate.pdf, id=486, 822.77934pt x 708.02457pt>
 File: Figures/glossy_pirate.pdf Graphic file (type pdf)
 
 <use Figures/glossy_pirate.pdf>
@@ -1172,7 +1167,7 @@ put line 61.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/it' will be
 (Font)              scaled to size 9.0pt on input line 61.
 
-<Figures/DPRT_vs_MoMoPRT_a.pdf, id=496, 485.29178pt x 720.19093pt>
+<Figures/DPRT_vs_MoMoPRT_a.pdf, id=495, 485.29178pt x 720.19093pt>
 File: Figures/DPRT_vs_MoMoPRT_a.pdf Graphic file (type pdf)
 
 <use Figures/DPRT_vs_MoMoPRT_a.pdf>
@@ -1189,14 +1184,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--73
  []
 
 [5.5 <./Figures/Network_topology.pdf> <./Figures/glossy_pirate.pdf>]
-<Figures/DPRT_vs_MoMoPRT_b.pdf, id=615, 454.51125pt x 703.30846pt>
+<Figures/DPRT_vs_MoMoPRT_b.pdf, id=614, 454.51125pt x 703.30846pt>
 File: Figures/DPRT_vs_MoMoPRT_b.pdf Graphic file (type pdf)
 
 <use Figures/DPRT_vs_MoMoPRT_b.pdf>
 Package pdftex.def Info: Figures/DPRT_vs_MoMoPRT_b.pdf used on input line 78.
 (pdftex.def)             Requested size: 227.83119pt x 352.54408pt.
 
-<Figures/DPRT_quality.pdf, id=616, 845.58867pt x 767.07838pt>
+<Figures/DPRT_quality.pdf, id=615, 845.58867pt x 767.07838pt>
 File: Figures/DPRT_quality.pdf Graphic file (type pdf)
 
 <use Figures/DPRT_quality.pdf>
@@ -1204,17 +1199,19 @@ Package pdftex.def Info: Figures/DPRT_quality.pdf used on input line 84.
 (pdftex.def)             Requested size: 491.43787pt x 445.81874pt.
  [6.6 <./Figures/DPRT_vs_MoMoPRT_a.pdf> <./Figures/DPRT_vs_MoMoPRT_b.pdf>]) (./
 5_Outlook.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--6
+Underfull \hbox (badness 10000) in paragraph at lines 2--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--13
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7.7 <./Figures/DPRT_quality.pdf>]) [8.8] (./main.bbl
+ [7.7 <./Figures/DPRT_quality.pdf>]) (./main.bbl
 LaTeX Info: Redefining \tempurl on input line 70.
 LaTeX Info: Redefining \tempurl on input line 88.
 LaTeX Info: Redefining \tempurl on input line 106.
@@ -1230,15 +1227,15 @@ LaTeX Info: Redefining \tempurl on input line 307.
 LaTeX Info: Redefining \tempurl on input line 321.
 LaTeX Info: Redefining \tempurl on input line 339.
 LaTeX Info: Redefining \tempurl on input line 355.
+
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
 LaTeX Info: Redefining \tempurl on input line 375.
 LaTeX Info: Redefining \tempurl on input line 392.
 LaTeX Info: Redefining \tempurl on input line 411.
 LaTeX Info: Redefining \tempurl on input line 423.
 LaTeX Info: Redefining \tempurl on input line 456.
 LaTeX Info: Redefining \tempurl on input line 471.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Info: Redefining \tempurl on input line 488.
 LaTeX Info: Redefining \tempurl on input line 505.
 LaTeX Info: Redefining \tempurl on input line 542.
@@ -1250,7 +1247,7 @@ LaTeX Info: Redefining \tempurl on input line 612.
 
 Package natbib Warning: There were undefined citations.
 
-[9.9]
+[8.8]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
  (./main.aux)
@@ -1264,11 +1261,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18678 strings out of 493089
- 285001 string characters out of 6134843
- 407655 words of memory out of 5000000
+ 18680 strings out of 493089
+ 285070 string characters out of 6134843
+ 404655 words of memory out of 5000000
  21091 multiletter control sequences out of 15000+600000
- 239704 words of font info for 431 fonts, out of 8000000 for 9000
+ 240075 words of font info for 433 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,16n,94p,918b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc
@@ -1307,10 +1304,10 @@ mf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist
 /type1/public/newtx/zxlr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
 blic/newtx/zxlri.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/new
 tx/zxlzi.pfb>
-Output written on main.pdf (9 pages, 55011045 bytes).
+Output written on main.pdf (8 pages, 55011412 bytes).
 PDF statistics:
- 899 PDF objects out of 1000 (max. 8388607)
- 671 compressed objects within 7 object streams
- 78 named destinations out of 1000 (max. 500000)
+ 901 PDF objects out of 1000 (max. 8388607)
+ 674 compressed objects within 7 object streams
+ 77 named destinations out of 1000 (max. 500000)
  48243 words of extra memory for PDF output out of 51595 (max. 10000000)
 
