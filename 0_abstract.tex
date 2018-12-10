@@ -42,9 +42,10 @@
 % --------
 % abstract
 \begin{abstract}
-TODO:\\
-(Written by Yue Li)\\
-\textit{   Traditional Precomputed Radiance Transfer methods  require a lot of memory to save the precomputed data for real time rendering. For an animation sequence such data would be gigantic. We proposed a deep learning precomputed radiance transfer framework (DPRT) for deforming object, saving only the weights of the network, which lowers the memory cost in orders of magnitudes. Object is first parameterized via harmonic mapping and reconstructed to form geometry and normal image as the inputs of a carefully designed fully convolutional network. }
+Traditional Precomputed Radiance Transfer (PRT) methods are limited to static objects or highly constrained deformation sequences. The bottleneck of PRT, when considering deformable objects, is its immense memory requirement to wield all pre-computations for a given series of object deformations. \\
+We present a compact representation of PRT for deformable objects associated to a fixed memory consumption independently of the number of deformations. We propose a deep Convolutional Neural Network (CNN) to encapsulate the self-shadowing information of an object. Specifically, the CNN is trained to predict the coefficients of a particular encoding of the \textit{Transfer Function}, for a given shape query. Here, we chose \textit{Spherical Harmonics} as representation of the \textit{Transfer Function}, although the method is not limited to that particular choice.
+\\
+Last but not least, we suggest learning on a parametric surface representation called \textit{Geometry Image}. This surface representation facilitates the learning procedure, removing irrelevant, deformation invariant, information from the data; and supports standard convolution operations. 
 \end{abstract}
 
 %CCS

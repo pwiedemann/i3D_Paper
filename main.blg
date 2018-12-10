@@ -6,7 +6,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: 6_ref.bib
 Warning--I didn't find a database entry for "Masci2015ShapeNetCN"
-Warning--I didn't find a database entry for "Sinha2016DeepL3"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -16,6 +15,7 @@ Warning--page numbers missing in both pages and numpages fields in BoscainiMRB16
 Warning--page numbers missing in both pages and numpages fields in Geometric_deep_learning
 Warning--page numbers missing in both pages and numpages fields in DeepHuman
 Warning--page numbers missing in both pages and numpages fields in Survey_NN_Compression
+Warning--empty address in HM_book
 Warning--empty year in HarmonicMapping
 Warning--page numbers missing in both pages and numpages fields in Deep_Compression
 Warning--page numbers missing in both pages and numpages fields in ResNet
@@ -42,45 +42,45 @@ Warning--page numbers missing in both pages and numpages fields in StridingConv
 Warning--page numbers missing in both pages and numpages fields in DBLP
 Warning--empty publisher in 3d_ShapeNets
 Warning--empty address in 3d_ShapeNets
-You've used 35 entries,
+You've used 36 entries,
             5719 wiz_defined-function locations,
-            1576 strings with 22172 characters,
-and the built_in function-call counts, 42010 in all, are:
-= -- 5489
-> -- 1662
-< -- 0
-+ -- 547
-- -- 544
-* -- 3250
-:= -- 4222
-add.period$ -- 178
-call.type$ -- 35
-change.case$ -- 271
-chr.to.int$ -- 35
-cite$ -- 65
-duplicate$ -- 3504
-empty$ -- 2496
-format.name$ -- 668
-if$ -- 10220
+            1582 strings with 22305 characters,
+and the built_in function-call counts, 43038 in all, are:
+= -- 5601
+> -- 1700
+< -- 1
++ -- 560
+- -- 560
+* -- 3327
+:= -- 4344
+add.period$ -- 185
+call.type$ -- 36
+change.case$ -- 277
+chr.to.int$ -- 36
+cite$ -- 67
+duplicate$ -- 3593
+empty$ -- 2561
+format.name$ -- 688
+if$ -- 10441
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 133
-newline$ -- 440
-num.names$ -- 280
-pop$ -- 1325
+missing$ -- 135
+newline$ -- 448
+num.names$ -- 288
+pop$ -- 1352
 preamble$ -- 1
-purify$ -- 563
+purify$ -- 578
 quote$ -- 0
-skip$ -- 1148
+skip$ -- 1177
 stack$ -- 0
-substring$ -- 2851
-swap$ -- 322
-text.length$ -- 0
+substring$ -- 2947
+swap$ -- 330
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 755
-warning$ -- 30
-while$ -- 216
+type$ -- 770
+warning$ -- 31
+while$ -- 225
 width$ -- 0
-write$ -- 757
+write$ -- 775
 (There were 32 warnings)
