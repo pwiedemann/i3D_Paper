@@ -59,13 +59,12 @@ consisting of the SH-coefficients of the \textit{Transfer Function} of the input
 \end{align*}
 that is, vertex $i$ of image $t_j$ represents the transfer coefficient $j$ of vertex $i$ of the input surface.
 \\
-Figure \ref{Fig: Teaser} illustrates the basic procedure of the method.
+Figure (1) illustrates the basic procedure of the method.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % -------------- NETWORK ----------------- 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{ Network Architecture and Training}
-
+\subsection{Network and Implementation }
 \subsubsection*{Architecture: \\} 
 The topology of our deep convolutional network is based on a \textit{U-Net}  \cite{U-Net}, consisting of an Encoder and Decoder with Skip-Connections. Both Encoder and Decoder consist of sequences of ResNet blocks \cite{ResNet} each comprising a series of 2D-Convolution, Batch Normalisation and ReLU - Activation layers (illustrated in Figure (\ref{Fig: NetworkTopology}) ). For the last layer of the decoder we use a Sigmoid-Activation-Function. Instead of a Pooling-Layer we perform down-sampling by increasing the stride, by a factor of two, within a Convolutional layer \cite{StridingConv}. To avoid information loss,  we make use of Skip-Connections passing information between outputs of encoding layers and corresponding inputs of the decoding layers. 
 \\
@@ -90,6 +89,7 @@ The network is trained on 450 samples, each consisting of six image channels of 
 Convergence varies from object to object, but in most cases 500 to 1000 epochs are sufficient, using a batch size of 5. The network is implemented in Keras with Tensorflow as Backend \cite{Keras}. 
 \\
 It takes close to 16 hours to compute 800 epochs of training on a single NVIDIA GetForce GTX 2080 GPU.
+
 %%%%
 \begin{figure*}[t]
   \centering

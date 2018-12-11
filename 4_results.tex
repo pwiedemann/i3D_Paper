@@ -2,9 +2,12 @@
 \section{Experiments and Results}
 We test our DPRT method against different animated objects,  see Figure (\ref{Fig: DPRT_Quality}). We animate a \textit{Pirate Head} and a \textit{Fish} object using linear blend-shapes and apply physics-based deformations to animate the \textit{Cloth} object.\\ 
 For the \textit{Pirate Head} and the \textit{Cloth} objects we chose a reconstruction resolution of $256 \times 256$ and for the \textit{Fish } object of $512 \times 512$.
-\\
-\\
-(TODO: FISH EXAMPLE 512x512 because of HM)
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.5\textwidth]{Figures/fish}
+     \caption{Fish reconstructions after uniform-resampling of Harmonic Map}
+     \label{Fig: Fish Reconstruction}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CMEMORY and QUALITY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -81,9 +84,9 @@ As can be seen in Figure (\ref{Fig:DPRT vs MoMoPRT B}), the linear model is not 
 \end{figure}
 \begin{figure*}
   \centering
-    \includegraphics[width=0.8\paperwidth]{Figures/DPRT_quality.pdf}
+    \includegraphics[width=0.8\paperwidth]{Figures/DPRT_quality_SSIM.pdf}
      \caption{Visual Quality:
-     a : Ground truth appearance. b: CNN appearance prediction. c: L2-Error between ground truth RGB-colors and prediction RGB-colors. d: L1-Error between ground truth and predicted transfer coefficients }
+     a : Ground truth appearance. b: CNN appearance prediction. c: SSIM. d: L1-Error between ground truth and predicted transfer coefficients }
      \label{Fig: DPRT_Quality}
 \end{figure*}
 \newpage
