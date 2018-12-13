@@ -2,9 +2,9 @@
 \section{Related Work}
 %-------------------------------------------------------------------------
 \subsection*{Precomputed Radiance Transfer and Extensions} 
-PRT was first proposed by \cite{sloan2002precomputed} to address global illumination effects on objects for real-time applications. This technique exploits the limitation of static objects by making a single pre-computation step of the \textit{Transfer Function}, allowing fast computations at runtime. \\
+PRT was first proposed by \cite{sloan2002precomputed} to address global illumination effects on objects for real-time applications. This technique exploits the limitation of static objects by making a single pre-computation step of the \textit{transfer function}, allowing fast computations at runtime. \\
 \\
-PRT for dynamic or deformable objects would require pre-computing sequences of \textit{Transfer Functions} to account for every pose, resulting in datasets that expand in proportion to the number of poses; hence, rapidly becoming unwieldy or innefficient. Memory IO's operations can be 3 orders of magnitudes more energy demanding than floating point summations or multiplications \cite{ComputingEnergy}.\\
+PRT for dynamic or deformable objects would require pre-computing sequences of \textit{transfer functions} to account for every pose, resulting in datasets that expand in proportion to the number of poses; hence, rapidly becoming unwieldy or innefficient. Memory IO's operations can be 3 orders of magnitudes more energy demanding than floating point summations or multiplications \cite{ComputingEnergy}.\\
 Our aim is to extend traditional PRT to deformable geometries while preserving a rather manageable and limited storage consumption.
 \\
 \\
@@ -17,7 +17,7 @@ Other approaches, rely on exploiting the information of a specific dataset to re
 \\  
 An appearance model, that approximates PRT lighting, is presented in  \cite{James_Fatahalian}. The model is based on a reduced state space of deformable shapes that allows only very limited kind of poses/shapes. 
 \\
-Similarly, \cite{MoMoPRT} suggest a linear self-shadowing model to predict the coefficients of the \textit{Transfer Function} from shape parameters of Morphable Models (MoMo) \cite{MoMo}. Their proposed model shows good results while operating within the reduced shape space of MoMo; nevertheless, our aim is to provide a more powerful PRT-model, that endows good approximations for more arbitrary deformations living within a larger and more generic shape space. To that end, we rather propose a non-linear model with well known strong generalisation properties, namely a deep Convolutional Neural Network \cite{DL_nature, ImageNet_CNN, CNN_videoClassification}.  
+Similarly, \cite{MoMoPRT} suggest a linear self-shadowing model to predict the coefficients of the \textit{transfer function} from shape parameters of Morphable Models (MoMo) \cite{MoMo}. Their proposed model shows good results while operating within the reduced shape space of MoMo; nevertheless, our aim is to provide a more powerful PRT-model, that endows good approximations for more arbitrary deformations living within a larger and more generic shape space. To that end, we rather propose a non-linear model with well known strong generalisation properties, namely a deep Convolutional Neural Network \cite{DL_nature, ImageNet_CNN, CNN_videoClassification}.  
 \subsection*{Deep Learning Appearance on Geometry Data} 
 Deep Learning (DL) has been used for appearance predictions before, albeit mostly focusing on learning illumination effects from screen-space data. In  \cite{Nalbach2017b} and \cite{DBLP} learning is conducted on image data gathered from the shading buffers to predict illumination effects in screen space. However, image-based approaches often suffer from significant information loss, depending on the visibility of the object, and do not leverage the underlying structure of the geometry. These factors make the learning procedure harder requiring large amounts of training data.
 \\

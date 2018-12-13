@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{36}
+\begin{thebibliography}{38}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -147,6 +147,24 @@
   \bibinfo{address}{San Diego, CA, USA}.
 \newblock
 \showISBNx{0-12-178270-0}
+
+
+\bibitem[\protect\citeauthoryear{Dai, Qi, Xiong, Li, Zhang, Hu, and Wei}{Dai
+  et~al\mbox{.}}{2017}]%
+        {DeformableCNN}
+\bibfield{author}{\bibinfo{person}{Jifeng Dai}, \bibinfo{person}{Haozhi Qi},
+  \bibinfo{person}{Yuwen Xiong}, \bibinfo{person}{Yi Li},
+  \bibinfo{person}{Guodong Zhang}, \bibinfo{person}{Han Hu}, {and}
+  \bibinfo{person}{Yichen Wei}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Deformable Convolutional Networks}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1703.06211}
+  (\bibinfo{year}{2017}).
+\newblock
+\showeprint[arxiv]{1703.06211}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1703.06211}
+\showURL{%
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Eells and Sampson}{Eells and Sampson}{1964}]%
@@ -354,6 +372,17 @@
 \urldef\tempurl%
 \url{https://doi.org/10.1038/nature14539}
 \showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Man, Huang, Feng, Li, and Wu}{Man
+  et~al\mbox{.}}{2018}]%
+        {Deformable_UNet}
+\bibfield{author}{\bibinfo{person}{Yunze Man}, \bibinfo{person}{Yangsibo
+  Huang}, \bibinfo{person}{Junyi Feng}, \bibinfo{person}{Xi Li}, {and}
+  \bibinfo{person}{Fei Wu}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Deep Q Learning Driven CT Pancreas Segmentation
+  with Geometry-Aware U-Net}.
+\newblock
 
 
 \bibitem[\protect\citeauthoryear{Maron, Galun, Aigerman, Trope, Dym, Yumer,

@@ -2,14 +2,24 @@
 \section{Experiments and Results}
 We test our DPRT method against different animated objects,  see Figure (\ref{Fig: DPRT_Quality}). We animate a \textit{Pirate Head} and a \textit{Fish} object using linear blend-shapes and apply physics-based deformations to animate the \textit{Cloth} object.\\ 
 For the \textit{Pirate Head} and the \textit{Cloth} objects we chose a reconstruction resolution of $256 \times 256$ and for the \textit{Fish } object of $512 \times 512$.
+% FIGURE (Fish Resampling)
 \begin{figure}[H]
   \centering
     \includegraphics[width=0.5\textwidth]{Figures/fish}
      \caption{Fish reconstructions after uniform-resampling of Harmonic Map}
      \label{Fig: Fish Reconstruction}
 \end{figure}
+%------------------
+% FIGURE (Varying Lighting)
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.4\textwidth]{Figures/varying_lighting}
+     \caption{Method is independent of lighting condition}
+     \label{Fig: Varying lighting}
+\end{figure}
+%------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% CMEMORY and QUALITY
+% MEMORY and QUALITY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Memory Savings}
 For each of the test objects, our training sets comprises 450 distinct object deformations. \\
@@ -44,13 +54,13 @@ This number grows linearly with increasing number of coefficients, number of def
 %%%%%%%%%%%%%%%%%%%
 The numbers shown above express the compression ratio taking into account solely the training set. On top of that, our network shows good generalisation properties, also enabling accurate and qualitatively precise appearance predictions of deformations outside the training set. Thus, by taking this into account the compression ratio grows to immeasurable values. 
 \\
-Thus, we show that DPRT, as it is, is capable of drastically diminishing the storage consumption of PRT algorithms for deforming objects. 
+Thus, we show that DeepPRT, as it is, is capable of drastically diminishing the storage consumption of PRT algorithms for deforming objects. 
 \\
-As mentioned above, commonly deep convolutional networks itself can be highly optimised, hence making DPRT even much more efficient, energy, speed and memory wise \cite{Survey_NN_Compression}. 
+As mentioned above, commonly deep convolutional networks itself can be highly optimised, hence making DeepPRT even much more efficient, energy, speed and memory wise \cite{Survey_NN_Compression}. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Comparisson 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection*{Generality of DPRT and Comparison}
+\subsection*{Generality of DeepPRT and Comparison}
 \subsubsection*{Generalisation Capability:}
 We validate the generalisation capabilities of our model by standard machine learning procedures. We base our parameter tuning on minimising the validation loss and later analyse prediction quality using a test set.\\ 
 The results show small errors and are in most cases visually indistinguishable or close to the ground truth (Figure [??]). 
@@ -61,7 +71,7 @@ The results show small errors and are in most cases visually indistinguishable o
      \label{Fig: glossy_pirate}
 \end{figure}
 \subsubsection*{\textbf{Comparison with MoMoPRT}~:}
-Furthermore, we compare our method with \cite{MoMoPRT} (MoMoPRT) and show that DPRT it is more accurate and can handle more general deformations. \\
+Furthermore, we compare our method with \cite{MoMoPRT} (MoMoPRT) and show that DeepPRT it is more accurate and can handle more general deformations. \\
 The authors of \cite{MoMoPRT} proposed a linear model $f_{lin}$ to predict transfer coefficients within a "linear shape space", namely the space spanned by a Morphable Model.\\
 This approach is clearly limited to shape deformations that are contained within the space described by the linear-shape-model $S_{lin}$ of choice. Moreover, although a linear model may be enough to approximate self-shadowing effects of shapes that are close to the mean shape of the training-data-distribution, the model lacks complexity to accurately approximate data samples that exist farther away from the mean shape (underfitting).  
 \\

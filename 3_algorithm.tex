@@ -1,5 +1,5 @@
 %-------------------------------------------------------------------------
-\section{DPRT Method}
+\section{Method}
 Classic PRT  is a physically-based rendering method to accelerate on-line computations of the (simplified) \textit{Rendering Equation}:
 \begin{align}
 L(\bm{\omega}_0 ) &= 
@@ -10,7 +10,7 @@ V(\bm{\omega}_i) H_N(\omega_i) }_{T(\bm{\omega}_i,\bm{\omega}_0) }
 \label{rendering equation PRT}
 \end{align}
 where $L_{\epsilon}$ accounts for all incoming radiance over the hemisphere, $f$  describes the surface reflectance properties $f$ (BRDF), $H_N$ is the \textit{Lambert's Law} and $V$ the \textit{Visibility Function} describing geometric information of the scene.\\
-It precisely exploits the essence of static/non-deformable objects by uniquely determining the integrand $T(\bm{\omega}_i,\bm{\omega}_0)$ (called the \textbf{\textit{Transfer Function}} ), which contains the costly-to-compute  \textit{Visibility} term,
+It precisely exploits the essence of static/non-deformable objects by uniquely determining the integrand $T(\bm{\omega}_i,\bm{\omega}_0)$ (called the \textbf{\textit{transfer function}} ), which contains the costly-to-compute  \textit{Visibility} term,
 \begin{align*}
 V :  \mathcal{S}  \times \Omega \rightarrow \{0,1\} \quad,
 \end{align*}
@@ -22,26 +22,26 @@ For $m$ number of coefficients of the basis functions and $l_i$, $t_i$ being the
 L(\bm{\omega}_0 ) \approx \sum_{j}^{m} l_j \cdot t_j 
 \label{Eq: Reduced Rendering Eq}
 \end{align}
-We chose a \textit{Spherical Harmonics} (SH) basis to encode the Transfer Function $T$ and the light environment $L_{\epsilon}$.
+We chose a \textit{Spherical Harmonics} (SH) basis to encode the transfer function $T$ and the light environment $L_{\epsilon}$.
 \\
 \\
- As mentioned above, our aim is to extend the PRT method to malleable and dynamic objects, but avoiding costly pre-computations and storage of every single \textit{Transfer Function} $T_i$ per shape query $S_i$ (with $i \in [1,2,\dots, d]$ and $d$ : $\#$ deformations ). \\
-With this in mind, we suggest a data-based model, a fully Convolutional Neural Network, to infer the \textit{Transfer Function} $T_i$, more precisely the coefficients of its SH-encoding $t_j$'s, for any given shape query $S_i$.
+ As mentioned above, our aim is to extend the PRT method to malleable and dynamic objects, but avoiding costly pre-computations and storage of every single \textit{transfer function} $T_i$ per shape query $S_i$ (with $i \in [1,2,\dots, d]$ and $d$ : $\#$ deformations ). \\
+With this in mind, we suggest a data-based model, a fully Convolutional Neural Network, to infer the \textit{transfer function} $T_i$ for any given shape query $S_i$. \\
 This makes the costly ray-casting computations superfluous and solves the abusive memory requirements, only necessitating the storage of the network's parameters. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % -------------- GEOMETRY IMAGE ----------------- 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Data: Geometry Images}
-We propose learning directly \textbf{on} the object's surface in order to leverage its underlying shape structure. \textit{Geometry Images} present a planar shape representation on which standard 2D CNNs can be applied \cite{gu2002geometry, sinha2016deep}. 
+We propose learning directly \textbf{on} the object's surface in order to leverage its underlying shape structure. \textit{Geometry images} present a planar shape representation on which standard 2D CNNs can be applied \cite{gu2002geometry, sinha2016deep}. 
 \\ 
 Surfaces with a single boundary (topological disks) are mapped onto a unit square and later discretised (or resampled) into a regular grid of $n \times n$ vertices. \\
-In \textit{Geometry Images} a \textit{Stretch-Minimising} parametrisation is presented for the interior of the planar surface. However, for simplicity, but without loss of generality, we  chose a \textit{Harmonic Map}, based on \cite{HM_book, HarmonicMapping}. \\
+In \textit{geometry images} a \textit{Stretch-Minimising} parametrisation is presented for the interior of the planar surface. However, for simplicity, but without loss of generality, we  chose a \textit{Harmonic Map}, based on \cite{HM_book, HarmonicMapping}. \\
 \\
-It is to note that we apply deformations only on the reconstructed object (right shape of Figure (\ref{Fig: Teaser}) ) in order to make our shape representation, \textit{Geometry Images}, invariant to deformations. By doing so, we maintain a one-to-one pixel correspondence; hence, filtering out deformation invariant information of the surface; and therefore, facilitating the feature extraction of surface properties that are more related to self-shadowing effects. 
+It is to note that we apply deformations only on the reconstructed object (right shape of Figure (\ref{Fig: Teaser}) ) in order to make our shape representation, \textit{geometry images}, invariant to deformations. By doing so, we maintain a one-to-one pixel correspondence; hence, filtering out deformation invariant information of the surface; and therefore, facilitating the feature extraction of surface properties that are more related to self-shadowing effects. 
 \\
-Moreover, this means that the conversion process of a surface into a Geometry Image has to be performed just once and can be done off-line, saving precious computation time.\\
+Moreover, this means that the conversion process of a surface into a geometry image has to be performed just once and can be done off-line, saving precious computation time.\\
 \\
-The surface information we transform into \textit{Geometry Images} to use as regressor for the CNN are: vertex positions $\mathcal{P}$ and normals $\mathcal{N}$. 
+The surface information we transform into \textit{geometry images} to use as regressor for the CNN are: vertex positions $\mathcal{P}$ and normals $\mathcal{N}$. 
 \begin{align*}
 	\mathcal{P} = [ P_x, P_y, P_z ]^T , \quad
 	\mathcal{N} = [ N_x, N_y, N_z ] ^T 
@@ -49,18 +49,28 @@ The surface information we transform into \textit{Geometry Images} to use as reg
 with  $P_i, N_i \in \mathbb{R}^{n \times n }$ being the position and normal images, respectively, for each coordinate $i \in \{ x,y,z\}$.
 \\
 \\
-Resulting, our CNN model predicts a corresponding sequence of \textit{Geometry Images} $\mathcal{T}$,
+Resulting, our CNN model predicts a corresponding sequence of images $\mathcal{T_{C,R}}$,
 \begin{align*}
-	f_{CNN} (  \mathcal{P} , \mathcal{N} ) = \mathcal{T} 
+	f_{CNN} (  \mathcal{P} , \mathcal{N} ) = 
+	\begin{cases}
+	\mathcal{T_D}  & \text{diffuse} \\
+	\mathcal{T_G} & \text{glossy}
+	\end{cases},
 \end{align*}
-consisting of the SH-coefficients of the \textit{Transfer Function} of the input shape, as introduced above (see eq. \ref{Eq: Reduced Rendering Eq}):
+which, for \textbf{diffuse materials}, consists of the SH-coefficients of the \textit{transfer function} of the input shape, as introduced above (see equation \ref{Eq: Reduced Rendering Eq}):
 \begin{align*}
-	\mathcal{T} = [ t_1, t_2, \dots, t_m ]^T \in \mathbb{R}^{m \times n \times n} 
+	\mathcal{T_D} = [ t_1, t_2, \dots, t_m ]^T \in \mathbb{R}^{m \times n \times n} 
 \end{align*}
 that is, vertex $i$ of image $t_j$ represents the transfer coefficient $j$ of vertex $i$ of the input surface.
 \\
-Figure (1) illustrates the basic procedure of the method.
-
+For \textbf{glossy materials}, our network predicts the transfered radiance $\mathcal{T_G}$ consisting of three radiance channels, 
+\begin{align*}
+\mathcal{T_G} = [T_r , T_g ,T_b]^T \in \mathbb{R}^{3 \times m \times n \times n} 
+\end{align*}
+resulting from the product between the transfer matrix $M_T$ and the lighting coefficients  $ L^{sh}_i$ \cite{sloan2002precomputed}. 
+\begin{align*}
+T_i= M_T \cdot L^{sh}_i   \in \mathbb{R}^{m \times n \times n}   \quad \text{forx }~  i \in \{r,g,b\} 
+\end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % -------------- NETWORK ----------------- 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,17 +79,17 @@ Figure (1) illustrates the basic procedure of the method.
 The topology of our deep convolutional network is based on a \textit{U-Net}  \cite{U-Net}, consisting of an Encoder and Decoder with Skip-Connections. Both Encoder and Decoder consist of sequences of ResNet blocks \cite{ResNet} each comprising a series of 2D-Convolution, Batch Normalisation and ReLU - Activation layers (illustrated in Figure (\ref{Fig: NetworkTopology}) ). For the last layer of the decoder we use a Sigmoid-Activation-Function. Instead of a Pooling-Layer we perform down-sampling by increasing the stride, by a factor of two, within a Convolutional layer \cite{StridingConv}. To avoid information loss,  we make use of Skip-Connections passing information between outputs of encoding layers and corresponding inputs of the decoding layers. 
 \\
 \\
-In order for DPRT to function in real-time rendering scenarios, it requires a very fast network inference. However, to achieve high accuracies, existing deep convolutional network models, such as ours, rely on very deep architectures with millions of parameters. 
+In order for DeepPRT to function in real-time rendering scenarios, it requires a very fast network inference. However, to achieve high accuracies, existing deep convolutional network models, such as ours, rely on very deep architectures with millions of parameters. 
 \\
 In particular, our network has an approximate amount of $11$ million parameters and an inference time of $50$ms on the high-end GPU \textit{NVIDIA RTX 2080}. 
 \\
 It has been extensively shown that most neural network models are highly compressible and can be significantly accelerated, eventually making them deployable to devices with low memory resources and applicable in real-time \cite{Deep_Compression, Survey_NN_Compression}.
 \\
-Nevertheless, the topic of \textit{network optimisation} reaches beyond the scope of this work. Hence, for our experiments we used the uncompressed CNN introduced above. In section [??] we show that even neglecting network optimisations our DPRT-approach already achieves immense memory savings. 
+Nevertheless, the topic of \textit{network optimisation} reaches beyond the scope of this work. Hence, for our experiments we used the uncompressed CNN introduced above. In section [??] we show that even neglecting network optimisations our DeepPRT-approach already achieves immense memory savings. 
 \subsubsection*{Synthesis of Training Data :\\}
 For a given object, we generate the training data by applying sequences of  deformations, obtained by a physically based or blendshape based animation (see Section ?? for examples), each of a total length of 500 frames. 
 \\
-For each frame $i \in [1,2,\dots,500]$ we store the position $\mathcal{P}_i$  and normal $\mathcal{N}_i$ images, and perform a full self-shadowing integration using ray-casting to compute and store the corresponding coefficients of the \textit{Transfer Function} $\mathcal{T}_i$ (ground truth).
+For each frame $i \in [1,2,\dots,500]$ we store the position $\mathcal{P}_i$  and normal $\mathcal{N}_i$ images, and perform a full self-shadowing integration using ray-casting to compute and store the corresponding coefficients of the \textit{transfer function} $\mathcal{T}_i$ (ground truth).
 \\
 For most objects we chose an image resolution of $256 \times 256$. 
 
