@@ -76,21 +76,20 @@ T_i= M_T \cdot L^{sh}_i   \in \mathbb{R}^{m \times n \times n}   \quad \text{for
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Network and Performance }
 \subsubsection*{Architecture: \\} 
-The topology of our deep convolutional network is based on a \textit{U-Net}  \cite{U-Net}, consisting of an Encoder and Decoder with Skip-Connections. Both Encoder and Decoder consist of sequences of ResNet blocks \cite{ResNet} each comprising a series of 2D-Convolution, Batch Normalisation and ReLU - Activation layers (illustrated in Figure (\ref{Fig: NetworkTopology}) ). For the last layer of the decoder we use a Sigmoid-Activation-Function. Instead of a Pooling-Layer we perform down-sampling by increasing the stride, by a factor of two, within a Convolutional layer \cite{StridingConv}. To avoid information loss,  we make use of Skip-Connections passing information between outputs of encoding layers and corresponding inputs of the decoding layers. 
+The topology of our deep convolutional network is based on a \textit{U-Net}  \cite{U-Net}, consisting of an Encoder and Decoder with Skip-Connections. Both Encoder and Decoder consist of sequences of ResNet blocks \cite{ResNet} each comprising a series of 2D-Convolution, Batch Normalisation and ReLU - Activation layers (illustrated in Figure (\ref{Fig: NetworkTopology}) ). For the last layer of the decoder we use a Sigmoid-Activation-Function. Instead of a Pooling-Layer we perform down-sampling by increasing the stride, by a factor of two, within a Convolutional layer \cite{StridingConv}. To avoid information loss,  we make use of Skip-Connections passing information between outputs of encoding layers and corresponding inputs of the decoding layers.
 
 \subsubsection*{Synthesis of Training Data :\\}
-For a given object, we generate the training data by applying sequences of  deformations, obtained by a physically based or blendshape based animation (see Section ?? for examples), each of a total length of 500 frames. 
+We generate the training data applying a sequence of free form deformations onto a given object. Specifically, for our experiments, deformations are generated either by a physically driven simulation or by a blendshape based animation (see Section ?? for examples). Each generated deformation sequence has a total length of 500 frames. 
 \\
-For each frame $i \in [1,2,\dots,500]$ we store the position $\mathcal{P}_i$  and normal $\mathcal{N}_i$ images, and perform a full self-shadowing integration using ray-casting to compute and store the corresponding coefficients of the \textit{transfer function} $\mathcal{T}_i$ (ground truth).
+At each frame $i \in [1,2,\dots,500]$ we store the position $\mathcal{P}_i$  and normal $\mathcal{N}_i$ images of the current deformation , and perform a full self-shadowing integration using ray-casting to compute and store the corresponding ground truth transfer coefficients ($\mathcal{T_D}_i$ or $\mathcal{T_G}_i$). For our experiments we chose a SH-band number of $4$, which corresponds to $16$ coefficients. Moreover, as mentioned above with image resolutions of $256 \times 256$ and $512 \times 512$. 
 \\
-For most objects we chose an image resolution of $256 \times 256$. 
+Our implementation for the generation of the ground truth data $\mathcal{T_{D,G}}$ requires, per frame, a duration of $39.6$s for diffuse and $49.7$s for glossy surfaces.
 
 \subsubsection*{Training: \\} 
-The network is trained on 450 samples, each consisting of six image channels of size $256 \times 256$. As cost function, we minimize the pixel-wise absolute error between predicted output and the ground-truth ($l_1$-loss), and the optimizer we use is ADAM \cite{ADAM}. 
+The data is split into a training and validation set consisting of 450 and 50 data samples respectively. As cost function, we minimize the pixel-wise absolute error between predicted output and the ground-truth ($L_1$-loss), and the optimizer we use is ADAM \cite{ADAM}. 
 \\
-Convergence varies from object to object, but in most cases 500 to 1000 epochs are sufficient, using a batch size of 5. The network is implemented in Keras with Tensorflow as Backend \cite{Keras}. 
-\\
-It takes close to 16 hours to compute 800 epochs of training on a single NVIDIA GetForce GTX 2080 GPU.
+Convergence varies from object to object, but in most cases 500 to 1000 epochs are sufficient, whereby a we used a batch size of 5. \\
+The network is implemented in Keras with Tensorflow as Backend \cite{Keras} and takes close to 16 hours to compute 800 epochs of training on a single NVIDIA GetForce GTX 2080 GPU.
 
 \subsubsection*{DeepPRT Performance: \\}
 In order for \textit{DeepPRT} to function in real-time, fast network inference is required. However, to achieve high accuracies, existing deep convolutional network models, such as ours, rely on very deep architectures with millions of parameters. 

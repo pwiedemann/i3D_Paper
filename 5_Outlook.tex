@@ -10,4 +10,10 @@ The particular choice of our basis functions (\textit{Spherical Harmonics}), cur
 \\
 The most significant limitations of our method reside within the choice of our parametrisation (Harmonic Map) and the natural flaws of the geometry images surface representation.  Currently, DeepPRT only performs well for modest curvature variations and is restricted to surfaces with one boundary (topological disks); however, using the \textit{Strech-Minimising} parametrisation instead and further using the extension proposed by \cite{Spherical_Parametrization}, the shape representation would be more robust and our method would be applicable to more general surface shapes. \\
 Apart from that, alternative surface representations could be explored to overcome this restrictions natural flaws of \textit{geometry images}. 
-
+\begin{figure*}
+  \centering
+    \includegraphics[width=0.7\paperwidth]{Figures/DPRT_quality_SSIM.pdf}
+     \caption{Visual Quality:
+     a : Ground truth appearance. b: CNN appearance prediction. c: SSIM. d: L1-Error between ground truth and predicted transfer coefficients }
+     \label{Fig: DPRT_Quality}
+\end{figure*}
