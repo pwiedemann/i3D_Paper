@@ -74,18 +74,10 @@ T_i= M_T \cdot L^{sh}_i   \in \mathbb{R}^{m \times n \times n}   \quad \text{for
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % -------------- NETWORK ----------------- 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Network and Implementation }
+\subsection{Network and Performance }
 \subsubsection*{Architecture: \\} 
 The topology of our deep convolutional network is based on a \textit{U-Net}  \cite{U-Net}, consisting of an Encoder and Decoder with Skip-Connections. Both Encoder and Decoder consist of sequences of ResNet blocks \cite{ResNet} each comprising a series of 2D-Convolution, Batch Normalisation and ReLU - Activation layers (illustrated in Figure (\ref{Fig: NetworkTopology}) ). For the last layer of the decoder we use a Sigmoid-Activation-Function. Instead of a Pooling-Layer we perform down-sampling by increasing the stride, by a factor of two, within a Convolutional layer \cite{StridingConv}. To avoid information loss,  we make use of Skip-Connections passing information between outputs of encoding layers and corresponding inputs of the decoding layers. 
-\\
-\\
-In order for DeepPRT to function in real-time rendering scenarios, it requires a very fast network inference. However, to achieve high accuracies, existing deep convolutional network models, such as ours, rely on very deep architectures with millions of parameters. 
-\\
-In particular, our network has an approximate amount of $11$ million parameters and an inference time of $50$ms on the high-end GPU \textit{NVIDIA RTX 2080}. 
-\\
-It has been extensively shown that most neural network models are highly compressible and can be significantly accelerated, eventually making them deployable to devices with low memory resources and applicable in real-time \cite{Deep_Compression, Survey_NN_Compression}.
-\\
-Nevertheless, the topic of \textit{network optimisation} reaches beyond the scope of this work. Hence, for our experiments we used the uncompressed CNN introduced above. In section [??] we show that even neglecting network optimisations our DeepPRT-approach already achieves immense memory savings. 
+
 \subsubsection*{Synthesis of Training Data :\\}
 For a given object, we generate the training data by applying sequences of  deformations, obtained by a physically based or blendshape based animation (see Section ?? for examples), each of a total length of 500 frames. 
 \\
@@ -100,6 +92,21 @@ Convergence varies from object to object, but in most cases 500 to 1000 epochs a
 \\
 It takes close to 16 hours to compute 800 epochs of training on a single NVIDIA GetForce GTX 2080 GPU.
 
+\subsubsection*{DeepPRT Performance: \\}
+In order for \textit{DeepPRT} to function in real-time, fast network inference is required. However, to achieve high accuracies, existing deep convolutional network models, such as ours, rely on very deep architectures with millions of parameters. 
+\\
+In particular, our network has an approximate amount of $11.8$ million parameters, occupying $45$Mbytes of space, and with an inference time close to $45$ms on a high-end GPU \textit{NVIDIA RTX 2080}. \\
+Besides, for a network input size of $4.5$Mbytes there is an additional loading\footnote{Loading six input images, $\mathcal{P}$ and $\mathcal{N}$, into the GPU} cost of approximately $5$ms.  
+\\
+\\
+After prediction, the performance for the rendering process differs significantly between diffuse and glossy surfaces:
+\\ 
+For \textbf{diffuse} surfaces, the dot product between predicted transfer coefficients $\mathcal{T_D}$ and the three channels of the lighting coefficients is calculated (eq. \ref{Eq: Reduced Rendering Eq}) and the result passed to the buffers for final rendering.  For our sample geometries with $256^2$ number of vertices the computation of the dot product takes $13$ms on the GPU, and a loading time of $0.09$s for the resulting $4.0$Mbytes exiting radiance vectors.
+\\ 
+On the other hand, for the same sample geometry, to render a \textbf{glossy} surface, the netowrk prediction $\mathcal{T_G}$, of size $12.0$Mbytes, needs to be convolved with a BRDF-kernel before passed to the shaders \cite{sloan2002precomputed}.  We perform this steps in the CPU based on \cite{ BRDF_kernel}, with a resulting total duration of $1.29$s. 
+\\
+We note that our implementation is far from being optimal.  Both, the rendering and the prediction process can be accelerated significantly. It has been extensively shown that most neural network models are highly compressible and can be significantly accelerated, eventually making them deployable to devices with low memory resources and applicable in real-time \cite{Deep_Compression, Survey_NN_Compression}.
+Nevertheless, exploring network optimisation methods reaches beyond the scope of this work. Hence, for our experiments we used the uncompressed CNN introduced above. In section [??] we show that even neglecting network optimisations our DeepPRT-approach already achieves immense memory savings. 
 %%%%
 \begin{figure*}[t]
   \centering
