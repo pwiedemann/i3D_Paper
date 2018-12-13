@@ -78,17 +78,17 @@ This approach is clearly limited to shape deformations that are contained within
 On the other hand, our more complex non-linear CNN model ($f_{CNN}$) is able to capture the relationships between the dataset's features (shape) and the target variable (transfer coefficients), enabling accurate approximations for a much larger deformation domain.\\
 \\
 For demonstration purposes, we generate a new training set consisting of, randomly sampled, linear combinations between visually more dissimilar basis shapes\footnote{More distinguishable between each other, than between each face expressions used in \cite{MoMo}.}: 1) the \textit{Pirate Head } on one side, and 2)  a simple \textit{Plane} on the other. We train both models, $f_{CNN}$ and $f_{lin}$, and compute their predictions for a series of test-shapes that are evenly distributed over the linear shape space. Figure (\ref{Fig:DPRT vs MoMoPRT A}) shows that the prediction accuracy of our $f_{CNN}$ model is higher and remains almost constant over the entire domain; on the contrary, the prediction accuracy of the linear model $f_{lin}$ drops significantly moving away from the mean shape (the \textit{Pirate/Plane} hybrid), as expected. 
-\begin{figure}[H]
+\begin{figure}[h]
   \centering
-    \includegraphics[width=0.5\textwidth]{Figures/DPRT_vs_MoMoPRT_a.pdf}
+    \includegraphics[width=0.4\textwidth]{Figures/DPRT_vs_MoMoPRT_a.pdf}
      \caption{Example: DPRT vs MoMoPRT}
      \label{Fig:DPRT vs MoMoPRT A}
 \end{figure}
 Last but not least, we demonstrate that our model approximates data that is contained in a much larger domain than the one spanned by a linear-shape-model $S_{lin}$. The models, $f_{CNN}$ and $f_{lin}$, are fed with a series of sample shapes, starting from the mean shape and increasingly deforming towards a \textit{Pirate} face expression that was excluded from the training set. \\
 As can be seen in Figure (\ref{Fig:DPRT vs MoMoPRT B}), the linear model is not able to predict shapes away from its shape-space $S_{lin}$, while our method, again shows a close to constant prediction accuracy.
-\begin{figure}[H]
+\begin{figure}[h]
   \centering
-    \includegraphics[width=0.45\textwidth]{Figures/DPRT_vs_MoMoPRT_b.pdf}
+    \includegraphics[width=0.4\textwidth]{Figures/DPRT_vs_MoMoPRT_b.pdf}
      \caption{Example: DPRT vs MoMoPRT}
      \label{Fig:DPRT vs MoMoPRT B}
 \end{figure}
