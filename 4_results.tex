@@ -7,7 +7,7 @@ The mesh resolution of the objects is $256 \times 256$. However, for the Fish ob
 \begin{figure}[H]
   \centering
     \includegraphics[width=0.4\textwidth]{Figures/fish}
-     \caption{Fish reconstructions after uniform-resampling of Harmonic Map}
+     \caption{Fish reconstructions after regular sampling of squared harmonic map. \textit{Top:} Sampled by a $256 \times 256$ grid. Shows detail loss and distortions. \textit{Bottom:} Higher sampling $512 \times 512$ preserves detail and minimize artifacts.}
      \label{Fig: Fish Reconstruction}
 \end{figure}~
 This distortions arise due to the uniform remeshing, while using a sub-optimal choice of 2D surface parametrization (Harmonic Map), leading to poorly sampled surface areas in regions of higher curvatures. A more suited parametrization, that minimizes distortion after resampling, is the \textit{geometric-stretch} parametrization  \cite{gu2002geometry}.
@@ -48,44 +48,47 @@ This numbers grow linearly with an increasing number of coefficients, deformatio
 \label{Table: NN_Accuracy}
 \end{table}
 %%%%%%%%%%%%%%%%%%%
-The numbers shown above express the compression ratio taking into account solely the training set. On top of that, our network shows good generalisation properties, also enabling accurate and qualitatively precise appearance predictions of deformations outside the training set. Thus, by taking this into account the compression ratio grows to immeasurable values. 
+The numbers shown above express the compression ratio taking into account solely the training and validation sets. Nevertheless, our network shows good generalization properties, also enabling accurate and qualitatively precise appearance predictions of deformations outside the training set. Hence, taking this into account the compression ratio grows to immeasurable values. 
 \\
-Thus, we show that DeepPRT, as it is, is capable of drastically diminishing the storage consumption of PRT algorithms for deforming objects. 
 \\
-Last but not least, as mentioned above, deep convolutional networks itself can be highly optimised, hence making DeepPRT even much more efficient, energy, speed and memory wise \cite{Survey_NN_Compression}. 
+Last but not least, as mentioned above, deep neural networks itself can be highly optimised, hence making DeepPRT even much more efficient memory, speed and energy wise \cite{Survey_NN_Compression}. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Comparisson 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Generality of DeepPRT and Comparison}
-\subsubsection*{Generalisation Capability:}
-We validate the generalisation capabilities of our model by standard machine learning procedures. We base our parameter tuning on minimising the validation loss and later analyse prediction quality using a test set.\\ 
-The results show small errors and are in most cases visually indistinguishable or close to the ground truth (Figure [??]). 
+\subsubsection*{Generalization Capability:}
+We validate the generalization capabilities of our model by standard machine learning procedures. We base our parameter tuning on minimizing the validation loss and later analyze prediction quality using a test set.
 \begin{figure}[H]
   \centering
     \includegraphics[width=0.35\textwidth]{Figures/glossy_pirate.pdf}
-     \caption{Example: glossy pirate}
+     \caption{Prediction of a test sample (unseen while training) for a diffuse (top) and glossy (bottom) surface. }
      \label{Fig: glossy_pirate}
 \end{figure}
 \subsubsection*{\textbf{Comparison with MoMoPRT}~:}
 Furthermore, we compare our method with \cite{MoMoPRT} (MoMoPRT) and show that DeepPRT it is more accurate and can handle more general deformations. \\
-The authors of \cite{MoMoPRT} proposed a linear model $f_{lin}$ to predict transfer coefficients within a "linear shape space", namely the space spanned by a Morphable Model.\\
-This approach is clearly limited to shape deformations that are contained within the space described by the linear-shape-model $S_{lin}$ of choice. Moreover, although a linear model may be enough to approximate self-shadowing effects of shapes that are close to the mean shape of the training-data-distribution, the model lacks complexity to accurately approximate data samples that exist farther away from the mean shape (underfitting).  
+The authors of \cite{MoMoPRT} proposed a linear model $f_{lin}$ to predict transfer coefficients from shape parameters of a \textit{morphable model}.
 \\
-On the other hand, our more complex non-linear CNN model ($f_{CNN}$) is able to capture the relationships between the dataset's features (shape) and the target variable (transfer coefficients), enabling accurate approximations for a much larger deformation domain.\\
+Clearly, MoMoPRT is limited to shape deformations that are contained within the space described by a linear-shape-model $S_{lin}$. Moreover, although a linear model may be enough to approximate self-shadowing effects of shapes that are close to the mean shape of the data distribution of the training set, the model lacks complexity to accurately approximate data samples existing farther away from the mean shape (under-fitting).  
 \\
-For demonstration purposes, we generate a new training set consisting of, randomly sampled, linear combinations between visually more dissimilar basis shapes\footnote{More distinguishable between each other, than between each face expressions used in \cite{MoMo}.}: 1) the \textit{Pirate Head } on one side, and 2)  a simple \textit{Plane} on the other. We train both models, $f_{CNN}$ and $f_{lin}$, and compute their predictions for a series of test-shapes that are evenly distributed over the linear shape space. Figure (\ref{Fig:DPRT vs MoMoPRT A}) shows that the prediction accuracy of our $f_{CNN}$ model is higher and remains almost constant over the entire domain; on the contrary, the prediction accuracy of the linear model $f_{lin}$ drops significantly moving away from the mean shape (the \textit{Pirate/Plane} hybrid), as expected. 
+On the other hand, our more complex non-linear model ($f_{CNN}$) is able to capture the relationships between the dataset's features (shape) and the target variable (transfer coefficients), enabling accurate approximations for a much larger deformation domain.\\
+\\
+For demonstration purposes, we generate a new training set consisting of $500$ shapes resulting from linear combinations between visually more dissimilar basis shapes\footnote{More distinguishable between each other, than between each face expressions used in \cite{MoMo}.}: 1) the \textit{Pirate Head } on one side, and 2)  a simple \textit{Plane} on the other. 
+\begin{align*}
+S_{lin} = \alpha ~ S_{pirate} + (1 - \alpha)~S_{plane}
+\end{align*}
+We train both models, $f_{CNN}$ and $f_{lin}$, and compute their predictions for a series of test-shapes that are evenly distributed. Figure (\ref{Fig:DPRT vs MoMoPRT A}) shows that the prediction accuracy of our $f_{CNN}$ model is higher and remains almost constant over the entire domain; on the contrary, the prediction accuracy of the linear model $f_{lin}$ drops significantly moving away from the mean shape (the \textit{Pirate/Plane} hybrid), as expected. 
 \begin{figure}[h]
   \centering
     \includegraphics[width=0.4\textwidth]{Figures/DPRT_vs_MoMoPRT_a.pdf}
-     \caption{Example: DPRT vs MoMoPRT}
+     \caption{DeepPRT (ours) vs. MoMoPRT (within training space).\textit{ Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit{ Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape. DeepPRT error is lower overall and close to constant, while MoMoPRT gets worse with increasing distance to mean shape.}
      \label{Fig:DPRT vs MoMoPRT A}
 \end{figure}
-Last but not least, we demonstrate that our model approximates data that is contained in a much larger domain than the one spanned by a linear-shape-model $S_{lin}$. The models, $f_{CNN}$ and $f_{lin}$, are fed with a series of sample shapes, starting from the mean shape and increasingly deforming towards a \textit{Pirate} face expression that was excluded from the training set. \\
-As can be seen in Figure (\ref{Fig:DPRT vs MoMoPRT B}), the linear model is not able to predict shapes away from its shape-space $S_{lin}$, while our method, again shows a close to constant prediction accuracy.
+Last but not least, we demonstrate that our model approximates data that is contained in a much larger domain than the one spanned by a linear-shape-model $S_{lin}$. The models, $f_{CNN}$ and $f_{lin}$, are fed with a series of sample shapes, starting from the mean shape and increasingly deforming towards a pirate face expression that was excluded from the training set. \\
+As can be seen in Figure (\ref{Fig:DPRT vs MoMoPRT B}), the linear model performs poorly away from $S_{lin}$, while our network's accuracy remains constant.
 \begin{figure}[h]
   \centering
     \includegraphics[width=0.4\textwidth]{Figures/DPRT_vs_MoMoPRT_b.pdf}
-     \caption{Example: DPRT vs MoMoPRT}
+     \caption{DeepPRT (ours) vs. MoMoPRT (moving away from the training space). \textit{Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit{ Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape.}
      \label{Fig:DPRT vs MoMoPRT B}
 \end{figure}
 

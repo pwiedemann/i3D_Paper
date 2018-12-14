@@ -2,7 +2,7 @@
 \section{Related Work}
 %-------------------------------------------------------------------------
 \subsection*{Precomputed Radiance Transfer and Extensions} 
-PRT was first proposed by \cite{sloan2002precomputed} to address global illumination effects on objects for real-time applications. This technique exploits the limitation of static objects by making a single pre-computation step of the \textit{transfer function}, allowing fast computations at runtime. \\
+PRT was first proposed by \cite{sloan2002precomputed} to address global illumination effects on objects for real-time applications. This technique exploits the limitation of static objects by making a single pre-computation step of the transfer function, allowing fast computations at runtime. \\
 \\
 PRT for dynamic or deformable objects would require pre-computing sequences of \textit{transfer functions} to account for every pose, resulting in datasets that expand in proportion to the number of poses; hence, rapidly becoming unwieldy or innefficient. Memory IO's operations can be 3 orders of magnitudes more energy demanding than floating point summations or multiplications \cite{ComputingEnergy}.\\
 Our aim is to extend traditional PRT to deformable geometries while preserving a rather manageable and limited storage consumption.
@@ -17,7 +17,7 @@ Other approaches, rely on exploiting the information of a specific dataset to re
 \\  
 An appearance model, that approximates PRT lighting, is presented in  \cite{James_Fatahalian}. The model is based on a reduced state space of deformable shapes that allows only very limited kind of poses/shapes. 
 \\
-Similarly, \cite{MoMoPRT} suggest a linear self-shadowing model to predict the coefficients of the \textit{transfer function} from shape parameters of Morphable Models (MoMo) \cite{MoMo}. Their proposed model shows good results while operating within the reduced shape space of MoMo; nevertheless, our aim is to provide a more powerful PRT-model, that endows good approximations for more arbitrary deformations living within a larger and more generic shape space. To that end, we rather propose a non-linear model with well known strong generalisation properties, namely a deep Convolutional Neural Network \cite{DL_nature, ImageNet_CNN, CNN_videoClassification}.  
+Similarly, \cite{MoMoPRT} suggest a linear self-shadowing model to predict the coefficients of the transfer function from shape parameters of Morphable Models (MoMo) \cite{MoMo}. Their proposed model shows good results while operating within the reduced shape space of MoMo; nevertheless, our aim is to provide a more powerful PRT-model, that endows good approximations for more arbitrary deformations living within a larger and more generic shape space. To that end, we rather propose a non-linear model with well known strong generalisation properties, namely a deep Convolutional Neural Network \cite{DL_nature, ImageNet_CNN, CNN_videoClassification}.  
 \subsection*{Deep Learning Appearance on Geometry Data} 
 Deep Learning (DL) has been used for appearance predictions before, albeit mostly focusing on learning illumination effects from screen-space data. In  \cite{Nalbach2017b} and \cite{DBLP} learning is conducted on image data gathered from the shading buffers to predict illumination effects in screen space. However, image-based approaches often suffer from significant information loss, depending on the visibility of the object, and do not leverage the underlying structure of the geometry. These factors make the learning procedure harder requiring large amounts of training data.
 \\
@@ -28,7 +28,7 @@ One approach, is to circumvent this difficulty by representing the surface data 
 Conversely, strategies for intrinsic shape representations propose different adaptations of CNN's to such domains \cite{ShapeNet1, BoscainiMRB16, CNN_on_Torus}.
 \\
 \\ 
-In our work, we chose a shape representation that, on the one hand, can endow the underlying shape structure, and on the other hand, supports standard 2D convolution operations. We adopt a parametric approach introduced by \cite{gu2002geometry}, called \textit{Geometry Image}, that transforms a discrete surface into a regularly sampled unit square. This approach has been extended by \cite{Spherical_Parametrization} to smooth out some critical limitations of the original work and later validated by \cite{sinha2016deep} as suitable framework for Deep Learning purposes.
+In our work, we chose a shape representation that, on the one hand, can endow the underlying shape structure, and on the other hand, supports standard 2D convolution operations. We adopt a parametric approach introduced by \cite{gu2002geometry}, called \textit{geometry image}, that transforms a discrete surface into a regularly sampled unit square. This approach has been extended by \cite{Spherical_Parametrization} to smooth out some critical limitations of the original work and later validated by \cite{sinha2016deep} as suitable framework for Deep Learning purposes.
 \\
 To the extend of our knowledge, our work is the first to tackle the problem of PRT for deformable objects from a Deep Learning perspective and especially on manifold like data. 
 

@@ -1,6 +1,6 @@
 %-------------------------------------------------------------------------
 \section{Method}
-Precomputed Radiance Transfer  is a physically-based rendering method to accelerate on-line computations of the (simplified) \textit{rendering equation}:
+Precomputed Radiance Transfer  is a physically-based rendering method to accelerate on-line computations of the (simplified) rendering equation:
 \begin{align}
 L(\bm{\omega}_0 ) &= 
 \int_{\Omega}   L_{\epsilon}(\bm{\omega}_i ) 
@@ -9,14 +9,14 @@ V(\bm{\omega}_i) H_N(\omega_i) }_{T(\bm{\omega}_i,\bm{\omega}_0) }
 \,  \, d\bm{\omega}_i , 
 \label{rendering equation PRT}
 \end{align}
-where $L_{\epsilon}$ accounts for all incoming radiance over the hemisphere, $f$  describes the surface reflectance properties $f$ (BRDF), $H_N$ is the \textit{Lambert's Law} and $V$ the \textit{visibility function} describing geometric information of the scene.\\
-PRT precisely exploits the essence of static/non-deformable objects by uniquely determining the integrand $T(\bm{\omega}_i,\bm{\omega}_0)$ (called the \textbf{\textit{transfer function}} ), which contains the costly-to-compute  \textit{visibility} term,
+where $L_{\epsilon}$ accounts for all incoming radiance over the hemisphere, $f$  describes the surface reflectance properties $f$ (BRDF), $H_N$ is the Lambert's Law and $V$ the visibility function describing geometric information of the scene.\\
+PRT precisely exploits the essence of static/non-deformable objects by uniquely determining the integrand $T(\bm{\omega}_i,\bm{\omega}_0)$ (called the \textbf{transfer function} ), which contains the costly-to-compute  visibility term,
 \begin{align*}
 V :  \mathcal{S}  \times \Omega \rightarrow \{0,1\} \quad,
 \end{align*}
 for each surface point $\bm{s} \in \mathcal{S} \subset \mathbb{R}^3$ \cite{CohenBook}. 
 \\
-Both functions $L_{\epsilon} $ and $T$  are projected onto a suitable set of orthonormal basis functions for faster evaluation of the \textit{rendering equation} \ref{rendering equation PRT}. 
+Both functions $L_{\epsilon} $ and $T$  are projected onto a suitable set of orthonormal basis functions for faster evaluation of the rendering equation \ref{rendering equation PRT}. 
 For $m$ number of coefficients of the basis functions and $l_i$, $t_i$ being the $i$-th coefficient of $L_{\epsilon} $ and $T$ respectively, equation \ref{rendering equation PRT} reduces to \cite{sloan2002precomputed} 
 \begin{align}
 L(\bm{\omega}_0 ) \approx \sum_{j}^{m} l_j \cdot t_j 
@@ -25,8 +25,8 @@ L(\bm{\omega}_0 ) \approx \sum_{j}^{m} l_j \cdot t_j
 We chose a \textit{Spherical Harmonics} (SH) basis to encode the transfer function $T$ and the light environment $L_{\epsilon}$.
 \\
 \\
-As mentioned above, our aim is to extend the PRT method to malleable and dynamic objects, but avoiding costly precomputations and storage of every single \textit{transfer function} $T_i$ per shape query $S_i$ (with $i \in [1,2,\dots, d]$ and $d$ : $\#$ deformations ). \\
-With this in mind, we suggest a data-based model, a fully convolutional neural network, to infer the \textit{transfer function} $T_i$ for any given shape query $S_i$. \\
+As mentioned above, our aim is to extend the PRT method to malleable and dynamic objects, but avoiding costly precomputations and storage of every single transfer function $T_i$ per shape query $S_i$ (with $i \in [1,2,\dots, d]$ and $d$ : $\#$ deformations ). \\
+With this in mind, we suggest a data-based model, a fully convolutional neural network, to infer the transfer function $T_i$ for any given shape query $S_i$. \\
 This makes the costly ray-casting computations superfluous and solves the abusive memory requirements, only necessitating the storage of the network's parameters. \\
 Moreover, by choosing to estimating the transfer function, instead of a direct prediction of $L$, our method is open to  dynamic lighting environments.
 %------------------
@@ -34,7 +34,7 @@ Moreover, by choosing to estimating the transfer function, instead of a direct p
 \begin{figure}[H]
   \centering
     \includegraphics[width=0.4\textwidth]{Figures/varying_lighting}
-     \caption{Method is independent of lighting condition}
+     \caption{Pirate rendered under different lighting conditions using the same predicted transfer function. Lighting environment is interpolated between two light probes.}
      \label{Fig: Varying lighting}
 \end{figure}
 %------------------
@@ -42,9 +42,9 @@ Moreover, by choosing to estimating the transfer function, instead of a direct p
 % -------------- GEOMETRY IMAGE ----------------- 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Data: Geometry Images}
-We propose learning directly \textbf{on} the object's surface in order to leverage its underlying shape structure. \textit{Geometry images} present a planar and regular shape representation on which standard 2D CNNs can be applied \cite{gu2002geometry, sinha2016deep}. 
+We propose learning directly \textbf{on} the object's surface in order to leverage its underlying shape structure. Geometry images present a planar and regular shape representation on which standard 2D CNNs can be applied \cite{gu2002geometry, sinha2016deep}. 
 \\ 
-Surfaces with a single boundary (topological disks) are mapped onto a unit square and later discretized (or re-sampled) into a regular grid of $n \times n$ vertices. We chose \textit{Harmonic Map} as implicit parametrisation of the interior of the 2D domain \cite{HM_book, HarmonicMapping}. \\
+Surfaces with a single boundary (topological disks) are mapped onto a unit square and later discretized (or re-sampled) into a regular grid of $n \times n$ vertices. We chose harmonic map as implicit parametrisation of the interior of the 2D domain \cite{HM_book, HarmonicMapping}. \\
 %In a \textit{Stretch-Minimising} parametrisation is presented for the interior of the planar surface. However, for simplicity, but without loss of generality, ...
 \\
 It is to note, that we apply deformations only on the reconstructed object (shape $\mathcal{S_R}$ in Figure (1) ) in order to make our shape representation, geometry images, invariant to deformations. By doing so, we maintain a one-to-one pixel correspondence between deformations; hence, filtering out deformation invariant information of the representation; and therefore, facilitating the feature extraction of surface properties that are more closely related to self-shadowing effects. 
@@ -67,7 +67,7 @@ Resulting, our network predicts a corresponding sequence of images $\mathcal{T_{
 	\mathcal{T_G} & \text{glossy}
 	\end{cases},
 \end{align*}
-which, for \textbf{diffuse materials}, consists of the SH-coefficients of the \textit{transfer function} of the input shape, as introduced above (see equation \ref{Eq: Reduced Rendering Eq}):
+which, for \textbf{diffuse materials}, consists of the SH-coefficients of the transfer function of the input shape, as introduced above (see equation \ref{Eq: Reduced Rendering Eq}):
 \begin{align*}
 	\mathcal{T_D} = [ t_1, t_2, \dots, t_m ]^T \in \mathbb{R}^{m \times n \times n} 
 \end{align*}
@@ -122,7 +122,7 @@ Nevertheless, exploring network optimization methods reaches beyond the scope of
 \begin{figure*}[t]
   \centering
     \includegraphics[width=0.7\paperwidth]{Figures/Network_topology.pdf}
-     \caption{Network Topology}
+     \caption{\textit{Left:} Illustration of the configuration of our U-shaped network. \textit{Right:} Shows the two kind of operations performed within our ResNet blocks.}
      \label{Fig: NetworkTopology}
 \end{figure*}
 
