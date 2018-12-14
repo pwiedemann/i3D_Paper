@@ -66,9 +66,10 @@
 % ----- TEASER FIGURE -----------
 \begin{teaserfigure}
   \centering
-  \includegraphics[width=6.0in]{Figures/Teaser.pdf}
+  \includegraphics[width=5.0in]{Figures/Teaser.pdf}
   \label{Fig: Teaser}
-  \caption{TODO}
+  \caption{DeepPRT method overview. \textbf{(1)}: First, we convert an arbitrary surface into a regular structure called \textit{geometry image}, that captures the geometry as a simple $256 \times 256$ array with position values. The surface is mapped onto a unit square, via Harmonic Mapping, and re-sampled uniformly. \textbf{(2)}: Second, we generate training data by applying free form deformations to the regular surface $\mathcal{S_R}$. In addition to the position images we feed the network with surface normals represented in the same regular structure (normal images). Given those inputs, the network is trained to approximate the encoded transfer function $\mathcal{T}$. \textbf{(3)}: Finally, for an arbitrary deformation of $\mathcal{S_R}$, the network is able to accurately predict the transfer coefficients (or transfer radiance, for glossy surfaces). Compression:
+If considering that our network only encodes the information of the training set of $500$ deformations, this would already imply enormous compression ratios with respect to classic PRT.}
 \end{teaserfigure}
 % -------------------------------------
 \maketitle
