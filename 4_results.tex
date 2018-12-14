@@ -1,35 +1,25 @@
 %-------------------------------------------------------------------------
-\section{Experiments and Results}
-We test our DPRT method against different animated objects,  see Figure (\ref{Fig: DPRT_Quality}). We animate a \textit{Pirate Head} and a \textit{Fish} object using linear blend-shapes and apply physics-based deformations to animate the \textit{Cloth} object.\\ 
-For the \textit{Pirate Head} and the \textit{Cloth} objects we chose a reconstruction resolution of $256 \times 256$ and for the \textit{Fish } object of $512 \times 512$.
+\section{Experiments and Results}  \label{Sec:Experiments}
+We test our DeepPRT method against different animated objects: We animate a \textit{Pirate Head} and a \textit{Fish} object using a blendshape model and apply physically-based deformations to animate a \textit{Cloth} object.
+\\
+The mesh resolution of the objects is $256 \times 256$. However, for the Fish object we increase the resolution to $512 \times 512$ to avoid reconstruction artifacts (see figure \ref{Fig: Fish Reconstruction})
 % FIGURE (Fish Resampling)
 \begin{figure}[H]
   \centering
-    \includegraphics[width=0.5\textwidth]{Figures/fish}
+    \includegraphics[width=0.4\textwidth]{Figures/fish}
      \caption{Fish reconstructions after uniform-resampling of Harmonic Map}
      \label{Fig: Fish Reconstruction}
-\end{figure}
-%------------------
-% FIGURE (Varying Lighting)
-\begin{figure}[H]
-  \centering
-    \includegraphics[width=0.4\textwidth]{Figures/varying_lighting}
-     \caption{Method is independent of lighting condition}
-     \label{Fig: Varying lighting}
-\end{figure}
-%------------------
+\end{figure}~
+This distortions arise due to the uniform remeshing, while using a sub-optimal choice of 2D surface parametrization (Harmonic Map), leading to poorly sampled surface areas in regions of higher curvatures. A more suited parametrization, that minimizes distortion after resampling, is the \textit{geometric-stretch} parametrization  \cite{gu2002geometry}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % MEMORY and QUALITY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection*{Memory Savings}
-For each of the test objects, our train- and validation set together comprise 500 distinct object deformations. \\
-Now, for demonstration purposes, lets assume the shapes of this particular set are precisely the target shapes which appearances are requested to be computed for a given application.
+\subsection*{DeepPRT Quality and Memory Savings} \label{Sec: memory_savings}
+For each of the test objects, our train- and validation sets together comprise 500 distinct object deformations. 
+Within that deformation set, our U-Net model is able to achieve accuracies up to 98\% (table \ref{Table: NN_Accuracy}). Moreover, the resulting rendered appearances are close to indistinguishable from the ground truth. We further quantify the quality of the results using the perceptual metric SSIM, see Figure (\ref{Fig: DPRT_Quality}). 
 \\
-Within that deformation set, our CNN model is able to achieve accuracies up to 98\% with good validation results (table \ref{Table: NN_Accuracy}). The resulting rendered appearances become visually indistinguishable from the ground truth, which we also validate quantitatively using the perceptual SSIM metric, see Figure (\ref{Fig: DPRT_Quality}). 
-\\
-Based on this results, we imply that our trained network is able to faithfully approximate self-shadowing effects of 500 distinct shapes \textbf{at the very least}. Contrarily to classic PRT, which implies storing the transfer coefficients of each vertex for every single shape of the set, we only require the storage of the network parameters.
-\\ 
-For our particular network of approx. $11,8$ million parameters,  the example objects with $256 \times 256$ and $512 \times 512$ number of vertices, and  a choice of $16$ transfer coefficients per vertex, this implies a compression ratio $r = (\text{\# PRT-params})/(\text{\# CNN-params})$ of: 
+Based on this results, we imply that our trained network is able to faithfully approximate self-shadowing effects of 500 distinct shapes \textbf{at the very least}. Contrarily to classic PRT, which involves storing the transfer coefficients of each vertex for every single shape of the set, we only require the storage of the network parameters.
+For our particular network of approx. $11,8$ million parameters,  the example objects with $256 \times 256$ and $512 \times 512$ number of vertices, and  a choice of $16$ transfer coefficients per vertex, this implies a compression ratio $r = (\text{\# PRT parameters})/(\text{\# network parameters})$ of: 
 \begin{align*}
 r_{diffuse} = 
 \begin{cases}
@@ -46,11 +36,11 @@ r_{glossy} =
 for diffuse and glossy surfaces respectively.\\
 This numbers grow linearly with an increasing number of coefficients, deformations or number of vertices. 
 %%%%% TABLE %%%%%%%%%%%
-\begin{table}[]
+\begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|}
 \hline
-\textbf{}            & \textbf{Accuracy} & \textbf{Loss Value} & \textbf{Validation Loss} & \multicolumn{1}{c|}{\textbf{SSIM}} \\ \hline
-\textbf{Pirate Head} & 0.9817            & 0.000397            & 0.000399                 & 0.99386                      \\ \hline
+\textbf{}            & \textbf{Accuracy} & \textbf{Train-Loss} & \textbf{Val-Loss} & \multicolumn{1}{c|}{\textbf{SSIM}} \\ \hline
+\textbf{Pirate} & 0.9817            & 0.000397            & 0.000399                 & 0.99386                      \\ \hline
 \textbf{Fish}        & 0.9729            & 0.002104            & 0.002200                      &  0.92451                   \\ \hline
 \textbf{Cloth}       & 0.9818            & 0.000078            & 0.000098                 & 0.98840                      \\ \hline
 \end{tabular}

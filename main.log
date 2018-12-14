@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  14 DEC 2018 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  14 DEC 2018 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1099,116 +1099,96 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
 (./3_algorithm.tex
-Underfull \hbox (badness 10000) in paragraph at lines 24--34
+<Figures/varying_lighting.pdf, id=405, 832.53809pt x 436.01445pt>
+File: Figures/varying_lighting.pdf Graphic file (type pdf)
+
+<use Figures/varying_lighting.pdf>
+Package pdftex.def Info: Figures/varying_lighting.pdf used on input line 36.
+(pdftex.def)             Requested size: 202.51491pt x 106.05605pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--39
 
  []
 
 [3.3]
-
-Package caption Warning: \label without proper \caption on input line 75.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `Fig: Teaser' on page 4 undefined on input line 40.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--45
+Underfull \hbox (badness 10000) in paragraph at lines 45--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--45
+Underfull \hbox (badness 10000) in paragraph at lines 45--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--53
+Underfull \hbox (badness 10000) in paragraph at lines 58--63
 
  []
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 79.
-<Figures/Network_topology.pdf, id=479, 1013.57356pt x 405.70523pt>
+(Font)              scaled to size 9.0pt on input line 90.
+[4.4 <./Figures/varying_lighting.pdf>]
+<Figures/Network_topology.pdf, id=534, 1013.57356pt x 405.70523pt>
 File: Figures/Network_topology.pdf Graphic file (type pdf)
 
 <use Figures/Network_topology.pdf>
-Package pdftex.def Info: Figures/Network_topology.pdf used on input line 112.
+Package pdftex.def Info: Figures/Network_topology.pdf used on input line 124.
 (pdftex.def)             Requested size: 430.00462pt x 172.116pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--116
+Underfull \hbox (badness 10000) in paragraph at lines 107--128
 
  []
 
-[4.4]) (./4_results.tex <Figures/fish.pdf, id=501, 1027.84pt x 591.57823pt>
+) (./4_results.tex <Figures/fish.pdf, id=536, 1027.84pt x 591.57823pt>
 File: Figures/fish.pdf Graphic file (type pdf)
 
 <use Figures/fish.pdf>
-Package pdftex.def Info: Figures/fish.pdf used on input line 8.
-(pdftex.def)             Requested size: 253.14749pt x 145.70068pt.
+Package pdftex.def Info: Figures/fish.pdf used on input line 9.
+(pdftex.def)             Requested size: 202.51491pt x 116.55333pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 8--9
- [][] 
- []
+Underfull \vbox (badness 6792) has occurred while \output is active []
 
-<Figures/varying_lighting.pdf, id=502, 832.53809pt x 436.01445pt>
-File: Figures/varying_lighting.pdf Graphic file (type pdf)
-
-<use Figures/varying_lighting.pdf>
-Package pdftex.def Info: Figures/varying_lighting.pdf used on input line 16.
-(pdftex.def)             Requested size: 202.51491pt x 106.05605pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 49.
-
-
-Overfull \hbox (27.23714pt too wide) in paragraph at lines 50--57
- [][] 
- []
-
-[5.5 <./Figures/fish.pdf> <./Figures/varying_lighting.pdf>]
-<Figures/glossy_pirate.pdf, id=573, 813.24709pt x 707.37909pt>
+ [5.5 <./Figures/fish.pdf>] <Figures/glossy_pirate.pdf, id=578, 813.24709pt x 7
+07.37909pt>
 File: Figures/glossy_pirate.pdf Graphic file (type pdf)
 
 <use Figures/glossy_pirate.pdf>
-Package pdftex.def Info: Figures/glossy_pirate.pdf used on input line 75.
+Package pdftex.def Info: Figures/glossy_pirate.pdf used on input line 65.
 (pdftex.def)             Requested size: 177.20633pt x 154.13434pt.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/it' in size <9> not av
 ailable
 (Font)              Font shape `T1/LinuxBiolinumT-TLF/b/it' tried instead on in
-put line 80.
+put line 70.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/it' will be
-(Font)              scaled to size 9.0pt on input line 80.
+(Font)              scaled to size 9.0pt on input line 70.
 
-<Figures/DPRT_vs_MoMoPRT_a.pdf, id=582, 458.10228pt x 691.71474pt>
+<Figures/DPRT_vs_MoMoPRT_a.pdf, id=587, 458.10228pt x 691.71474pt>
 File: Figures/DPRT_vs_MoMoPRT_a.pdf Graphic file (type pdf)
 
 <use Figures/DPRT_vs_MoMoPRT_a.pdf>
-Package pdftex.def Info: Figures/DPRT_vs_MoMoPRT_a.pdf used on input line 89.
+Package pdftex.def Info: Figures/DPRT_vs_MoMoPRT_a.pdf used on input line 79.
 (pdftex.def)             Requested size: 202.51491pt x 305.79086pt.
 
-<Figures/DPRT_vs_MoMoPRT_b.pdf, id=584, 462.43175pt x 678.91086pt>
+<Figures/DPRT_vs_MoMoPRT_b.pdf, id=589, 462.43175pt x 678.91086pt>
 File: Figures/DPRT_vs_MoMoPRT_b.pdf Graphic file (type pdf)
 
 <use Figures/DPRT_vs_MoMoPRT_b.pdf>
-Package pdftex.def Info: Figures/DPRT_vs_MoMoPRT_b.pdf used on input line 97.
+Package pdftex.def Info: Figures/DPRT_vs_MoMoPRT_b.pdf used on input line 87.
 (pdftex.def)             Requested size: 202.51491pt x 297.32318pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--101
+Underfull \hbox (badness 10000) in paragraph at lines 70--91
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[6.6 <./Figures/Network_topology.pdf> <./Figures/glossy_pirate.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (./5_Outlook.tex
-<Figures/DPRT_quality_SSIM.pdf, id=597, 804.87714pt x 770.88pt>
+<Figures/DPRT_quality_SSIM.pdf, id=722, 804.87714pt x 770.88pt>
 File: Figures/DPRT_quality_SSIM.pdf Graphic file (type pdf)
 
 <use Figures/DPRT_quality_SSIM.pdf>
@@ -1219,15 +1199,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--95
 
  []
 
-[6.6 <./Figures/Network_topology.pdf> <./Figures/glossy_pirate.pdf>] [7.7 <./Fi
-gures/DPRT_vs_MoMoPRT_a.pdf> <./Figures/DPRT_vs_MoMoPRT_b.pdf>] (./main.bbl
+[7.7 <./Figures/DPRT_vs_MoMoPRT_a.pdf> <./Figures/DPRT_vs_MoMoPRT_b.pdf>]
+(./main.bbl
 LaTeX Info: Redefining \tempurl on input line 70.
 LaTeX Info: Redefining \tempurl on input line 88.
 LaTeX Info: Redefining \tempurl on input line 106.
 LaTeX Info: Redefining \tempurl on input line 124.
 LaTeX Info: Redefining \tempurl on input line 165.
-
-[8.8 <./Figures/DPRT_quality_SSIM.pdf>]
+ [8.8 <./Figures/DPRT_quality_SSIM.pdf>]
 LaTeX Info: Redefining \tempurl on input line 197.
 LaTeX Info: Redefining \tempurl on input line 209.
 LaTeX Info: Redefining \tempurl on input line 241.
@@ -1268,17 +1247,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 253CA3884B375224B3099A5EA79AFBFE;1272.
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 18709 strings out of 493089
- 285683 string characters out of 6134843
- 406948 words of memory out of 5000000
- 21109 multiletter control sequences out of 15000+600000
- 239975 words of font info for 433 fonts, out of 8000000 for 9000
+ 18714 strings out of 493089
+ 285799 string characters out of 6134843
+ 407052 words of memory out of 5000000
+ 21111 multiletter control sequences out of 15000+600000
+ 240346 words of font info for 435 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,16n,94p,2017b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc
@@ -1317,10 +1292,10 @@ mf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist
 /type1/public/newtx/zxlr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
 blic/newtx/zxlri.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/new
 tx/zxlzi.pfb>
-Output written on main.pdf (9 pages, 46005506 bytes).
+Output written on main.pdf (9 pages, 46006733 bytes).
 PDF statistics:
- 1118 PDF objects out of 1200 (max. 8388607)
- 806 compressed objects within 9 object streams
+ 1123 PDF objects out of 1200 (max. 8388607)
+ 811 compressed objects within 9 object streams
  85 named destinations out of 1000 (max. 500000)
  48253 words of extra memory for PDF output out of 51595 (max. 10000000)
 
