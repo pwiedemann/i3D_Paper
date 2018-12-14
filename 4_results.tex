@@ -30,15 +30,21 @@ This means, that our trained network is able to faithfully generate self-shadowi
 \\ 
 On the contrary classic PRT would imply storing the transfer coefficients of each vertex for every single shape of the training set.
 \\ 
-For our particular network of approx. $11,8$ million parameters,  the example objects with $256 \times 256$ and $512 \times 512$ number of vertices, and  a choice of 16 transfer coefficients per vertex, this implies a compression ratio of: 
+For our particular network of approx. $11,8$ million parameters,  the example objects with $256 \times 256$ and $512 \times 512$ number of vertices, and  a choice of 16 transfer coefficients per vertex, this implies a compression ratio $r = (\text{\# PRT-params})/(\text{\# CNN-params})$ of: 
 \begin{align*}
-r = \frac{\text{\# PRT-params}}{\text{\# CNN-params}}  = 
+r_{diffuse} = 
 \begin{cases}
-\textbf{40,022} , & \mbox{for } 256^2 \mbox{ \#vertices} \\
-\textbf{160,088} & \mbox{for } 512^2 \mbox{ \#vertices}
+\textbf{40.022 : 1} , & \mbox{for } 256^2 \mbox{ \#vertices} \\
+\textbf{160.088 : 1} & \mbox{for } 512^2 \mbox{ \#vertices}
+\end{cases}
+\\
+r_{glossy} = 
+\begin{cases}
+\textbf{120.066 : 1} , & \mbox{for } 256^2 \mbox{ \#vertices} \\
+\textbf{480.264 : 1} & \mbox{for } 512^2 \mbox{ \#vertices}
 \end{cases}
 \end{align*}
-This number grows linearly with increasing number of coefficients, number of deformations or number vertices. 
+This number grows linearly with an increasing number of coefficients, number of deformations or number vertices. 
 %%%%% TABLE %%%%%%%%%%%
 \begin{table}[H]
 \begin{tabular}{|l|l|l|l|l|}
@@ -56,7 +62,7 @@ The numbers shown above express the compression ratio taking into account solely
 \\
 Thus, we show that DeepPRT, as it is, is capable of drastically diminishing the storage consumption of PRT algorithms for deforming objects. 
 \\
-As mentioned above, commonly deep convolutional networks itself can be highly optimised, hence making DeepPRT even much more efficient, energy, speed and memory wise \cite{Survey_NN_Compression}. 
+Last but not least, as mentioned above, deep convolutional networks itself can be highly optimised, hence making DeepPRT even much more efficient, energy, speed and memory wise \cite{Survey_NN_Compression}. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Comparisson 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
