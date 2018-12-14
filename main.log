@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  14 DEC 2018 22:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  14 DEC 2018 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1153,6 +1153,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--58
 
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [5.5 <./Figures/fish.pdf>]
 <Figures/glossy_pirate.pdf, id=579, 813.24709pt x 707.37909pt>
 File: Figures/glossy_pirate.pdf Graphic file (type pdf)
@@ -1170,10 +1173,6 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/it' will be
 Underfull \hbox (badness 10000) in paragraph at lines 68--76
 
  []
-
-
-Underfull \vbox (badness 2042) has occurred while \output is active []
-
 
 <Figures/DPRT_vs_MoMoPRT_a.pdf, id=588, 458.10228pt x 691.71474pt>
 File: Figures/DPRT_vs_MoMoPRT_a.pdf Graphic file (type pdf)
@@ -1260,7 +1259,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  18693 strings out of 493089
  285262 string characters out of 6134843
- 408051 words of memory out of 5000000
+ 408189 words of memory out of 5000000
  21111 multiletter control sequences out of 15000+600000
  237749 words of font info for 421 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
@@ -1301,7 +1300,7 @@ mf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist
 /type1/public/newtx/zxlr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
 blic/newtx/zxlri.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/new
 tx/zxlzi.pfb>
-Output written on main.pdf (9 pages, 46010005 bytes).
+Output written on main.pdf (9 pages, 46010117 bytes).
 PDF statistics:
  1124 PDF objects out of 1200 (max. 8388607)
  812 compressed objects within 9 object streams
