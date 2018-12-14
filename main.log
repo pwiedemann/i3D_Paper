@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  14 DEC 2018 10:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  14 DEC 2018 13:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1162,13 +1162,23 @@ Package pdftex.def Info: Figures/varying_lighting.pdf used on input line 16.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5.5 <./Figures/fish.pdf> <./Figures/varying_lighting.pdf>]
-<Figures/glossy_pirate.pdf, id=573, 822.77934pt x 708.02457pt>
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 49.
+
+
+Overfull \hbox (27.23714pt too wide) in paragraph at lines 50--57
+ [][] 
+ []
+
+[5.5 <./Figures/fish.pdf> <./Figures/varying_lighting.pdf>]
+<Figures/glossy_pirate.pdf, id=573, 813.24709pt x 707.37909pt>
 File: Figures/glossy_pirate.pdf Graphic file (type pdf)
 
 <use Figures/glossy_pirate.pdf>
 Package pdftex.def Info: Figures/glossy_pirate.pdf used on input line 75.
-(pdftex.def)             Requested size: 177.20633pt x 152.4924pt.
+(pdftex.def)             Requested size: 177.20633pt x 154.13434pt.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/it' in size <9> not av
 ailable
 (Font)              Font shape `T1/LinuxBiolinumT-TLF/b/it' tried instead on in
@@ -1176,19 +1186,19 @@ put line 80.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/it' will be
 (Font)              scaled to size 9.0pt on input line 80.
 
-<Figures/DPRT_vs_MoMoPRT_a.pdf, id=582, 449.08817pt x 683.59438pt>
+<Figures/DPRT_vs_MoMoPRT_a.pdf, id=582, 458.10228pt x 691.71474pt>
 File: Figures/DPRT_vs_MoMoPRT_a.pdf Graphic file (type pdf)
 
 <use Figures/DPRT_vs_MoMoPRT_a.pdf>
 Package pdftex.def Info: Figures/DPRT_vs_MoMoPRT_a.pdf used on input line 89.
-(pdftex.def)             Requested size: 202.51491pt x 308.26134pt.
+(pdftex.def)             Requested size: 202.51491pt x 305.79086pt.
 
-<Figures/DPRT_vs_MoMoPRT_b.pdf, id=584, 437.02502pt x 676.701pt>
+<Figures/DPRT_vs_MoMoPRT_b.pdf, id=584, 462.43175pt x 678.91086pt>
 File: Figures/DPRT_vs_MoMoPRT_b.pdf Graphic file (type pdf)
 
 <use Figures/DPRT_vs_MoMoPRT_b.pdf>
 Package pdftex.def Info: Figures/DPRT_vs_MoMoPRT_b.pdf used on input line 97.
-(pdftex.def)             Requested size: 202.51491pt x 313.57852pt.
+(pdftex.def)             Requested size: 202.51491pt x 297.32318pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 80--101
 
@@ -1267,10 +1277,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18707 strings out of 493089
- 285617 string characters out of 6134843
+ 18706 strings out of 493089
+ 285608 string characters out of 6134843
  406948 words of memory out of 5000000
- 21110 multiletter control sequences out of 15000+600000
+ 21109 multiletter control sequences out of 15000+600000
  239604 words of font info for 431 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,16n,94p,2017b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1310,7 +1320,7 @@ mf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist
 /type1/public/newtx/zxlr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
 blic/newtx/zxlri.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/new
 tx/zxlzi.pfb>
-Output written on main.pdf (9 pages, 45450664 bytes).
+Output written on main.pdf (9 pages, 46003073 bytes).
 PDF statistics:
  1118 PDF objects out of 1200 (max. 8388607)
  806 compressed objects within 9 object streams

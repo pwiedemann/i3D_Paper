@@ -22,37 +22,37 @@ For the \textit{Pirate Head} and the \textit{Cloth} objects we chose a reconstru
 % MEMORY and QUALITY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Memory Savings}
-For each of the test objects, our training sets comprises 450 distinct object deformations. \\
-Now, for demonstration purposes, lets assume the shapes of this training set are precisely the target shapes which appearances are requested to be computed for a given application.
+For each of the test objects, our train- and validation set together comprise 500 distinct object deformations. \\
+Now, for demonstration purposes, lets assume the shapes of this particular set are precisely the target shapes which appearances are requested to be computed for a given application.
 \\
-Within that training set, our CNN model is able to achieve accuracies up to 98\% (table \ref{Table: NN_Accuracy}) and its rendered appearances become visually indistinguishable from the ground truth (Figure (\ref{Fig: DPRT_Quality}) ). 
-This means, that our trained network is able to faithfully generate self-shadowing effects of 450 distinct shapes \textbf{at the very least}, only requiring the storage of the network parameters.
+Within that deformation set, our CNN model is able to achieve accuracies up to 98\% with good validation results (table \ref{Table: NN_Accuracy}). The resulting rendered appearances become visually indistinguishable from the ground truth, which we also validate quantitatively using the perceptual SSIM metric, see Figure (\ref{Fig: DPRT_Quality}). 
+\\
+Based on this results, we imply that our trained network is able to faithfully approximate self-shadowing effects of 500 distinct shapes \textbf{at the very least}. Contrarily to classic PRT, which implies storing the transfer coefficients of each vertex for every single shape of the set, we only require the storage of the network parameters.
 \\ 
-On the contrary classic PRT would imply storing the transfer coefficients of each vertex for every single shape of the training set.
-\\ 
-For our particular network of approx. $11,8$ million parameters,  the example objects with $256 \times 256$ and $512 \times 512$ number of vertices, and  a choice of 16 transfer coefficients per vertex, this implies a compression ratio $r = (\text{\# PRT-params})/(\text{\# CNN-params})$ of: 
+For our particular network of approx. $11,8$ million parameters,  the example objects with $256 \times 256$ and $512 \times 512$ number of vertices, and  a choice of $16$ transfer coefficients per vertex, this implies a compression ratio $r = (\text{\# PRT-params})/(\text{\# CNN-params})$ of: 
 \begin{align*}
 r_{diffuse} = 
 \begin{cases}
-\textbf{40.022 : 1} , & \mbox{for } 256^2 \mbox{ \#vertices} \\
-\textbf{160.088 : 1} & \mbox{for } 512^2 \mbox{ \#vertices}
+\textbf{44.47 : 1} , & \mbox{for } 256^2 \mbox{ \#vertices} \\
+\textbf{177.86 : 1} & \mbox{for } 512^2 \mbox{ \#vertices}
 \end{cases}
 \\
 r_{glossy} = 
 \begin{cases}
-\textbf{120.066 : 1} , & \mbox{for } 256^2 \mbox{ \#vertices} \\
-\textbf{480.264 : 1} & \mbox{for } 512^2 \mbox{ \#vertices}
+\textbf{133.41 : 1} , & \mbox{for } 256^2 \mbox{ \#vertices} \\
+\textbf{533.56 : 1} & \mbox{for } 512^2 \mbox{ \#vertices}
 \end{cases}
 \end{align*}
-This number grows linearly with an increasing number of coefficients, number of deformations or number vertices. 
+for diffuse and glossy surfaces respectively.\\
+This numbers grow linearly with an increasing number of coefficients, deformations or number of vertices. 
 %%%%% TABLE %%%%%%%%%%%
-\begin{table}[H]
+\begin{table}[]
 \begin{tabular}{|l|l|l|l|l|}
 \hline
-\textbf{}            & \textbf{Accuracy} & \textbf{Loss} & \multicolumn{2}{l|}{\textbf{Val-Loss}} \\ \hline
-\textbf{Pirate Head} & 0.9817            & 0.000397            & \multicolumn{2}{l|}{0.000399}                 \\ \hline
-\textbf{Fish}        & 0.9729            & 0.002104            & \multicolumn{2}{l|}{0.002200}                 \\ \hline
-\textbf{Cloth}       & 0.9818            & 0.000786            & \multicolumn{2}{l|}{0.000907}                 \\ \hline
+\textbf{}            & \textbf{Accuracy} & \textbf{Loss Value} & \textbf{Validation Loss} & \multicolumn{1}{c|}{\textbf{SSIM}} \\ \hline
+\textbf{Pirate Head} & 0.9817            & 0.000397            & 0.000399                 & 0.99386                      \\ \hline
+\textbf{Fish}        & 0.9729            & 0.002104            & 0.002200                      &  0.92451                   \\ \hline
+\textbf{Cloth}       & 0.9818            & 0.000078            & 0.000098                 & 0.98840                      \\ \hline
 \end{tabular}
 \caption{Network Accuracy}
 \label{Table: NN_Accuracy}
