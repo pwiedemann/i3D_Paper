@@ -1,6 +1,6 @@
 %-------------------------------------------------------------------------
 \section{Method}
-Classic PRT  is a physically-based rendering method to accelerate on-line computations of the (simplified) \textit{Rendering Equation}:
+Precomputed Radiance Transfer  is a physically-based rendering method to accelerate on-line computations of the (simplified) \textit{rendering equation}:
 \begin{align}
 L(\bm{\omega}_0 ) &= 
 \int_{\Omega}   L_{\epsilon}(\bm{\omega}_i ) 
@@ -9,14 +9,14 @@ V(\bm{\omega}_i) H_N(\omega_i) }_{T(\bm{\omega}_i,\bm{\omega}_0) }
 \,  \, d\bm{\omega}_i , 
 \label{rendering equation PRT}
 \end{align}
-where $L_{\epsilon}$ accounts for all incoming radiance over the hemisphere, $f$  describes the surface reflectance properties $f$ (BRDF), $H_N$ is the \textit{Lambert's Law} and $V$ the \textit{Visibility Function} describing geometric information of the scene.\\
-It precisely exploits the essence of static/non-deformable objects by uniquely determining the integrand $T(\bm{\omega}_i,\bm{\omega}_0)$ (called the \textbf{\textit{transfer function}} ), which contains the costly-to-compute  \textit{Visibility} term,
+where $L_{\epsilon}$ accounts for all incoming radiance over the hemisphere, $f$  describes the surface reflectance properties $f$ (BRDF), $H_N$ is the \textit{Lambert's Law} and $V$ the \textit{visibility function} describing geometric information of the scene.\\
+PRT precisely exploits the essence of static/non-deformable objects by uniquely determining the integrand $T(\bm{\omega}_i,\bm{\omega}_0)$ (called the \textbf{\textit{transfer function}} ), which contains the costly-to-compute  \textit{visibility} term,
 \begin{align*}
 V :  \mathcal{S}  \times \Omega \rightarrow \{0,1\} \quad,
 \end{align*}
 for each surface point $\bm{s} \in \mathcal{S} \subset \mathbb{R}^3$ \cite{CohenBook}. 
 \\
-Both functions $L_{\epsilon} $ and $T$  are projected onto a suitable set of orthonormal basis functions for faster evaluation of the \textit{Rendering Equation} \ref{rendering equation PRT}. 
+Both functions $L_{\epsilon} $ and $T$  are projected onto a suitable set of orthonormal basis functions for faster evaluation of the \textit{rendering equation} \ref{rendering equation PRT}. 
 For $m$ number of coefficients of the basis functions and $l_i$, $t_i$ being the $i$-th coefficient of $L_{\epsilon} $ and $T$ respectively, equation \ref{rendering equation PRT} reduces to \cite{sloan2002precomputed} 
 \begin{align}
 L(\bm{\omega}_0 ) \approx \sum_{j}^{m} l_j \cdot t_j 
