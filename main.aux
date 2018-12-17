@@ -58,27 +58,27 @@
 \citation{StridingConv}
 \citation{ADAM}
 \citation{Keras}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Pirate rendered under different lighting conditions using the same predicted transfer function. Lighting environment is interpolated between two light probes.\relax }}{4}{figure.caption.8}}
-\newlabel{Fig: Varying lighting}{{2}{4}{Pirate rendered under different lighting conditions using the same predicted transfer function. Lighting environment is interpolated between two light probes.\relax }{figure.caption.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Data: Geometry Images}{4}{subsection.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Network and Performance }{4}{subsection.3.2}}
 \citation{BRDF_kernel}
 \citation{sloan2002precomputed}
 \citation{Deep_Compression,Survey_NN_Compression}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Dynamic lighting. Rendered appearance of the \textit  {Pirate Head} under three different lighting conditions. Lighting is interpolated between two light-probes.\relax }}{4}{figure.caption.8}}
+\newlabel{Fig: Varying lighting}{{2}{4}{Dynamic lighting. Rendered appearance of the \textit {Pirate Head} under three different lighting conditions. Lighting is interpolated between two light-probes.\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Data: Geometry Images}{4}{subsection.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Network and Performance }{4}{subsection.3.2}}
 \citation{gu2002geometry}
 \citation{Survey_NN_Compression}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Experiments and Results}{5}{section.4}}
 \newlabel{Sec:Experiments}{{4}{5}{Experiments and Results}{section.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Fish reconstructions after regular sampling of squared harmonic map. \textit  {Top:} Sampled by a $256 \times 256$ grid. Shows detail loss and distortions. \textit  {Bottom:} Higher sampling $512 \times 512$ preserves detail and minimize artifacts.\relax }}{5}{figure.caption.14}}
-\newlabel{Fig: Fish Reconstruction}{{4}{5}{Fish reconstructions after regular sampling of squared harmonic map. \textit {Top:} Sampled by a $256 \times 256$ grid. Shows detail loss and distortions. \textit {Bottom:} Higher sampling $512 \times 512$ preserves detail and minimize artifacts.\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Fish reconstructions after regular sampling of squared harmonic map. \textit  {Top:} Sampled by a $256 \times 256$ grid, shows detail loss and distortions. \textit  {Bottom:} Higher sampling $512 \times 512$ needed to preserve detail and minimize artifacts.\relax }}{5}{figure.caption.14}}
+\newlabel{Fig: Fish Reconstruction}{{4}{5}{Fish reconstructions after regular sampling of squared harmonic map. \textit {Top:} Sampled by a $256 \times 256$ grid, shows detail loss and distortions. \textit {Bottom:} Higher sampling $512 \times 512$ needed to preserve detail and minimize artifacts.\relax }{figure.caption.14}{}}
 \newlabel{Sec: memory_savings}{{4}{5}{DeepPRT Quality and Memory Savings}{section*.15}{}}
 \citation{MoMoPRT}
 \citation{MoMoPRT}
 \citation{MoMo}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textit  {Left:} Illustration of the configuration of our U-shaped network. \textit  {Right:} Shows the two kind of operations performed within our ResNet blocks.\relax }}{6}{figure.caption.13}}
 \newlabel{Fig: NetworkTopology}{{3}{6}{\textit {Left:} Illustration of the configuration of our U-shaped network. \textit {Right:} Shows the two kind of operations performed within our ResNet blocks.\relax }{figure.caption.13}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Network accuracy and SSIM are computed on training data + validation data. Third and fourth columns are the training and validation losses of the network.\relax }}{6}{table.caption.16}}
-\newlabel{Table: NN_Accuracy}{{1}{6}{Network accuracy and SSIM are computed on training data + validation data. Third and fourth columns are the training and validation losses of the network.\relax }{table.caption.16}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Network accuracy and SSIM are computed on training plus validation data, first and last columns respectively. Third and fourth columns show the training and validation losses of the network.\relax }}{6}{table.caption.16}}
+\newlabel{Table: NN_Accuracy}{{1}{6}{Network accuracy and SSIM are computed on training plus validation data, first and last columns respectively. Third and fourth columns show the training and validation losses of the network.\relax }{table.caption.16}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Prediction of a test sample (unseen while training) for a diffuse (top) and glossy (bottom) surface. \relax }}{6}{figure.caption.19}}
 \newlabel{Fig: glossy_pirate}{{5}{6}{Prediction of a test sample (unseen while training) for a diffuse (top) and glossy (bottom) surface. \relax }{figure.caption.19}{}}
 \citation{Survey_NN_Compression}
@@ -87,13 +87,15 @@
 \citation{DeformableCNN}
 \citation{AllFrequencyPRT}
 \citation{Spherical_Parametrization}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces DeepPRT (ours) vs. MoMoPRT (within training space).\textit  { Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit  { Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape. DeepPRT error is lower overall and close to constant, while MoMoPRT gets worse with increasing distance to mean shape.\relax }}{7}{figure.caption.21}}
-\newlabel{Fig:DPRT vs MoMoPRT A}{{6}{7}{DeepPRT (ours) vs. MoMoPRT (within training space).\textit { Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit { Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape. DeepPRT error is lower overall and close to constant, while MoMoPRT gets worse with increasing distance to mean shape.\relax }{figure.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces DeepPRT (ours) vs. MoMoPRT, within training space.\textit  { Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit  { Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape. DeepPRT error is lower overall and close to constant, while MoMoPRT gets worse with increasing distance to mean shape.\relax }}{7}{figure.caption.21}}
+\newlabel{Fig:DPRT vs MoMoPRT A}{{6}{7}{DeepPRT (ours) vs. MoMoPRT, within training space.\textit { Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit { Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape. DeepPRT error is lower overall and close to constant, while MoMoPRT gets worse with increasing distance to mean shape.\relax }{figure.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces DeepPRT (ours) vs. MoMoPRT, moving away from the training space. \textit  {Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit  { Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape.\relax }}{7}{figure.caption.22}}
+\newlabel{Fig:DPRT vs MoMoPRT B}{{7}{7}{DeepPRT (ours) vs. MoMoPRT, moving away from the training space. \textit {Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit { Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape.\relax }{figure.caption.22}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion and Future Work}{7}{section.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces DeepPRT (ours) vs. MoMoPRT (moving away from the training space). \textit  {Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit  { Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape.\relax }}{7}{figure.caption.22}}
-\newlabel{Fig:DPRT vs MoMoPRT B}{{7}{7}{DeepPRT (ours) vs. MoMoPRT (moving away from the training space). \textit {Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit { Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape.\relax }{figure.caption.22}{}}
 \bibstyle{ACM-Reference-Format}
 \bibdata{6_ref}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Prediction Quality: a : ground truth appearance. b: predicted appearance. c: SSIM. d: L1-Error between ground truth and predicted transfer coefficients \relax }}{8}{figure.caption.23}}
+\newlabel{Fig: DPRT_Quality}{{8}{8}{Prediction Quality: a : ground truth appearance. b: predicted appearance. c: SSIM. d: L1-Error between ground truth and predicted transfer coefficients \relax }{figure.caption.23}{}}
 \bibcite{MoMo}{{1}{1999}{{Blanz and Vetter}}{{Blanz and Vetter}}}
 \bibcite{BoscainiMRB16}{{2}{2016}{{Boscaini et~al\unhbox \voidb@x \hbox {.}}}{{Boscaini, Masci, Rodol{\`{a}}, and Bronstein}}}
 \bibcite{Geometric_deep_learning}{{3}{2016}{{Bronstein et~al\unhbox \voidb@x \hbox {.}}}{{Bronstein, Bruna, LeCun, Szlam, and Vandergheynst}}}
@@ -102,9 +104,6 @@
 \bibcite{Keras}{{6}{2015}{{Chollet et~al\unhbox \voidb@x \hbox {.}}}{{Chollet et~al\unhbox \voidb@x \hbox {.}}}}
 \bibcite{CohenBook}{{7}{1993}{{Cohen et~al\unhbox \voidb@x \hbox {.}}}{{Cohen, Wallace, and Hanrahan}}}
 \bibcite{DeformableCNN}{{8}{2017}{{Dai et~al\unhbox \voidb@x \hbox {.}}}{{Dai, Qi, Xiong, Li, Zhang, Hu, and Wei}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Prediction Quality: a : ground truth appearance. b: predicted appearance. c: SSIM. d: L1-Error between ground truth and predicted transfer coefficients \relax }}{8}{figure.caption.23}}
-\newlabel{Fig: DPRT_Quality}{{8}{8}{Prediction Quality: a : ground truth appearance. b: predicted appearance. c: SSIM. d: L1-Error between ground truth and predicted transfer coefficients \relax }{figure.caption.23}{}}
-\@writefile{toc}{\contentsline {section}{References}{8}{section*.25}}
 \bibcite{HM_book}{{9}{1964}{{Eells and Sampson}}{{Eells and Sampson}}}
 \bibcite{SkinningPRT}{{10}{2007}{{Feng et~al\unhbox \voidb@x \hbox {.}}}{{Feng, Peng, Jia, and Yu}}}
 \bibcite{HarmonicMapping}{{11}{[n. d.]}{{Gu}}{{Gu}}}
@@ -141,4 +140,5 @@
 \newlabel{tocindent1}{4.185pt}
 \newlabel{tocindent2}{10.34999pt}
 \newlabel{tocindent3}{0pt}
+\@writefile{toc}{\contentsline {section}{References}{9}{section*.25}}
 \newlabel{TotPages}{{9}{9}{}{page.9}{}}
