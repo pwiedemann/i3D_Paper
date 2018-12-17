@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  17 DEC 2018 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.8)  17 DEC 2018 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1109,7 +1109,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--39
  []
 
 
-Underfull \vbox (badness 1960) has occurred while \output is active []
+Underfull \vbox (badness 4441) has occurred while \output is active []
 
  [3.3]
 Underfull \hbox (badness 10000) in paragraph at lines 45--55
@@ -1302,7 +1302,7 @@ mf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist
 /type1/public/newtx/zxlr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
 blic/newtx/zxlri.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/new
 tx/zxlzi.pfb>
-Output written on main.pdf (9 pages, 76249955 bytes).
+Output written on main.pdf (9 pages, 76250040 bytes).
 PDF statistics:
  1120 PDF objects out of 1200 (max. 8388607)
  809 compressed objects within 9 object streams
