@@ -16,13 +16,14 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{gu2002geometry}
+\citation{gu2002geometry}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{Fig: Teaser}{{\caption@xref {Fig: Teaser}{ on input line 75}}{1}{}{figure.caption.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces DeepPRT method overview. \textbf  {(1)}: First, we convert an arbitrary surface into a regular structure called \textit  {geometry image}, that captures the geometry as a simple $256 \times 256$ array with position values. The surface is mapped onto a unit square, via Harmonic Mapping, and re-sampled uniformly. \textbf  {(2)}: Second, we generate training data by applying free form deformations to the regular surface $\mathcal  {S_R}$. In addition to the position images we feed the network with surface normals represented in the same regular structure (normal images). Given those inputs, the network is trained to approximate the encoded transfer function $\mathcal  {T}$. \textbf  {(3)}: Finally, for an arbitrary deformation of $\mathcal  {S_R}$, the network is able to accurately predict the transfer coefficients (or transfer radiance, for glossy surfaces). Compression: If considering that our network only encodes the information of the training set of $500$ deformations, this would already imply enormous compression ratios with respect to classic PRT.\relax }}{1}{figure.caption.1}}
+\newlabel{Fig: Teaser}{{\caption@xref {Fig: Teaser}{ on input line 74}}{1}{}{figure.caption.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Overview of our deep deformable PRT compression scheme. \textbf  {1)} we map an object's surface into a \textit  {geometry image} \citep  {gu2002geometry} on the unit square, via Harmonic Mapping, and then resample uniformly. \textbf  {2)} we generate training data by applying free form deformations to the reference surface pose $\mathcal  {S_R}$. In addition to the position images we feed the network with surface normals represented in the same regular structure (normal images). Given those inputs, the network is trained to approximate the encoded transfer function $\mathcal  {T}$. \textbf  {3)} finally, for various deformations of $\mathcal  {S_R}$, the network is able to accurately predict the transfer coefficients (or transfer radiance, for glossy surfaces). In the example above, with a fixed U-Net memory of 45Mbytes compared to classic PRT storage, our method achieves a compression ratio of 44.47:1 sufficient for practical use.\relax }}{1}{figure.caption.1}}
 \providecommand \oddpage@label [2]{}
 \@writefile{toc}{\contentsline {section}{Abstract}{1}{section*.2}}
-\citation{DeepHuman,Holden2017,QuadrupedMotion}
-\citation{Masci2015ShapeNetCN,Geometric_deep_learning,CNN_on_Torus}
+\citation{ShapeNet1,Geometric_deep_learning,CNN_on_Torus}
 \citation{GeoDeepLearning}
 \citation{gu2002geometry}
 \citation{sinha2016deep}
@@ -31,11 +32,11 @@
 \citation{local-deformable-precomputed-radiance-transfer}
 \citation{SkinningPRT}
 \citation{James_Fatahalian}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}}
 \citation{MoMoPRT}
 \citation{MoMo}
 \citation{DL_nature,ImageNet_CNN,CNN_videoClassification}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}}
 \citation{Nalbach2017b}
 \citation{DBLP}
 \citation{Geometric_deep_learning}
@@ -58,87 +59,86 @@
 \citation{StridingConv}
 \citation{ADAM}
 \citation{Keras}
-\citation{BRDF_kernel}
-\citation{sloan2002precomputed}
-\citation{Deep_Compression,Survey_NN_Compression}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Dynamic lighting. Rendered appearance of the \textit  {Pirate Head} under three different lighting conditions. Lighting is interpolated between two light-probes.\relax }}{4}{figure.caption.8}}
 \newlabel{Fig: Varying lighting}{{2}{4}{Dynamic lighting. Rendered appearance of the \textit {Pirate Head} under three different lighting conditions. Lighting is interpolated between two light-probes.\relax }{figure.caption.8}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Data: Geometry Images}{4}{subsection.3.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Network and Performance }{4}{subsection.3.2}}
+\citation{BRDF_kernel}
+\citation{sloan2002precomputed}
+\citation{Deep_Compression,Survey_NN_Compression}
 \citation{gu2002geometry}
 \citation{Survey_NN_Compression}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments and Results}{5}{section.4}}
-\newlabel{Sec:Experiments}{{4}{5}{Experiments and Results}{section.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Fish reconstructions after regular sampling of squared harmonic map. \textit  {Top:} Sampled by a $256 \times 256$ grid, shows detail loss and distortions. \textit  {Bottom:} Higher sampling $512 \times 512$ needed to preserve detail and minimize artifacts.\relax }}{5}{figure.caption.14}}
-\newlabel{Fig: Fish Reconstruction}{{4}{5}{Fish reconstructions after regular sampling of squared harmonic map. \textit {Top:} Sampled by a $256 \times 256$ grid, shows detail loss and distortions. \textit {Bottom:} Higher sampling $512 \times 512$ needed to preserve detail and minimize artifacts.\relax }{figure.caption.14}{}}
-\newlabel{Sec: memory_savings}{{4}{5}{DeepPRT Quality and Memory Savings}{section*.15}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Network accuracy and SSIM are computed on training plus validation data, first and last columns respectively. Third and fourth columns show the training and validation losses of the network.\relax }}{5}{table.caption.14}}
+\newlabel{Table: NN_Accuracy}{{1}{5}{Network accuracy and SSIM are computed on training plus validation data, first and last columns respectively. Third and fourth columns show the training and validation losses of the network.\relax }{table.caption.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments and Analysis}{5}{section.4}}
+\newlabel{Sec:Experiments}{{4}{5}{Experiments and Analysis}{section.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Fish reconstructions after regular sampling of squared harmonic map. \textit  {Top:} Sampled by a $256 \times 256$ grid, shows detail loss and distortions. \textit  {Bottom:} Higher sampling $512 \times 512$ needed to preserve detail and minimize artifacts.\relax }}{5}{figure.caption.15}}
+\newlabel{Fig: Fish Reconstruction}{{4}{5}{Fish reconstructions after regular sampling of squared harmonic map. \textit {Top:} Sampled by a $256 \times 256$ grid, shows detail loss and distortions. \textit {Bottom:} Higher sampling $512 \times 512$ needed to preserve detail and minimize artifacts.\relax }{figure.caption.15}{}}
+\newlabel{Sec: memory_savings}{{4}{5}{Quality and Memory Savings}{section*.16}{}}
 \citation{MoMoPRT}
 \citation{MoMoPRT}
 \citation{MoMo}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textit  {Left:} Illustration of the configuration of our U-shaped network. \textit  {Right:} Shows the two kind of operations performed within our ResNet blocks.\relax }}{6}{figure.caption.13}}
 \newlabel{Fig: NetworkTopology}{{3}{6}{\textit {Left:} Illustration of the configuration of our U-shaped network. \textit {Right:} Shows the two kind of operations performed within our ResNet blocks.\relax }{figure.caption.13}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Network accuracy and SSIM are computed on training plus validation data, first and last columns respectively. Third and fourth columns show the training and validation losses of the network.\relax }}{6}{table.caption.16}}
-\newlabel{Table: NN_Accuracy}{{1}{6}{Network accuracy and SSIM are computed on training plus validation data, first and last columns respectively. Third and fourth columns show the training and validation losses of the network.\relax }{table.caption.16}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Prediction of a test sample (unseen while training) for a diffuse (top) and glossy (bottom) surface. \relax }}{6}{figure.caption.19}}
 \newlabel{Fig: glossy_pirate}{{5}{6}{Prediction of a test sample (unseen while training) for a diffuse (top) and glossy (bottom) surface. \relax }{figure.caption.19}{}}
-\citation{Survey_NN_Compression}
-\citation{Deep_Compression}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion and Future Work}{6}{section.5}}
+\citation{Survey_NN_Compression,Deep_Compression}
 \citation{Deformable_UNet}
 \citation{DeformableCNN}
 \citation{AllFrequencyPRT}
 \citation{Spherical_Parametrization}
+\citation{detlefsen2018transformations}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces DeepPRT (ours) vs. MoMoPRT, within training space.\textit  { Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit  { Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape. DeepPRT error is lower overall and close to constant, while MoMoPRT gets worse with increasing distance to mean shape.\relax }}{7}{figure.caption.21}}
 \newlabel{Fig:DPRT vs MoMoPRT A}{{6}{7}{DeepPRT (ours) vs. MoMoPRT, within training space.\textit { Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit { Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape. DeepPRT error is lower overall and close to constant, while MoMoPRT gets worse with increasing distance to mean shape.\relax }{figure.caption.21}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces DeepPRT (ours) vs. MoMoPRT, moving away from the training space. \textit  {Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit  { Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape.\relax }}{7}{figure.caption.22}}
 \newlabel{Fig:DPRT vs MoMoPRT B}{{7}{7}{DeepPRT (ours) vs. MoMoPRT, moving away from the training space. \textit {Top:} Appearance and vertex-wise $L_2$-RGB distance between ground truth and predictions.\textit { Bottom:} Plot of the mean $L_2$-RGB distance for each predicted shape.\relax }{figure.caption.22}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion and Future Work}{7}{section.5}}
 \bibstyle{ACM-Reference-Format}
 \bibdata{6_ref}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Prediction Quality: a : ground truth appearance. b: predicted appearance. c: SSIM. d: L1-Error between ground truth and predicted transfer coefficients \relax }}{8}{figure.caption.23}}
-\newlabel{Fig: DPRT_Quality}{{8}{8}{Prediction Quality: a : ground truth appearance. b: predicted appearance. c: SSIM. d: L1-Error between ground truth and predicted transfer coefficients \relax }{figure.caption.23}{}}
 \bibcite{MoMo}{{1}{1999}{{Blanz and Vetter}}{{Blanz and Vetter}}}
 \bibcite{BoscainiMRB16}{{2}{2016}{{Boscaini et~al\unhbox \voidb@x \hbox {.}}}{{Boscaini, Masci, Rodol{\`{a}}, and Bronstein}}}
 \bibcite{Geometric_deep_learning}{{3}{2016}{{Bronstein et~al\unhbox \voidb@x \hbox {.}}}{{Bronstein, Bruna, LeCun, Szlam, and Vandergheynst}}}
-\bibcite{DeepHuman}{{4}{2017}{{B{\"{u}}tepage et~al\unhbox \voidb@x \hbox {.}}}{{B{\"{u}}tepage, Black, Kragic, and Kjellstr{\"{o}}m}}}
-\bibcite{Survey_NN_Compression}{{5}{2017}{{Cheng et~al\unhbox \voidb@x \hbox {.}}}{{Cheng, Wang, Zhou, and Zhang}}}
-\bibcite{Keras}{{6}{2015}{{Chollet et~al\unhbox \voidb@x \hbox {.}}}{{Chollet et~al\unhbox \voidb@x \hbox {.}}}}
-\bibcite{CohenBook}{{7}{1993}{{Cohen et~al\unhbox \voidb@x \hbox {.}}}{{Cohen, Wallace, and Hanrahan}}}
-\bibcite{DeformableCNN}{{8}{2017}{{Dai et~al\unhbox \voidb@x \hbox {.}}}{{Dai, Qi, Xiong, Li, Zhang, Hu, and Wei}}}
+\bibcite{Survey_NN_Compression}{{4}{2017}{{Cheng et~al\unhbox \voidb@x \hbox {.}}}{{Cheng, Wang, Zhou, and Zhang}}}
+\bibcite{Keras}{{5}{2015}{{Chollet et~al\unhbox \voidb@x \hbox {.}}}{{Chollet et~al\unhbox \voidb@x \hbox {.}}}}
+\bibcite{CohenBook}{{6}{1993}{{Cohen et~al\unhbox \voidb@x \hbox {.}}}{{Cohen, Wallace, and Hanrahan}}}
+\bibcite{DeformableCNN}{{7}{2017}{{Dai et~al\unhbox \voidb@x \hbox {.}}}{{Dai, Qi, Xiong, Li, Zhang, Hu, and Wei}}}
+\bibcite{detlefsen2018transformations}{{8}{2018}{{Detlefsen et~al\unhbox \voidb@x \hbox {.}}}{{Detlefsen, Freifeld, and Hauberg}}}
 \bibcite{HM_book}{{9}{1964}{{Eells and Sampson}}{{Eells and Sampson}}}
 \bibcite{SkinningPRT}{{10}{2007}{{Feng et~al\unhbox \voidb@x \hbox {.}}}{{Feng, Peng, Jia, and Yu}}}
-\bibcite{HarmonicMapping}{{11}{[n. d.]}{{Gu}}{{Gu}}}
+\bibcite{HarmonicMapping}{{11}{2018}{{Gu}}{{Gu}}}
 \bibcite{gu2002geometry}{{12}{2002}{{Gu et~al\unhbox \voidb@x \hbox {.}}}{{Gu, Gortler, and Hoppe}}}
 \bibcite{Deep_Compression}{{13}{2015}{{Han et~al\unhbox \voidb@x \hbox {.}}}{{Han, Mao, and Dally}}}
 \bibcite{ResNet}{{14}{2015}{{He et~al\unhbox \voidb@x \hbox {.}}}{{He, Zhang, Ren, and Sun}}}
-\bibcite{Holden2017}{{15}{2017}{{Holden et~al\unhbox \voidb@x \hbox {.}}}{{Holden, Komura, and Saito}}}
-\bibcite{ComputingEnergy}{{16}{2014}{{Horowitz}}{{Horowitz}}}
-\bibcite{James_Fatahalian}{{17}{2003}{{James and Fatahalian}}{{James and Fatahalian}}}
-\bibcite{CNN_videoClassification}{{18}{2014}{{Karpathy et~al\unhbox \voidb@x \hbox {.}}}{{Karpathy, Toderici, Shetty, Leung, Sukthankar, and Fei-Fei}}}
-\bibcite{BRDF_kernel}{{19}{2002}{{Kautz et~al\unhbox \voidb@x \hbox {.}}}{{Kautz, Sloan, and Snyder}}}
-\bibcite{ADAM}{{20}{2014}{{Kingma and Ba}}{{Kingma and Ba}}}
-\bibcite{ImageNet_CNN}{{21}{2012}{{Krizhevsky et~al\unhbox \voidb@x \hbox {.}}}{{Krizhevsky, Sutskever, and Hinton}}}
-\bibcite{DL_nature}{{22}{2015}{{LeCun et~al\unhbox \voidb@x \hbox {.}}}{{LeCun, Bengio, and Hinton}}}
-\bibcite{Deformable_UNet}{{23}{2018}{{Man et~al\unhbox \voidb@x \hbox {.}}}{{Man, Huang, Feng, Li, and Wu}}}
-\bibcite{CNN_on_Torus}{{24}{2017}{{Maron et~al\unhbox \voidb@x \hbox {.}}}{{Maron, Galun, Aigerman, Trope, Dym, Yumer, Kim, and Lipman}}}
-\bibcite{ShapeNet1}{{25}{2015}{{Masci et~al\unhbox \voidb@x \hbox {.}}}{{Masci, Boscaini, Bronstein, and Vandergheynst}}}
-\bibcite{DeepGeoCourse}{{26}{2016}{{Masci et~al\unhbox \voidb@x \hbox {.}}}{{Masci, Rodol\`{a}, Boscaini, Bronstein, and Li}}}
-\bibcite{GeoDeepLearning}{{27}{[n. d.]}{{Monti}}{{Monti}}}
-\bibcite{Nalbach2017b}{{28}{2017}{{Nalbach et~al\unhbox \voidb@x \hbox {.}}}{{Nalbach, Arabadzhiyska, Mehta, Seidel, and Ritschel}}}
-\bibcite{AllFrequencyPRT}{{29}{2003}{{Ng et~al\unhbox \voidb@x \hbox {.}}}{{Ng, Ramamoorthi, and Hanrahan}}}
-\bibcite{Spherical_Parametrization}{{30}{2003}{{Praun and Hoppe}}{{Praun and Hoppe}}}
-\bibcite{U-Net}{{31}{2015}{{Ronneberger et~al\unhbox \voidb@x \hbox {.}}}{{Ronneberger, Fischer, and Brox}}}
-\bibcite{MoMoPRT}{{32}{2017}{{Schneider et~al\unhbox \voidb@x \hbox {.}}}{{Schneider, Schönborn, Egger, Frobeen, and Vetter}}}
-\bibcite{sinha2016deep}{{33}{2016}{{Sinha et~al\unhbox \voidb@x \hbox {.}}}{{Sinha, Bai, and Ramani}}}
-\bibcite{sloan2002precomputed}{{34}{2002}{{Sloan et~al\unhbox \voidb@x \hbox {.}}}{{Sloan, Kautz, and Snyder}}}
-\bibcite{local-deformable-precomputed-radiance-transfer}{{35}{2005}{{Sloan et~al\unhbox \voidb@x \hbox {.}}}{{Sloan, Luna, and Snyder}}}
-\bibcite{StridingConv}{{36}{2014}{{Springenberg et~al\unhbox \voidb@x \hbox {.}}}{{Springenberg, Dosovitskiy, Brox, and Riedmiller}}}
-\bibcite{DBLP}{{37}{2017}{{Thomas and Forbes}}{{Thomas and Forbes}}}
-\bibcite{3d_ShapeNets}{{38}{2015}{{Wu et~al\unhbox \voidb@x \hbox {.}}}{{Wu, Song, Khosla, Yu, Zhang, Tang, and Xiao}}}
-\bibcite{QuadrupedMotion}{{39}{2018}{{Zhang et~al\unhbox \voidb@x \hbox {.}}}{{Zhang, Starke, Komura, and Saito}}}
+\bibcite{ComputingEnergy}{{15}{2014}{{Horowitz}}{{Horowitz}}}
+\bibcite{James_Fatahalian}{{16}{2003}{{James and Fatahalian}}{{James and Fatahalian}}}
+\bibcite{CNN_videoClassification}{{17}{2014}{{Karpathy et~al\unhbox \voidb@x \hbox {.}}}{{Karpathy, Toderici, Shetty, Leung, Sukthankar, and Fei-Fei}}}
+\bibcite{BRDF_kernel}{{18}{2002}{{Kautz et~al\unhbox \voidb@x \hbox {.}}}{{Kautz, Sloan, and Snyder}}}
+\bibcite{ADAM}{{19}{2014}{{Kingma and Ba}}{{Kingma and Ba}}}
+\bibcite{ImageNet_CNN}{{20}{2012}{{Krizhevsky et~al\unhbox \voidb@x \hbox {.}}}{{Krizhevsky, Sutskever, and Hinton}}}
+\bibcite{DL_nature}{{21}{2015}{{LeCun et~al\unhbox \voidb@x \hbox {.}}}{{LeCun, Bengio, and Hinton}}}
+\bibcite{Deformable_UNet}{{22}{2018}{{Man et~al\unhbox \voidb@x \hbox {.}}}{{Man, Huang, Feng, Li, and Wu}}}
+\bibcite{CNN_on_Torus}{{23}{2017}{{Maron et~al\unhbox \voidb@x \hbox {.}}}{{Maron, Galun, Aigerman, Trope, Dym, Yumer, Kim, and Lipman}}}
+\bibcite{ShapeNet1}{{24}{2015}{{Masci et~al\unhbox \voidb@x \hbox {.}}}{{Masci, Boscaini, Bronstein, and Vandergheynst}}}
+\bibcite{DeepGeoCourse}{{25}{2016}{{Masci et~al\unhbox \voidb@x \hbox {.}}}{{Masci, Rodol\`{a}, Boscaini, Bronstein, and Li}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Prediction Quality: a) ground truth appearance. b) predicted appearance. c) SSIM. d) L1-Error between ground truth and predicted transfer coefficients \relax }}{8}{figure.caption.23}}
+\newlabel{Fig: DPRT_Quality}{{8}{8}{Prediction Quality: a) ground truth appearance. b) predicted appearance. c) SSIM. d) L1-Error between ground truth and predicted transfer coefficients \relax }{figure.caption.23}{}}
+\@writefile{toc}{\contentsline {section}{Acknowledgments}{8}{section*.25}}
+\@writefile{toc}{\contentsline {section}{References}{8}{section*.27}}
+\bibcite{GeoDeepLearning}{{26}{2018}{{Monti}}{{Monti}}}
+\bibcite{Nalbach2017b}{{27}{2017}{{Nalbach et~al\unhbox \voidb@x \hbox {.}}}{{Nalbach, Arabadzhiyska, Mehta, Seidel, and Ritschel}}}
+\bibcite{AllFrequencyPRT}{{28}{2003}{{Ng et~al\unhbox \voidb@x \hbox {.}}}{{Ng, Ramamoorthi, and Hanrahan}}}
+\bibcite{Spherical_Parametrization}{{29}{2003}{{Praun and Hoppe}}{{Praun and Hoppe}}}
+\bibcite{U-Net}{{30}{2015}{{Ronneberger et~al\unhbox \voidb@x \hbox {.}}}{{Ronneberger, Fischer, and Brox}}}
+\bibcite{MoMoPRT}{{31}{2017}{{Schneider et~al\unhbox \voidb@x \hbox {.}}}{{Schneider, Schönborn, Egger, Frobeen, and Vetter}}}
+\bibcite{sinha2016deep}{{32}{2016}{{Sinha et~al\unhbox \voidb@x \hbox {.}}}{{Sinha, Bai, and Ramani}}}
+\bibcite{sloan2002precomputed}{{33}{2002}{{Sloan et~al\unhbox \voidb@x \hbox {.}}}{{Sloan, Kautz, and Snyder}}}
+\bibcite{local-deformable-precomputed-radiance-transfer}{{34}{2005}{{Sloan et~al\unhbox \voidb@x \hbox {.}}}{{Sloan, Luna, and Snyder}}}
+\bibcite{StridingConv}{{35}{2014}{{Springenberg et~al\unhbox \voidb@x \hbox {.}}}{{Springenberg, Dosovitskiy, Brox, and Riedmiller}}}
+\bibcite{DBLP}{{36}{2017}{{Thomas and Forbes}}{{Thomas and Forbes}}}
+\bibcite{3d_ShapeNets}{{37}{2015}{{Wu et~al\unhbox \voidb@x \hbox {.}}}{{Wu, Song, Khosla, Yu, Zhang, Tang, and Xiao}}}
 \newlabel{tocindent-1}{0pt}
 \newlabel{tocindent0}{0pt}
 \newlabel{tocindent1}{4.185pt}
 \newlabel{tocindent2}{10.34999pt}
 \newlabel{tocindent3}{0pt}
-\@writefile{toc}{\contentsline {section}{References}{9}{section*.25}}
 \newlabel{TotPages}{{9}{9}{}{page.9}{}}

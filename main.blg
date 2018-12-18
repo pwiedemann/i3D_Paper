@@ -1,11 +1,10 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: ACM-Reference-Format.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: 6_ref.bib
-Warning--I didn't find a database entry for "Masci2015ShapeNetCN"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -13,11 +12,11 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--page numbers missing in both pages and numpages fields in BoscainiMRB16
 Warning--page numbers missing in both pages and numpages fields in Geometric_deep_learning
-Warning--page numbers missing in both pages and numpages fields in DeepHuman
 Warning--page numbers missing in both pages and numpages fields in Survey_NN_Compression
 Warning--page numbers missing in both pages and numpages fields in DeformableCNN
+Warning--no number and no volume in detlefsen2018transformations
+Warning--page numbers missing in both pages and numpages fields in detlefsen2018transformations
 Warning--empty address in HM_book
-Warning--empty year in HarmonicMapping
 Warning--page numbers missing in both pages and numpages fields in Deep_Compression
 Warning--page numbers missing in both pages and numpages fields in ResNet
 Warning--empty publisher in ComputingEnergy
@@ -29,7 +28,6 @@ Warning--empty booktitle in Deformable_UNet
 Warning--empty publisher in Deformable_UNet
 Warning--empty address in Deformable_UNet
 Warning--page numbers missing in both pages and numpages fields in ShapeNet1
-Warning--empty year in GeoDeepLearning
 Warning--no journal in Nalbach2017b
 Warning--page numbers missing in both pages and numpages fields in Nalbach2017b
 Warning--page numbers missing in both pages and numpages fields in U-Net
@@ -46,45 +44,45 @@ Warning--page numbers missing in both pages and numpages fields in StridingConv
 Warning--page numbers missing in both pages and numpages fields in DBLP
 Warning--empty publisher in 3d_ShapeNets
 Warning--empty address in 3d_ShapeNets
-You've used 39 entries,
+You've used 37 entries,
             5719 wiz_defined-function locations,
-            1602 strings with 22971 characters,
-and the built_in function-call counts, 46820 in all, are:
-= -- 6021
-> -- 1889
+            1579 strings with 22453 characters,
+and the built_in function-call counts, 44496 in all, are:
+= -- 5677
+> -- 1785
 < -- 1
-+ -- 623
-- -- 620
-* -- 3648
-:= -- 4746
-add.period$ -- 199
-call.type$ -- 39
-change.case$ -- 305
-chr.to.int$ -- 39
-cite$ -- 74
-duplicate$ -- 3910
-empty$ -- 2784
-format.name$ -- 760
-if$ -- 11328
++ -- 589
+- -- 588
+* -- 3435
+:= -- 4512
+add.period$ -- 189
+call.type$ -- 37
+change.case$ -- 288
+chr.to.int$ -- 37
+cite$ -- 71
+duplicate$ -- 3748
+empty$ -- 2656
+format.name$ -- 720
+if$ -- 10724
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 149
-newline$ -- 480
-num.names$ -- 312
-pop$ -- 1495
+missing$ -- 143
+newline$ -- 451
+num.names$ -- 296
+pop$ -- 1405
 preamble$ -- 1
-purify$ -- 632
+purify$ -- 610
 quote$ -- 0
-skip$ -- 1280
+skip$ -- 1252
 stack$ -- 0
-substring$ -- 3171
-swap$ -- 355
+substring$ -- 3065
+swap$ -- 345
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 846
-warning$ -- 35
-while$ -- 240
+type$ -- 814
+warning$ -- 34
+while$ -- 232
 width$ -- 0
-write$ -- 834
-(There were 36 warnings)
+write$ -- 787
+(There were 34 warnings)

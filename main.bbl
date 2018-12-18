@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{39}
+\begin{thebibliography}{37}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -90,24 +90,6 @@
 \tempurl}
 
 
-\bibitem[\protect\citeauthoryear{B{\"{u}}tepage, Black, Kragic, and
-  Kjellstr{\"{o}}m}{B{\"{u}}tepage et~al\mbox{.}}{2017}]%
-        {DeepHuman}
-\bibfield{author}{\bibinfo{person}{Judith B{\"{u}}tepage},
-  \bibinfo{person}{Michael~J. Black}, \bibinfo{person}{Danica Kragic}, {and}
-  \bibinfo{person}{Hedvig Kjellstr{\"{o}}m}.} \bibinfo{year}{2017}\natexlab{}.
-\newblock \showarticletitle{Deep representation learning for human motion
-  prediction and classification}.
-\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1702.07486}
-  (\bibinfo{year}{2017}).
-\newblock
-\showeprint[arxiv]{1702.07486}
-\urldef\tempurl%
-\url{http://arxiv.org/abs/1702.07486}
-\showURL{%
-\tempurl}
-
-
 \bibitem[\protect\citeauthoryear{Cheng, Wang, Zhou, and Zhang}{Cheng
   et~al\mbox{.}}{2017}]%
         {Survey_NN_Compression}
@@ -167,6 +149,18 @@
 \tempurl}
 
 
+\bibitem[\protect\citeauthoryear{Detlefsen, Freifeld, and Hauberg}{Detlefsen
+  et~al\mbox{.}}{2018}]%
+        {detlefsen2018transformations}
+\bibfield{author}{\bibinfo{person}{Nicki~Skafte Detlefsen},
+  \bibinfo{person}{Oren Freifeld}, {and} \bibinfo{person}{S{\o}ren Hauberg}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Deep Diffeomorphic Transformer Networks}.
+\newblock \bibinfo{journal}{\emph{Conference on Computer Vision and Pattern
+  Recognition (CVPR)}} (\bibinfo{year}{2018}).
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Eells and Sampson}{Eells and Sampson}{1964}]%
         {HM_book}
 \bibfield{author}{\bibinfo{person}{James Eells} {and} \bibinfo{person}{J.~H.
@@ -198,10 +192,9 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{Gu}{Gu}{[n. d.]}]%
+\bibitem[\protect\citeauthoryear{Gu}{Gu}{2018}]%
         {HarmonicMapping}
-\bibfield{author}{\bibinfo{person}{David Gu}.} \bibinfo{year}{[n.
-  d.]}\natexlab{}.
+\bibfield{author}{\bibinfo{person}{David Gu}.} \bibinfo{year}{2018}\natexlab{}.
 \newblock \bibinfo{title}{Harmonic Map}.
 \newblock
 \newblock
@@ -258,23 +251,6 @@
 \url{http://arxiv.org/abs/1512.03385}
 \showURL{%
 \tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Holden, Komura, and Saito}{Holden
-  et~al\mbox{.}}{2017}]%
-        {Holden2017}
-\bibfield{author}{\bibinfo{person}{Daniel Holden}, \bibinfo{person}{Taku
-  Komura}, {and} \bibinfo{person}{Jun Saito}.} \bibinfo{year}{2017}\natexlab{}.
-\newblock \showarticletitle{Phase-functioned Neural Networks for Character
-  Control}.
-\newblock \bibinfo{journal}{\emph{ACM Trans. Graph.}} \bibinfo{volume}{36},
-  \bibinfo{number}{4}, Article \bibinfo{articleno}{42} (\bibinfo{date}{July}
-  \bibinfo{year}{2017}), \bibinfo{numpages}{13}~pages.
-\newblock
-\showISSN{0730-0301}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/3072959.3073663}
-\showDOI{\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Horowitz}{Horowitz}{2014}]%
@@ -461,10 +437,10 @@
 \showDOI{\tempurl}
 
 
-\bibitem[\protect\citeauthoryear{Monti}{Monti}{[n. d.]}]%
+\bibitem[\protect\citeauthoryear{Monti}{Monti}{2018}]%
         {GeoDeepLearning}
-\bibfield{author}{\bibinfo{person}{Federico Monti}.} \bibinfo{year}{[n.
-  d.]}\natexlab{}.
+\bibfield{author}{\bibinfo{person}{Federico Monti}.}
+  \bibinfo{year}{2018}\natexlab{}.
 \newblock \bibinfo{title}{Geometric Deep Learning}.
 \newblock
 \newblock
@@ -641,24 +617,6 @@
 \showISSN{1063-6919}
 \urldef\tempurl%
 \url{https://doi.org/10.1109/CVPR.2015.7298801}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Zhang, Starke, Komura, and Saito}{Zhang
-  et~al\mbox{.}}{2018}]%
-        {QuadrupedMotion}
-\bibfield{author}{\bibinfo{person}{He Zhang}, \bibinfo{person}{Sebastian
-  Starke}, \bibinfo{person}{Taku Komura}, {and} \bibinfo{person}{Jun Saito}.}
-  \bibinfo{year}{2018}\natexlab{}.
-\newblock \showarticletitle{Mode-adaptive Neural Networks for Quadruped Motion
-  Control}.
-\newblock \bibinfo{journal}{\emph{ACM Trans. Graph.}} \bibinfo{volume}{37},
-  \bibinfo{number}{4}, Article \bibinfo{articleno}{145} (\bibinfo{date}{July}
-  \bibinfo{year}{2018}), \bibinfo{numpages}{11}~pages.
-\newblock
-\showISSN{0730-0301}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/3197517.3201366}
 \showDOI{\tempurl}
 
 

@@ -42,11 +42,11 @@
 % --------
 % abstract
 \begin{abstract}
-We propose, \textit{DeepPRT}, a deep convolutional neural network (in U-Net configuration) to encapsulate radiance transfer information of a freely deformable object. \\
+We propose, \textit{DeepPRT}, a deep convolutional neural network to compactly encapsulate the radiance transfer of a freely deformable object for rasterization in real-time. \\
 With pre-computation of radiance transfer (PRT) we can store complex light interactions appropriate to the shape of a given object at each surface point for subsequent real-time rendering via fast linear algebra evaluation against the viewing direction and distant light environment. However, performing light transport projection into an efficient basis representation, such as Spherical Harmonics (SH), requires a numerical Monte Carlo integration computation, limiting usage to rigid only objects or highly constrained deformation sequences. The bottleneck, when considering freely deformable objects, is the heavy memory requirement to wield all pre-computations in rendering with global illumination results.
-We present a compact representation of PRT for deformable objects with fixed memory consumption, which solves diverse non-linear deformations and is shown to be effective beyond the input training set. Specifically, the U-Net is trained to predict the coefficients of a particular encoding of the \textit{transfer function} (SH coefficients in this case), for a given animation's shape query each frame in real-time.
+We present a compact representation of PRT for deformable objects with fixed memory consumption, which solves diverse non-linear deformations and is shown to be effective beyond the input training set. Specifically, a \textit{U-Net} is trained to predict the coefficients of the \textit{transfer function} (SH coefficients in this case), for a given animation's shape query each frame in real-time.
 \\
-We contribute deep learning PRT within a parametric surface space representation via \textit{geometry images} using harmonic mapping with  a  texture space filling energy minimization variant. This surface representation facilitates the learning procedure, removing irrelevant, deformation invariant, information from the data; and supports standard convolution operations. Finally, comparisons with ground truth and a recent state of the art linear morphable-model method is provided.
+We contribute deep learning of PRT within a parametric surface space representation via \textit{geometry images} using harmonic mapping with  a  texture space filling energy minimization variant. This surface representation facilitates the learning procedure, removing irrelevant, deformation invariant information; and supports standard convolution operations. Finally, comparisons with ground truth and a recent linear morphable-model method is provided.
 %Traditional Precomputed Radiance Transfer (PRT) methods are limited to static objects or highly constrained deformation sequences. The bottleneck of PRT, when considering deformable objects, is its immense memory requirement to wield all pre-computations for a given series of object deformations. \\
 %We present a compact representation of PRT for deformable objects associated to a fixed memory consumption independently of the number of deformations. We propose a deep Convolutional Neural Network (CNN) to encapsulate the self-shadowing information of an object. Specifically, the CNN is trained to predict the coefficients of a particular encoding of the \textit{Transfer Function}, for a given shape query. Here, we chose \textit{Spherical Harmonics} as representation of the \textit{Transfer Function}, although the method is not limited to that particular choice.
 %\\
@@ -62,8 +62,8 @@ We contribute deep learning PRT within a parametric surface space representation
 <concept_significance>500</concept_significance>
 </concept>
 <concept>
-<concept_id>10010147.10010371.10010372.10010374</concept_id>
-<concept_desc>Computing methodologies~Ray tracing</concept_desc>
+<concept_id>10010147.10010371.10010372.10010373</concept_id>
+<concept_desc>Computing methodologies~Rasterization</concept_desc>
 <concept_significance>500</concept_significance>
 </concept>
 </ccs2012>
@@ -71,6 +71,7 @@ We contribute deep learning PRT within a parametric surface space representation
 
 \ccsdesc[500]{Computing methodologies~Rendering}
 \ccsdesc[500]{Computing methodologies~Ray tracing}
+\ccsdesc[500]{Computing methodologies~Rasterization}
 
 %keywords
-\keywords{ray tracing, global illumination, octrees, quadtrees}
+\keywords{real-time rendering, global illumination, pre-computed radiance transfer, spherical harmonics, deep learning}
