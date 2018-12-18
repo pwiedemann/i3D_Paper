@@ -20,7 +20,7 @@ Thus, we enable a compact PRT representation that maintains a constant/fixed sto
 
 
 Finding an appropriate representation of shape, or manifold like, data to use in a CNN framework is a challenging task due to the non-Euclidean nature of the domain in which the data is defined on. In such domains, basic operations, such as the convolution, are not well defined. Nonetheless, more recently some authors have started to address non-Euclidean data proposing a variety of approaches \cite{ShapeNet1, Geometric_deep_learning, CNN_on_Torus} (for further reading: \cite{GeoDeepLearning}).
-In particular, we propose learning on a regular surface representation \textit{geometry images} proposed by \citep{gu2002geometry}. Surfaces are mapped into squares, we perform ping, and resampled into a regular grid. This regular surface space representation allows standard convolution operations and shows to be advantageous within the DL context due to its dieffeomorphic property, as shown in \cite{sinha2016deep}. 
+In particular, we propose learning on a regular surface representation \textit{geometry images} proposed by \citep{gu2002geometry}. Surfaces are mapped into squares, we perform harmonic mapping, and resampled into a regular grid. This regular surface space representation allows standard convolution operations and shows to be advantageous within the DL context due to its dieffeomorphic property, as shown in \cite{sinha2016deep}. 
 \\
 The main contribution of our approach is: 
 \begin{itemize}
