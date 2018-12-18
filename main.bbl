@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{38}
+\begin{thebibliography}{39}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -251,6 +251,18 @@
 \url{http://arxiv.org/abs/1512.03385}
 \showURL{%
 \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Hermosilla, Maisch, Ritschel, and
+  Ropinski}{Hermosilla et~al\mbox{.}}{2018}]%
+        {Herm2018}
+\bibfield{author}{\bibinfo{person}{Pedro Hermosilla},
+  \bibinfo{person}{Sebastian Maisch}, \bibinfo{person}{Tobias Ritschel}, {and}
+  \bibinfo{person}{Timo Ropinski}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Deep-learning the Latent Space of Light Transport}.
+\newblock \bibinfo{journal}{\emph{arXiv}}  \bibinfo{volume}{abs/1811.04756}
+  (\bibinfo{year}{2018}).
+\newblock
 
 
 \bibitem[\protect\citeauthoryear{Horowitz}{Horowitz}{2014}]%
