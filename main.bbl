@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{37}
+\begin{thebibliography}{38}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -567,6 +567,23 @@
 \url{https://www.microsoft.com/en-us/research/publication/local-deformable-precomputed-radiance-transfer/}
 \showURL{%
 \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Sloan and Silvennoinen}{Sloan and
+  Silvennoinen}{2018}]%
+        {Sloan2018}
+\bibfield{author}{\bibinfo{person}{Peter-Pike Sloan} {and} \bibinfo{person}{Ari
+  Silvennoinen}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Directional Lightmap Encoding Insights}. In
+  \bibinfo{booktitle}{\emph{SIGGRAPH Asia 2018 Technical Briefs}}
+  \emph{(\bibinfo{series}{SA '18})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, Article \bibinfo{articleno}{12},
+  \bibinfo{numpages}{3}~pages.
+\newblock
+\showISBNx{978-1-4503-6062-3}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3283254.3283281}
+\showDOI{\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Springenberg, Dosovitskiy, Brox, and

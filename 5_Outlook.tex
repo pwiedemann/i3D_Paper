@@ -5,7 +5,7 @@ We present a compact representation of PRT for \textbf{free form} deformable obj
 Moreover, our method shows much higher generalization properties than previous approaches, allowing deformations from much larger and less constrained deformation spaces.
 
 Although we showed DeepPRT can be much more compact than traditional PRT, our network is far from being optimal. Exploiting network compression and acceleration methods could be highly beneficial \cite{Survey_NN_Compression, Deep_Compression}.
-Moreover, other network topologies and/or cost functions could be explored in order to achieve better approximations, for instance, as proposed in \cite{Deformable_UNet} to account for individual object deformations the use of deformable convolutions \cite{DeformableCNN} could be investigated.
+Moreover, other network topologies and/or cost functions could be explored in order to achieve better approximations, for instance, as proposed in \cite{Deformable_UNet} to account for individual object deformations the use of deformable convolutions \cite{DeformableCNN} could be investigated. Further to the transfer function representation, a direct learning of more bespoke and compact representations \cite{Sloan2018} could also be applied in this context.
 
 The particular choice of our basis functions (Spherical Harmonics), currently restricts our method to low-frequency lightings. However, an extension to all-frequencies is possible by fitting the model to an alternative representation of the transfer function $T$, such as non-linear Wavelets \cite{AllFrequencyPRT}.
 
