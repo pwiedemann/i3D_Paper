@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{39}
+\begin{thebibliography}{40}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -88,6 +88,26 @@
 \url{http://arxiv.org/abs/1611.08097}
 \showURL{%
 \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Chaitanya, Kaplanyan, Schied, Salvi, Lefohn,
+  Nowrouzezahrai, and Aila}{Chaitanya et~al\mbox{.}}{2017}]%
+        {Chaitanya2017}
+\bibfield{author}{\bibinfo{person}{Chakravarty R.~Alla Chaitanya},
+  \bibinfo{person}{Anton~S. Kaplanyan}, \bibinfo{person}{Christoph Schied},
+  \bibinfo{person}{Marco Salvi}, \bibinfo{person}{Aaron Lefohn},
+  \bibinfo{person}{Derek Nowrouzezahrai}, {and} \bibinfo{person}{Timo Aila}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Interactive Reconstruction of Monte Carlo Image
+  Sequences Using a Recurrent Denoising Autoencoder}.
+\newblock \bibinfo{journal}{\emph{ACM Trans. Graph.}} \bibinfo{volume}{36},
+  \bibinfo{number}{4}, Article \bibinfo{articleno}{98} (\bibinfo{date}{July}
+  \bibinfo{year}{2017}), \bibinfo{numpages}{12}~pages.
+\newblock
+\showISSN{0730-0301}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3072959.3073601}
+\showDOI{\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Cheng, Wang, Zhou, and Zhang}{Cheng

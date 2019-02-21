@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: ACM-Reference-Format.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -45,45 +45,45 @@ Warning--page numbers missing in both pages and numpages fields in StridingConv
 Warning--page numbers missing in both pages and numpages fields in DBLP
 Warning--empty publisher in 3d_ShapeNets
 Warning--empty address in 3d_ShapeNets
-You've used 39 entries,
+You've used 40 entries,
             5719 wiz_defined-function locations,
-            1594 strings with 22835 characters,
-and the built_in function-call counts, 46737 in all, are:
-= -- 5970
-> -- 1875
+            1602 strings with 23188 characters,
+and the built_in function-call counts, 48130 in all, are:
+= -- 6166
+> -- 1960
 < -- 1
-+ -- 619
-- -- 620
-* -- 3609
-:= -- 4742
-add.period$ -- 199
-call.type$ -- 39
-change.case$ -- 302
-chr.to.int$ -- 39
-cite$ -- 74
-duplicate$ -- 3940
-empty$ -- 2793
-format.name$ -- 760
-if$ -- 11265
++ -- 648
+- -- 648
+* -- 3741
+:= -- 4895
+add.period$ -- 204
+call.type$ -- 40
+change.case$ -- 313
+chr.to.int$ -- 40
+cite$ -- 75
+duplicate$ -- 4031
+empty$ -- 2861
+format.name$ -- 792
+if$ -- 11605
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 151
-newline$ -- 470
-num.names$ -- 312
-pop$ -- 1476
+missing$ -- 154
+newline$ -- 482
+num.names$ -- 320
+pop$ -- 1509
 preamble$ -- 1
-purify$ -- 642
+purify$ -- 662
 quote$ -- 0
-skip$ -- 1312
+skip$ -- 1336
 stack$ -- 0
-substring$ -- 3198
-swap$ -- 358
+substring$ -- 3272
+swap$ -- 363
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 860
+type$ -- 876
 warning$ -- 35
-while$ -- 244
+while$ -- 248
 width$ -- 0
-write$ -- 827
+write$ -- 848
 (There were 35 warnings)

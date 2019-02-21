@@ -6,17 +6,17 @@ L(\bm{\omega}_0 ) &=
 \int_{\Omega}   L_{\epsilon}(\bm{\omega}_i ) 
 \underbrace{f(\bm{\omega}_i,\bm{\omega}_0) 
 V(\bm{\omega}_i) H_N(\omega_i) }_{T(\bm{\omega}_i,\bm{\omega}_0) }
-\,  \, d\bm{\omega}_i , 
+\,  \, d\bm{\omega}_i 
 \label{rendering equation PRT}
 \end{align}
 where $L_{\epsilon}$ accounts for all incoming radiance over the hemisphere, $f$  describes the surface reflectance properties $f$ (BRDF), $H_N$ is the Lambert's Law and $V$ the visibility function describing geometric information of the scene. PRT precisely exploits the essence of static/non-deformable objects by uniquely determining the integrand $T(\bm{\omega}_i,\bm{\omega}_0)$ (called the \textbf{transfer function}), which contains the costly-to-compute  visibility term,
 \begin{align*}
-V :  \mathcal{S}  \times \Omega \rightarrow \{0,1\} \quad,
+V :  \mathcal{S}  \times \Omega \rightarrow \{0,1\} \quad
 \end{align*}
 for each surface point $\bm{s} \in \mathcal{S} \subset \mathbb{R}^3$ \cite{CohenBook}. 
 
 Both functions $L_{\epsilon} $ and $T$  are projected onto a suitable set of orthonormal basis functions for faster evaluation of the rendering equation \ref{rendering equation PRT}. 
-For $m$ number of coefficients of the basis functions and $l_i$, $t_i$ being the $i$-th coefficient of $L_{\epsilon} $ and $T$ respectively, equation \ref{rendering equation PRT} reduces to \cite{sloan2002precomputed} 
+For $m$ number of coefficients of the basis functions and $l_i$, $t_i$ being the $i$-th coefficient of $L_{\epsilon} $ and $T$ respectively, equation \ref{rendering equation PRT} reduces to, \cite{sloan2002precomputed} 
 \begin{align}
 L(\bm{\omega}_0 ) \approx \sum_{j}^{m} l_j \cdot t_j 
 \label{Eq: Reduced Rendering Eq}
@@ -33,7 +33,7 @@ Moreover, by choosing to estimate the transfer function, instead of a direct pre
 % FIGURE (Varying Lighting)
 \begin{figure}[H]
   \centering
-    \includegraphics[width=0.5\textwidth]{Figures/varying_lighting}
+    \includegraphics[width=1.0\textwidth]{Figures/varying_lighting}
      \caption{Dynamic lighting. Rendered appearance of the \textit{Pirate Head} under three different  lighting conditions. Lighting is interpolated between two light-probes.}
      \label{Fig: Varying lighting}
 \end{figure}
@@ -42,7 +42,7 @@ Moreover, by choosing to estimate the transfer function, instead of a direct pre
 % -------------- GEOMETRY IMAGE ----------------- 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Data: Geometry Images}
-We propose learning directly \textbf{on} the object's surface in order to leverage its underlying shape structure and further to be consistent with regular animated surface geometry representation for real-time rasterization. Geometry images present a planar and regular shape representation on which standard 2D CNNs can be applied \cite{gu2002geometry, sinha2016deep}. Surfaces with a single boundary (topological disks) are mapped onto a unit square and later discretized (or re-sampled) into a regular grid of $n \times n$ vertices. We chose harmonic map as implicit parametrization of the interior of the 2D domain \cite{HM_book, HarmonicMapping}. 
+We propose learning directly \textbf{on} the object's surface in order to leverage its underlying shape structure and further to be consistent with regular animated surface geometry representation for real-time rasterization. Geometry images present a planar and regular shape representation on which standard 2D CNNs can be applied \cite{gu2002geometry, sinha2016deep}. Surfaces with a single boundary (topological disks) are mapped onto a unit square and later discretized (or re-sampled) into a regular grid of $n \times n$ vertices. We chose harmonic map (HM) as implicit parametrization of the interior of the 2D domain \cite{HM_book, HarmonicMapping}. Further, our intent is that, for practically zero genus object surfaces, HMs provide the conditions for a homomorphism with diffeomorphic interior mapping such that the mapped differentiable manifold takes place smoothly in the image domain.
 %In a \textit{Stretch-Minimising} parametrisation is presented for the interior of the planar surface. However, for simplicity, but without loss of generality, ...
 
 Importantly, we apply deformations only on the reconstructed object (shape $\mathcal{S_R}$ in Figure (1) ) in order to make our shape representation, geometry images, invariant to deformations. By doing so, we maintain a one-to-one pixel correspondence between deformations; hence, filtering out deformation invariant information of the representation; and therefore, facilitating the feature extraction of surface properties that are more closely related to self-shadowing and light transfer effects. Moreover, this also means that the conversion process of a surface into a geometry image is required only once and can be performed off-line, saving precious computation time.
@@ -54,13 +54,13 @@ In addition to position values  $\mathcal{P}$, we use surface normals $\mathcal{
 \end{align*}
 and  $P_i, N_i \in \mathbb{R}^{n \times n }$ being each coordinate image  $i \in \{ x,y,z\}$ of positions and normals respectively. 
 
-In result, our network predicts a corresponding sequence of images $\mathcal{T_{C,R}}$,
+In result, our network predicts a corresponding sequence of images $\mathcal{T_{D,G}}$,
 \begin{align*}
 	f_{CNN} (  \mathcal{P} , \mathcal{N} ) = 
 	\begin{cases}
 	\mathcal{T_D}  & \text{diffuse} \\
 	\mathcal{T_G} & \text{glossy}
-	\end{cases},
+	\end{cases}
 \end{align*}
 which, for \textbf{diffuse materials}, consists of the SH-coefficients of the transfer function of the input shape, as introduced above (see equation \ref{Eq: Reduced Rendering Eq}):
 \begin{align*}
@@ -98,20 +98,21 @@ The data is split into a training and validation set consisting of $450$ and $50
 Convergence varies from object to object, but in most cases $500$ to $1000$ epochs are sufficient, whereby we used a batch size of 5. The network is implemented in Keras with Tensorflow as backend \cite{Keras} and takes close to $16$ hours to compute $800$ epochs of training on a single NVIDIA GetForce GTX 2080 GPU.
 
 \subsubsection*{Runtime: \\}
+\label{sec:runtime}
 In order for \textit{DeepPRT} to function in real-time, fast network inference is required. However, to achieve good approximations existing deep neural networks, such as ours, rely on very deep architectures with sufficient quantities of parameters. 
 In particular, our network has approximately $11.8$ million parameters, occupying $45$Mbytes of CPU memory, and with an inference time of $45$ms on a high-end GPU \textit{NVIDIA RTX 2080}.
 In addition, for a network input size of $4.5$Mbytes there is a further upload (loading input images, $\mathcal{P}$ and $\mathcal{N}$, from CPU into the GPU) cost of approximately $5$ms.  
 
 After prediction, the performance for the rendering process differs notably between diffuse and glossy surfaces: 
 For \textbf{diffuse} surfaces, the dot product between predicted transfer coefficients $\mathcal{T_D}$ and the three channels of the lighting coefficients are calculated (eq. \ref{Eq: Reduced Rendering Eq}) and the result passed to the buffers for final rendering.  For our sample geometries with $256^2$ number of vertices the computation of the dot product takes $13$ms on the GPU, and an upload time of $0.09$s for the resulting $4.0$Mbytes exiting radiance vectors.
-On the other hand, the output of the network for \textbf{glossy} surfaces $\mathcal{T_G}$ is three times the size as for diffuse objects, thus for the same sample geometry as above, it occupies $12.0$Mbytes. For further rendering,  $\mathcal{T_G}$ is convolved with a BRDF-kernel, based on \cite{ BRDF_kernel}, before passed to the shaders \cite{sloan2002precomputed}.  We perform these steps in the CPU resulting in an additional duration of $1.29$s. 
+On the other hand, the output of the network for \textbf{glossy} surfaces $\mathcal{T_G}$ is three times the size as for diffuse objects, thus for the same sample geometry as above, it occupies $12.0$Mbytes. For further rendering,  $\mathcal{T_G}$ is convolved with a BRDF-kernel, based on Kautz et al. \shortcite{ BRDF_kernel}, before passed to the shaders \cite{sloan2002precomputed}.  We perform these steps in the CPU resulting in an additional duration of $1.29$s. 
 
 We note that our implementation is far from being optimal.  Both, the rendering and the prediction process can be accelerated significantly. It has been extensively shown that most neural network models are highly compressible and can be significantly accelerated, eventually making them deployable to devices with low memory resources and applicable in real-time \cite{Deep_Compression, Survey_NN_Compression}.
 Nevertheless, exploring network optimization methods reaches beyond the scope of this work. Hence, for our experiments we used the uncompressed U-Net introduced above. In section \ref{Sec: memory_savings} we show that even neglecting network optimization our DeepPRT approach already achieves immense memory savings, compared to traditional PRT. 
 %%%%
 \begin{figure*}[t]
   \centering
-    \includegraphics[width=0.7\paperwidth]{Figures/Network_topology.pdf}
+    \includegraphics[width=1.0\textwidth]{Figures/Network_topology.pdf}
      \caption{\textit{Left:} Illustration of the configuration of our U-shaped network. \textit{Right:} Shows the two kind of operations performed within our ResNet blocks.}
      \label{Fig: NetworkTopology}
 \end{figure*}
